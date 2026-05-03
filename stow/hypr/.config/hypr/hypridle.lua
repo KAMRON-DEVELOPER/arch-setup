@@ -1,14 +1,17 @@
-general {
-  lock_cmd = "hyprlock"
-}
+hl.hypridle({
+  general = {
+    lock_cmd = "hyprlock",
+  },
 
-listener {
-  timeout = 600
-  on-timeout = "brightnessctl -s set 0 "
-  on-resume = "brightnessctl -r"
-}
-
-listener {
-  timeout = 3600
-  on-timeout = "loginctl lock-session"
-}
+  listeners = {
+    {
+      timeout = 600,
+      on_timeout = "brightnessctl -s set 0",
+      on_resume = "brightnessctl -r",
+    },
+    {
+      timeout = 3600,
+      on_timeout = "loginctl lock-session",
+    },
+  }
+})

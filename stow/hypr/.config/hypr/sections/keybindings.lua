@@ -2,48 +2,37 @@
 ---- KEYBINDINGS ----
 ---------------------
 
-bind = $mainMod, return, exec, $terminal
-bind = $mainMod, C, killactive,
-bind = $mainMod, M, exit,
-bind = $mainMod, E, exec, $fileManager
-bind = $mainMod, V, togglefloating,
-bind = $mainMod, space, exec, $menu
-bind = $SUPER_SHIFT, l, exec, hyprlock
-bind = $SUPER_SHIFT, R, exec, hyprctl reload
-bind = , Print, exec, hyprshot -m window
-bind = shift, Print, exec, hyprshot -m region
-bind = SUPER, Print, exec, flameshot gui
-bind = SUPER SHIFT, Print, exec, flameshot launcher
-
-
-# Super + Left/Right Arrow to switch workspace
-bind = SUPER, left, workspace, e-1
-bind = SUPER, right, workspace, e+1
-
-# Super + h/l to switch workspace (like Vim)
-bind = SUPER, h, workspace, e-1
-bind = SUPER, l, workspace, e+1
-
-
-
-
-
-
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
-local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
--- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + M",
-    hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+-- App launchers / Apps
+hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
+
+-- Window management
+hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
+-- session / lock / reload
+hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("hyprctl reload"))
+
+-- screenshots
+hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m window"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("flameshot gui"))
+hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("flameshot launcher"))
+
+-- workspace switching
+-- hl.bind(mainMod .. " + left", hl.dsp.focus({ workspace = "e-1" }))
+-- hl.bind(mainMod .. " + right", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. " + H", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ workspace = "e+1" }))
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
@@ -87,7 +76,3 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-
-
-
-bind = SUPER ALT, O, exec, ~/Documents/linux-setup/dotfiles/local/.local/bin/toggle-alacritty-opacity.sh

@@ -1,15 +1,10 @@
--- general {
---     col.active_border = $color6
---     col.inactive_border = $color8
--- }
-
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
-    general = {
+    general    = {
         gaps_in          = 5,
         gaps_out         = 5,
 
@@ -29,7 +24,7 @@ hl.config({
         layout           = "dwindle",
     },
 
-    snap = {
+    snap       = {
         enabled = false,
         window_gap = 10,
         monitor_gap = 10,
@@ -48,9 +43,9 @@ hl.config({
         inactive_opacity = 1.0,
 
         blur             = {
-            enabled  = true,
-            size     = 8,
-            passes   = 1,
+            enabled           = true,
+            size              = 8,
+            passes            = 1,
             -- whether to enable further optimizations to the blur.
             --- Recommended to leave on, as it will massively improve performance.
             new_optimizations = true,
@@ -61,9 +56,9 @@ hl.config({
             --- brightness modulation for blur. [0.0 - 2.0]
             brightness        = 0.8172,
             -- Increase saturation of blurred colors. [0.0 - 1.0]
-            vibrancy = 0.1696,
+            vibrancy          = 0.1696,
             --- whether to blur popups (e.g. right-click menus)
-            popups = false,
+            popups            = false,
         },
     },
 
@@ -81,7 +76,7 @@ hl.config({
         scale        = 1.0
     },
 
-    glow = {
+    glow       = {
         enabled = false,
         -- Glow range (“size”) in layout px
         range = 10,

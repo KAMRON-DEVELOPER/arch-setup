@@ -236,6 +236,7 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 hyprshot
+flameshot
 hyprutils
 
 nwg-displays

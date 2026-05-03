@@ -55,8 +55,19 @@ hl.window_rule({
     float = true,
 })
 
+-- opacity rules
+-- Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
+hl.window_rule({
+    match = { class = "code" },
+    opacity = "1.0 override 1.0 override 1.0 override",
+})
 
-# windowrule = opacity 0.95 override 1.0 override 1.0 override, match:class firefox # Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
-windowrule = opacity 1 override 1.0 override 1.0 override, match:class code # Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
-windowrule = opacity 1 override 1.0 override 1.0 override, match:class code-insiders # Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
-windowrule = opacity 1 override 1.0 override 1.0 override, match:class dev.zed.Zed # Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
+hl.window_rule({
+    match = { class = "code-insiders" },
+    opacity = "1.0 override 1.0 override 1.0 override",
+})
+
+hl.window_rule({
+    match = { class = "dev.zed.Zed" },
+    opacity = "1.0 override 1.0 override 1.0 override",
+})
