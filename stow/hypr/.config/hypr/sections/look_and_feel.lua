@@ -29,27 +29,68 @@ hl.config({
         layout           = "dwindle",
     },
 
+    snap = {
+        enabled = false,
+        window_gap = 10,
+        monitor_gap = 10,
+        border_overlap = false,
+        respect_gaps = false,
+    },
+
     decoration = {
         rounding         = 6,
-        rounding_power   = 2,
+        -- adjusts the curve used for rounding corners,
+        --- larger is smoother, 2.0 is a circle, 4.0 is a squircle, 1.0 is a triangular corner. [1.0 - 10.0]
+        rounding_power   = 2.0,
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
         inactive_opacity = 1.0,
 
-        shadow           = {
-            enabled      = true,
-            range        = 4,
-            render_power = 3,
-            color        = 0xee1a1a1a,
-        },
-
         blur             = {
             enabled  = true,
-            size     = 3,
+            size     = 8,
             passes   = 1,
+            -- whether to enable further optimizations to the blur.
+            --- Recommended to leave on, as it will massively improve performance.
+            new_optimizations = true,
+            --- how much noise to apply. [0.0 - 1.0]
+            noise             = 0.0117,
+            -- contrast modulation for blur. [0.0 - 2.0]
+            contrast          = 0.8916,
+            --- brightness modulation for blur. [0.0 - 2.0]
+            brightness        = 0.8172,
+            -- Increase saturation of blurred colors. [0.0 - 1.0]
             vibrancy = 0.1696,
+            --- whether to blur popups (e.g. right-click menus)
+            popups = false,
         },
+    },
+
+    shadow     = {
+        enabled      = true,
+        -- Shadow range (“size”) in layout px
+        range        = 4,
+        -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
+        render_power = 3,
+        -- shadow’s color. Alpha dictates shadow’s opacity.
+        color        = 0xee1a1a1a,
+        -- inactive shadow color. (if not set, will fall back to color)
+        -- color_inactive = nil,
+        -- shadow’s scale. [0.0 - 1.0]
+        scale        = 1.0
+    },
+
+    glow = {
+        enabled = false,
+        -- Glow range (“size”) in layout px
+        range = 10,
+        -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
+        render_power = 3,
+        -- glow’s color. Alpha dictates glow’s opacity.
+        color = 0xee1a1a1a,
+        -- inactive glow color. (if not set, will fall back to color)
+        -- color_inactive = nil,
     },
 
     animations = {
