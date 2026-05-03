@@ -1,0 +1,29 @@
+[general]
+import = [
+  "~/.config/alacritty/colors.toml",
+  "~/.config/alacritty/opacity.toml",
+  "~/.config/alacritty/keybindings.toml",
+]
+live_config_reload = true
+
+[window]
+padding = { x = 0, y = 0 }
+dimensions = { columns = 148, lines = 35 }
+blur = true
+
+[font]
+# normal = { family = "MesloLGS NF", style = "Regular" }
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+bold = { family = "JetBrainsMono NF", style = "Bold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic" }
+size = 10
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[mouse]
+hide_when_typing = true
