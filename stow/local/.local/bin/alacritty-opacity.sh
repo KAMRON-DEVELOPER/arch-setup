@@ -75,7 +75,7 @@ OPACITY="$1"
 #   ^0(\.[0-9]+)?$ → matches 0, 0.5, 0.95, etc.
 #   ^1(\.0+)?$ → matches 1, 1.0, 1.00, etc.
 if ! [[ "$OPACITY" =~ ^0(\.[0-9]+)?$|^1(\.0+)?$ ]]; then
-    echo "${0##*/}: invalid opacity '$OPACITY' — must be between 0.0 and 1.0" >&2
+    echo "${0##*/}: invalid opacity '$OPACITY' - must be between 0.0 and 1.0" >&2
     usage
     exit 1
 fi
