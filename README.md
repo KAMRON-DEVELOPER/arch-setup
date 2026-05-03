@@ -52,7 +52,20 @@ sudo pacman -S firefox \
   noto-fonts-emoji
 ```
 
-### Yay
+## Yay Setup
+
+[Follow the instruction on Github$](https://github.com/jguer/yay)
+
+```bash
+sudo pacman -S --needed git base-devel && \
+  git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+```
+
+```bash
+yay -S visual-studio-code-bin \
+  visual-studio-code-insiders-bin \
+  docker-credential-secretservice
+```
 
 Some packages:
 
@@ -73,7 +86,7 @@ Some packages:
 * android-studio
 * google-chrome
 
-## Setting up Gnome
+## Gnome Setup
 
 * [GNOME](https://wiki.archlinux.org/title/GNOME)
 * [polkit](https://wiki.archlinux.org/title/Polkit)
@@ -144,7 +157,7 @@ sudo systemctl start gdm
 sudo systemctl stop gdm
 ```
 
-## Setting up Hyprland
+## Hyprland Setup
 
 * [Hyprland Wiki](https://wiki.hypr.land/)
 
@@ -259,25 +272,4 @@ Test your configuration by authenticating with Docker:
 
 ```bash
 docker login
-```
-
-## Yay setup
-
-[Follow the instruction on Github$](https://github.com/jguer/yay)
-
-```bash
-sudo pacman -S --needed git base-devel && \
-  git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
-```
-
-```bash
-yay -S visual-studio-code-bin visual-studio-code-insiders-bin
-```
-
-## INSTALLS
-
-```bash
-yay -S aaa
-sudo pacman -S aaa
-
 ```
