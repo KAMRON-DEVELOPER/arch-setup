@@ -214,7 +214,6 @@ sudo pacman -S --needed hyprland \
   qt6-wayland \
   lxappearance \
   nwg-look \
-  hyprqt6engine \
   qt5ct \
   qt6ct \
   swaync \
@@ -228,13 +227,10 @@ sudo pacman -S --needed hyprland \
   hyprlauncher \
   hyprshot \
   flameshot \
-  wl-clip-persist \
-  cursor-clip
+  wl-clip-persist
 ```
 
 * hyprsunset
-* nwg-displays
-* nwg-panel
 
 ### Yay packages
 
@@ -242,7 +238,8 @@ sudo pacman -S --needed hyprland \
 yay -S hyprqt6engine \
   waypaper \
   wallust \
-  ashell
+  ashell \
+  cursor-clip-git
 ```
 
 * hyprsysteminfo
