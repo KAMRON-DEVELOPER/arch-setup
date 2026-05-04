@@ -5,7 +5,7 @@ This is very minimal setup.
 ## Base Setup
 
 ```bash
-sudo pacman -S firefox \
+sudo pacman -S --needed firefox \
   telegram-desktop \
   zed \
   stow \
@@ -57,7 +57,7 @@ sudo pacman -S firefox \
 [Follow the instruction on Github$](https://github.com/jguer/yay)
 
 ```bash
-sudo pacman -S --needed git base-devel && \
+sudo pacman -S --needed --needed git base-devel && \
   git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 ```
 
@@ -89,7 +89,7 @@ Some packages:
 * [GNOME/Files](https://wiki.archlinux.org/title/GNOME/Files)
 
 ```bash
-sudo pacman -S gnome-shell \
+sudo pacman -S --needed gnome-shell \
   gdm \
   gnome-control-center \
   gnome-tweaks \
@@ -105,22 +105,22 @@ sudo pacman -S gnome-shell \
   nautilus evince eog
 
 # https://wiki.archlinux.org/title/GNOME/Files#Thumbnails
-sudo pacman -S ffmpegthumbnailer gst-libav gst-plugins-ugly
+sudo pacman -S --needed ffmpegthumbnailer gst-libav gst-plugins-ugly
 
 # https://wiki.archlinux.org/title/File_manager_functionality#Thumbnail_previews
 # `tumbler` is the core backend for thumbnailing in many file managers.
 # This must be installed to enable thumbnailing for various file types.
 # It is not required for GNOME Files.
-sudo pacman -S tumbler
+sudo pacman -S --needed tumbler
 
 # Image formats:
 #   webp-pixbuf-loader — Thumbnails for .webp image files
-sudo pacman -S webp-pixbuf-loader
+sudo pacman -S --needed webp-pixbuf-loader
 
 # Video and audio:
 #   `ffmpegthumbnailer` — Thumbnails for video files
 #   `totem` — Thumbnails for video and tagged audio files (used by GNOME Files and caja)
-sudo pacman -S ffmpegthumbnailer
+sudo pacman -S --needed ffmpegthumbnailer
 
 # Documents and ebooks
 #   `papers` or `atril` — Thumbnails for .pdf files (used in GNOME and MATE environments)
@@ -128,7 +128,7 @@ sudo pacman -S ffmpegthumbnailer
 #   `gnome-epub-thumbnailer` — Thumbnails for .epub and .mobi ebook files
 #   `libgsf` — Thumbnails for .odf (OpenDocument Format) files
 #   `mcomixAUR` — Thumbnails for .cbr comic book archive files
-sudo pacman -S papers
+sudo pacman -S --needed papers
 
 # Other
 #   `f3d` — Thumbnails for 3D model files, including .glTF, .stl, .step, .ply, .obj, and .fbx
@@ -136,7 +136,7 @@ sudo pacman -S papers
 # Archive files
 # To extract compressed files such as tarballs (.tar and .tar.gz) within a file manager,
 # it will first be necessary to install a GUI archiver such as `file-roller`.
-sudo pacman -S file-roller
+sudo pacman -S --needed file-roller
 ```
 
 Start gdm service:
@@ -204,7 +204,7 @@ sudo systemctl stop gdm
 ### Pacman packages
 
 ```bash
-sudo pacman -S hyprland \
+sudo pacman -S --needed hyprland \
   pipewire \
   wireplumber \
   xdg-desktop-portal-hyprland \
@@ -242,7 +242,8 @@ sudo pacman -S hyprland \
 ```bash
 yay -S hyprqt6engine \
   waypaper \
-  wallust
+  wallust \
+  ashell
 ```
 
 * hyprqt6engine
@@ -251,138 +252,12 @@ yay -S hyprqt6engine \
 * hyprsysteminfo
 * nautilus-open-any-terminal
 
-### Walker
-
-* [Walker](https://walkerlauncher.com/)
-* [Installation](https://walkerlauncher.com/docs/installation)
-* [Getting Started](https://walkerlauncher.com/docs/getting-started)
-* [Configuration](https://walkerlauncher.com/docs/configuration)
-* [Keybindings](https://walkerlauncher.com/docs/keybindings)
-* [Theming](https://walkerlauncher.com/docs/theming)
-* [Providers](https://walkerlauncher.com/docs/providers)
-
-Walker is an extensible Wayland-native runner with various built-in
-modules (applications, runner, hyprland windows, websearch).
-It can be run as a service for faster startups.
-
-```bash
-yay -S walker elephant 
-```
-
-#### Start Elephant Service
-
-Walker requires Elephant to be running:
-
-```bash
-# Start Elephant as a user service
-elephant service enable
-systemctl --user start elephant.service
-
-# Or start manually
-elephant
-```
-
-#### Install Elephant Providers
-
-You need to install at least some providers for Elephant:
-
-```bash
-# Essential providers
-yay -S elephant-providerlist        # Provider switcher
-yay -S elephant-desktopapplications  # Desktop applications
-
-# Optional providers
-yay -S elephant-files               # File browser
-yay -S elephant-runner              # Command runner
-yay -S elephant-calc                # Calculator
-yay -S elephant-websearch           # Web search
-yay -S elephant-clipboard           # Clipboard history
-yay -S elephant-symbols             # Symbol picker
-```
-
-#### First Run
-
-```bash
-walker
-```
-
-This will:
-
-* Create default configuration at `~/.config/walker/config.toml`
-* Create default theme files in `~/.config/walker/themes/`
-
-#### Running as a Service
-
-For faster startup, run Walker as a background service:
-
-```bash
-walker --gapplication-service
-```
-
-Then open Walker anytime with:
-
-```bash
-walker
-```
-
-#### For systemd
-
-Create `~/.config/systemd/user/walker.service`:
-
-```bash
-[Unit]
-Description=Walker Launcher Service
-PartOf=graphical-session.target
-
-[Service]
-ExecStart=/usr/bin/walker --gapplication-service
-Restart=on-failure
-
-[Install]
-WantedBy=default.target
-```
-
-Then enable it:
-
-```bash
-systemctl --user enable --now walker.service
-```
-
-##### For Hyprland/Window Managers
-
-Add to your config:
-
-```bash
-# Hyprland
-exec-once=walker --gapplication-service
-
-# i3/sway
-exec walker --gapplication-service
-```
-
-#### Troubleshooting
-
-##### Missing dependencies
-
-If you get errors about missing libraries:
-
-```bash
-# Arch Linux
-sudo pacman -S gtk4 gtk4-layer-shell cairo poppler-glib protobuf
-
-# Fedora
-sudo dnf install gtk4 gtk4-layer-shell cairo poppler-glib protobuf-compiler
-
-# Ubuntu/Debian (may need PPA for GTK4)
-sudo apt install libgtk-4-dev libgtk4-layer-shell-dev libcairo2-dev libpoppler-glib-dev protobuf-compiler
-```
-
 ## Docker on Arch
 
 [Docker Arch Wiki](https://wiki.archlinux.org/title/Docker)
 
 ```bash
-sudo pacman -S docker docker-compose docker-buildx
+sudo pacman -S --needed docker docker-compose docker-buildx
 sudo systemctl enable --now docker.service
 sudo usermod -aG docker $USER
 newgrp docker
@@ -399,7 +274,7 @@ docker info
 [GNOME/Keyring](https://wiki.archlinux.org/title/GNOME/Keyring)
 
 ```bash
-sudo pacman -S gnome-keyring seahorse
+sudo pacman -S --needed gnome-keyring seahorse
 yay -S docker-credential-secretservice
 ```
 
