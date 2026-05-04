@@ -51,6 +51,7 @@ check_contrast = true
 
 waybar = { template = 'waybar-colors.css', target = '~/.config/waybar/colors.css' }
 alacritty = { template = 'alacritty-colors.toml', target = '~/.config/alacritty/colors.toml' }
-hyprland = { template = 'hyprland-colors.lua', target = '~/.config/hypr/colors.lua' }
+hyprland-conf = { template = 'hyprland-colors.conf', target = '~/.config/hypr/colors.conf' }
+hyprland-lua = { template = 'hyprland-colors.lua', target = '~/.config/hypr/colors.lua' }
 wofi = { template = 'wofi-colors.css', target = '~/.config/wofi/colors.css' }
 ashell = { template = 'ashell-config.toml', target = '~/.config/ashell/config.toml' }
