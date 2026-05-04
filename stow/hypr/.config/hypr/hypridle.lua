@@ -1,7 +1,7 @@
 hl.config({
   hypridle = {
     general = {
-      -- lock_cmd = "hyprlock",
+      -- lock_cmd = "systemctl suspend",
     },
 
     listeners = {
