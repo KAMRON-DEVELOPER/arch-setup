@@ -7,7 +7,7 @@
 
 ```bash
 yay -S waypaper
-sudo pacman -S swww, swaybg, feh, hyprpaper,  wallutils
+sudo pacman -S --needed swww, swaybg, feh, hyprpaper,  wallutils
 ```
 
 Features
