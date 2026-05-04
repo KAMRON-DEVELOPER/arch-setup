@@ -1,5 +1,7 @@
-hl.hyprpaper({
-    wallpaper = {
-        path = "/home/kamronbek/Documents/Personal/Walpapers/archie_chrisanthou.jpg"
+hl.config({
+    hyprpaper = {
+        wallpaper = {
+            -- path = "/home/kamronbek/Documents/Personal/Walpapers/archie_chrisanthou.jpg"
+        }
     }
 })
