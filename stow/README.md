@@ -1,8 +1,5 @@
 # Linux Setup
 
-Goal is simple:
-having good, minimal, easy to configure statusbar, hyprland, terminal
-
 Dry run first
 
 ```bash
