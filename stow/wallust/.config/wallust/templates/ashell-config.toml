@@ -85,24 +85,33 @@ style = "Gradient" # Islands, Solid, Gradient
 
 opacity = 0.8
 
-primary_color = "{color4}"
-success_color = "#color2}"
-text_color = "{foreground}"
+primary_color = "{{color4}}"
+success_color = "{{color2}}"
+text_color = "{{foreground}}"
 
-workspace_colors = [ "{color4}", "{color2}" ]
-special_workspace_colors = [ "{color4}", "{color2}" ]
+workspace_colors = [ "{{color4}}", "{{color2}}" ]
+special_workspace_colors = [ "{color4}", "{{color2}}" ]
+
+# The following are the colors that make up the palette:
+#     background_color: Used as the background color for all status bar components
+#     primary_color: Used for elements like buttons or slider handles
+#     secondary_color: Used for borders and slider tracks
+#     success_color: Used for success indicators
+#     danger_color: Used for danger messages or danger states
+#     (the weak version is used for warning states)
+#     text_color: Used as the default text color
 
 [appearance.background_color]
-base = "{background}"
-weak = "{color0}"
-strong = "{color8}"
+base = "{{background}}"
+weak = "{{color0}}"
+strong = "{{color8}}"
 
 [appearance.secondary_color]
-base = "{color0}"
+base = "{{color0}}"
 
 [appearance.danger_color]
-base = "{color1}"
-weak = "{color3}"
+base = "{{color1}}"
+weak = "{{color3}}"
 
 [appearance.menu]
 opacity = 1.0

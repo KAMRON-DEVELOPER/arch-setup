@@ -9,7 +9,7 @@ live_config_reload = true
 [window]
 padding = { x = 0, y = 0 }
 dimensions = { columns = 148, lines = 35 }
-blur = true
+blur = false
 
 [font]
 # normal = { family = "MesloLGS NF", style = "Regular" }
