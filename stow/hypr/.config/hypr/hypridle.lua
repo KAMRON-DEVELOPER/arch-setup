@@ -1,17 +1,22 @@
 hl.config({
   hypridle = {
     general = {
-      -- lock_cmd = "systemctl suspend",
+      lock_cmd = "hyprlock",
     },
 
     listeners = {
       {
-        timeout = 600,
+        timeout = 60,
+        on_timeout = "brightnessctl -s set 25",
+        on_resume = "brightnessctl -r",
+      },
+      {
+        timeout = 300,
         on_timeout = "brightnessctl -s set 0",
         on_resume = "brightnessctl -r",
       },
       {
-        timeout = 3600,
+        timeout = 600,
         on_timeout = "loginctl lock-session",
       },
     }

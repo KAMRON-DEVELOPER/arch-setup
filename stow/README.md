@@ -36,5 +36,6 @@ stow -v -t ~ waybar
 stow -v -t ~ ashell
 stow -v -t ~ wofi
 stow -v -t ~ hypr
+stow -v -t ~ walpapers
 cd ..
 ```

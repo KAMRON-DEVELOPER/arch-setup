@@ -7,16 +7,16 @@ hl.config({
         placeholder_text = "",
         size = { 60, 30 },
         outline_thickness = 0,
-        inner_color = "rgb(55,55,55)",
+        inner_color = "rgb(50,50,66)",
       },
     },
 
     backgrounds = {
       {
-        path = "/home/kamronbek/Documents/Personal/Walpapers/archie_chrisanthou.jpg",
-        color = "rgb(33,33,33)",
-        blur_passes = 2,
+        path = "~/.wallpapers/arch.png",
         blur_size = 4,
+        blur_passes = 2,
+        color = "rgb(30,30,46)",
       },
     }
   }

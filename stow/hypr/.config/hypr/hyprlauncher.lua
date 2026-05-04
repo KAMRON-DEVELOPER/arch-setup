@@ -1,7 +1,10 @@
 hl.config({
     hyprlauncher = {
+        general = {
+            grab_focus = true,
+        },
         ui = {
-            window_size = { 400, 260 }
+            window_size = { 400, 200 }
         }
     }
 })

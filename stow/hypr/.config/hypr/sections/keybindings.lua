@@ -1,44 +1,36 @@
----------------------
----- KEYBINDINGS ----
----------------------
+local mainMod = "SUPER"
 
-
-local mainMod = "SUPER" -- Sets "Windows" key as main modifier
-
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
--- App launchers / Apps
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
-
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cursor-clip"))
--- Window management
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
+hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
--- session / lock / reload
-hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("cursor-clip"))
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("hyprctl reload"))
 
--- screenshots
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("flameshot gui"))
-hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("flameshot launcher"))
+hl.bind("SUPER + Print", hl.dsp.exec_cmd("flameshot gui"))
+hl.bind("SUPER + SHIFT + Print", hl.dsp.exec_cmd("flameshot launcher"))
 
--- workspace switching
--- hl.bind(mainMod .. " + left", hl.dsp.focus({ workspace = "e-1" }))
--- hl.bind(mainMod .. " + right", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + H", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind("SUPER + SHIFT + left", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind("SUPER + SHIFT + right", hl.dsp.focus({ workspace = "e+1" }))
+
+hl.bind("SUPER + h", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + j", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + k", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + l", hl.dsp.focus({ direction = "right" }))
+
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
@@ -69,8 +61,10 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),
     { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"), { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"), { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"), { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"), { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl s 5%+"), { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"), { locked = true, repeating = true })
 
 -- Requires playerctl
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
