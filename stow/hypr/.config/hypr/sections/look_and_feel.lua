@@ -4,7 +4,7 @@
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
-    general    = {
+    general = {
         gaps_in          = 5,
         gaps_out         = 5,
 
@@ -22,15 +22,16 @@ hl.config({
         allow_tearing    = false,
 
         layout           = "dwindle",
+
+        snap             = {
+            enabled = false,
+            window_gap = 10,
+            monitor_gap = 10,
+            border_overlap = false,
+            respect_gaps = false,
+        }
     },
 
-    snap       = {
-        enabled = false,
-        window_gap = 10,
-        monitor_gap = 10,
-        border_overlap = false,
-        respect_gaps = false,
-    },
 
     decoration = {
         rounding         = 6,
