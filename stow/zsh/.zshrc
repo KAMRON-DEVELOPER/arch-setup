@@ -150,8 +150,6 @@ export SYSTEMD_EDITOR="nvim"
 export VISUAL="nvim"
 export KUBE_EDITOR="nvim"
 export KUBECONFIG="$HOME/.kube/config"
-# export GDK_BACKEND=wayland
-# export QT_QPA_PLATFORM=wayland
 
 
 # typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet

@@ -11,8 +11,8 @@ hl.config({
         border_size      = 1,
 
         col              = {
-            active_border   = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = color4,
+            inactive_border = color0,
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -60,33 +60,34 @@ hl.config({
             --- whether to blur popups (e.g. right-click menus)
             popups            = false,
         },
+
+        shadow           = {
+            enabled      = true,
+            -- Shadow range (“size”) in layout px
+            range        = 4,
+            -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
+            render_power = 3,
+            -- shadow’s color. Alpha dictates shadow’s opacity.
+            color        = background,
+            -- inactive shadow color. (if not set, will fall back to color)
+            -- color_inactive = nil,
+            -- shadow’s scale. [0.0 - 1.0]
+            scale        = 1.0
+        },
+
+        glow             = {
+            enabled = false,
+            -- Glow range (“size”) in layout px
+            range = 10,
+            -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
+            render_power = 3,
+            -- glow’s color. Alpha dictates glow’s opacity.
+            color = background,
+            -- inactive glow color. (if not set, will fall back to color)
+            -- color_inactive = nil,
+        },
     },
 
-    shadow     = {
-        enabled      = true,
-        -- Shadow range (“size”) in layout px
-        range        = 4,
-        -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
-        render_power = 3,
-        -- shadow’s color. Alpha dictates shadow’s opacity.
-        color        = 0xee1a1a1a,
-        -- inactive shadow color. (if not set, will fall back to color)
-        -- color_inactive = nil,
-        -- shadow’s scale. [0.0 - 1.0]
-        scale        = 1.0
-    },
-
-    glow       = {
-        enabled = false,
-        -- Glow range (“size”) in layout px
-        range = 10,
-        -- in what power to render the falloff (more power, the faster the falloff) [1 - 4]
-        render_power = 3,
-        -- glow’s color. Alpha dictates glow’s opacity.
-        color = 0xee1a1a1a,
-        -- inactive glow color. (if not set, will fall back to color)
-        -- color_inactive = nil,
-    },
 
     animations = {
         enabled = true,

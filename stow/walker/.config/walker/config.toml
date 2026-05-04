@@ -1,0 +1,42 @@
+# General Settings
+## Window Behavior
+force_keyboard_focus = false # Force keyboard focus to stay in Walker
+close_when_open = true       # Close if invoked while already open
+click_to_close = true        # Close when clicking outside content area
+selection_wrap = false       # Wrap list navigation at top/bottom
+disable_mouse = false        # Disable mouse on input and list
+debug = false                # Enable debug output
+
+## Theme
+theme = "default" # or your custom theme name
+
+# Shell Integration
+[shell]
+anchor_top = true
+anchor_bottom = true
+anchor_left = true
+anchor_right = true
+
+# Placeholders
+[placeholders]
+# Default placeholder for all providers
+"default" = { input = "Search", list = "No Results" }
+
+# Provider-specific placeholders
+"desktopapplications" = { input = "Launch App", list = "No Apps Found" }
+"files" = { input = "Browse Files", list = "No Files Found" }
+"calc" = { input = "Calculate", list = "Enter Expression" }
+"runner" = { input = "Run Command", list = "No Commands" }
+"websearch" = { input = "Search Web", list = "" }
+"clipboard" = { input = "Clipboard", list = "Clipboard Empty" }
+"symbols" = { input = "Symbol", list = "No Symbols" }
+"todo" = { input = "Todo", list = "No Todos" }
+
+# Keybindings
+[keybinds]
+close = ["Escape", "ctrl q"]
+next = ["Down", "ctrl j"]
+previous = ["Up", "ctrl k"]
+toggle_exact = ["ctrl e"]                 # Toggle exact search mode
+resume_last_query = ["ctrl r"]            # Resume last query (service mode)
+quick_activate = ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8"] # Quick activation keys
