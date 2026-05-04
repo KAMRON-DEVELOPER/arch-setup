@@ -228,12 +228,11 @@ sudo pacman -S --needed hyprland \
   hyprlauncher \
   hyprshot \
   flameshot \
+  wl-clip-persist \
+  cursor-clip
 ```
 
-* wofi
-* rofi
 * hyprsunset
-* hyprland-qt-support
 * nwg-displays
 * nwg-panel
 
@@ -246,9 +245,6 @@ yay -S hyprqt6engine \
   ashell
 ```
 
-* hyprqt6engine
-* waypaper
-* wallust
 * hyprsysteminfo
 * nautilus-open-any-terminal
 

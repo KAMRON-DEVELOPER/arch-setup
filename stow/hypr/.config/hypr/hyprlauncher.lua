@@ -1,5 +1,7 @@
-hl.hyprlauncher({
-    ui = {
-        window_size = { 400, 260 }
+hl.config({
+    hyprlauncher = {
+        ui = {
+            window_size = { 400, 260 }
+        }
     }
 })

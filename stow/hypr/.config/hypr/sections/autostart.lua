@@ -14,5 +14,6 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd("waybar")
     hl.exec_cmd("ashell")
     -- hl.exec_cmd("walker --gapplication-service")
+    hl.exec_cmd("wl-clip-persist --clipboard regular")
+    hl.exec_cmd("cursor-clip --daemon")
 end)
-
