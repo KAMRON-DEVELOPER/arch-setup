@@ -1,4 +1,5 @@
 wallpaper  = "{{wallpaper}}"
+cursor     = "rgb({{cursor | strip}})"
 background = "rgb({{background | strip}})"
 foreground = "rgb({{foreground | strip}})"
 color0     = "rgb({{color0  | strip}})"

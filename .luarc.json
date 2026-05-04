@@ -9,6 +9,7 @@
       "fileManager",
       "menu",
       "wallpaper",
+      "cursor",
       "background",
       "foreground",
       "color0",
@@ -28,8 +29,8 @@
       "color14",
       "color15",
       "vim",
-            "LazyVim",
-            "Snacks"
+      "LazyVim",
+      "Snacks"
     ]
   }
 }

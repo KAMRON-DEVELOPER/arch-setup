@@ -4,7 +4,7 @@ hl.config({
             grab_focus = true,
         },
         ui = {
-            window_size = { 400, 200 }
+            window_size = { 440, 260 }
         }
     }
 })
