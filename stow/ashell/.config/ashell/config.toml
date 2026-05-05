@@ -85,12 +85,12 @@ style = "Gradient" # Islands, Solid, Gradient
 
 opacity = 0.8
 
-primary_color = "#5682A0"
-success_color = "#545A65"
-text_color = "#A5E0FF"
+primary_color = "#873B42"
+success_color = "#51515D"
+text_color = "#78FFF3"
 
-workspace_colors = [ "#5682A0", "#545A65" ]
-special_workspace_colors = [ "{{color4}}", "#545A65" ]
+workspace_colors = [ "#873B42", "#51515D" ]
+special_workspace_colors = [ "{color4}", "#51515D" ]
 
 # The following are the colors that make up the palette:
 #     background_color: Used as the background color for all status bar components
@@ -102,16 +102,16 @@ special_workspace_colors = [ "{{color4}}", "#545A65" ]
 #     text_color: Used as the default text color
 
 [appearance.background_color]
-base = "#080303"
-weak = "#0B0405"
-strong = "#538DB4"
+base = "#050400"
+weak = "#070601"
+strong = "#00B19A"
 
 [appearance.secondary_color]
-base = "#0B0405"
+base = "#070601"
 
 [appearance.danger_color]
-base = "#545A65"
-weak = "#657688"
+base = "#5F543B"
+weak = "#7C7C47"
 
 [appearance.menu]
 opacity = 1.0

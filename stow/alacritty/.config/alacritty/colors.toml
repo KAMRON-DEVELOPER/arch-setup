@@ -1,31 +1,35 @@
 [colors.primary]
-background = "#080303"
-foreground = "#A5E0FF"
+background = "#050400"
+# which controls the main color, text, outputs
+foreground = "#50709c"
 
 [colors.cursor]
-cursor = "#5682A0"
+cursor = "#48B8A6"
 
 [colors.selection]
-text = "CellForeground"
-background = "#545A65"
+text = "#ff0505"
+background = "#0000ff"
 
 [colors.normal]
-black = "#0B0405"
-red = "#545A65"
-green = "#5682A0"
-yellow = "#657688"
-blue = "#5682A0"
-magenta = "#5682A0"
-cyan = "#5682A0"
-white = "#98D3FE"
-
+black = "#f700ff"
+# command is half written
+red = "#256258"
+# which controls command colors
+green = "#48B8A6"
+yellow = "#ffff00"
+blue = "#ffffff"
+magenta = "#ffffff"
+# which controls the path
+cyan = "#267164"
+white = "#ffffff"
 
 [colors.bright]
-black = "#538DB4"
-red = "#5D6573"
-green = "#5D6573"
-yellow = "#657D97"
-blue = "#73ADD6"
-magenta = "#73ADD6"
-cyan = "#73ADD6"
-white = "#C3E1F6"
+# this controls the zsh-autosuggestion remaing part
+black = "#1c4b41"
+red = "#6C5D3C"
+green = "#94dc6f"
+yellow = "#70704e"
+blue = "#A13B45"
+magenta = "#884900"
+cyan = "#ffffff"
+white = "#ffffff"

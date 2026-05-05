@@ -95,6 +95,7 @@ sudo pacman -S --needed gnome-shell \
   gnome-tweaks \
   gnome-shell-extensions \
   extension-manager \
+  gnome-themes-extra \
   gnome-session \
   gnome-keyring seahorse \
   gnome-font-viewer \
