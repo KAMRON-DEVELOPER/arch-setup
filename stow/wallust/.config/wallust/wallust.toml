@@ -1,52 +1,16 @@
 
-# kmeans samples pixels distributed across the whole image.
-# full - resized - wal - thumb -  fastresize - kmeans
 backend = "full"
-
-# lchmixed collapses gradient bands (sunset oranges/purples) into
-# representative hues, freeing up palette slots for unique accent colors.
-# lab - labmixed - lch - lchmixed
 color_space = "lch"
-
-# saliencedark16 picks colors by how much they visually "pop" —
-# ideal for borders and bars where you want standout accent colors.
-# dark - dark16 - darkcomp - darkcomp16
-# light - light16 - lightcomp - lightcomp16
-# harddark - harddark16 - harddarkcomp - harddarkcomp16
-# softdark - softdark16 - softdarkcomp - softdarkcomp16
-# softlight - softlight16 - softlightcomp - softlightcomp16
-palette = "saliencedarkdistributed16"
-
-# Ensures a "readable contrast" (OPTIONAL, disabled by default)
-# Should only be enabled when you notice an unreadable contrast frequently happening
-# with your images. The reference color for the contrast is the background color.
+palette = "dark"
 check_contrast = true
 
-# Sunsets and artwork are already rich — leave this off by default.
-# Uncomment only if colors feel washed out on a specific wallpaper.
-# Color saturation, between [1% and 100%] (OPTIONAL, disabled by default)
-# usually something higher than 50 increases the saturation and below
-# decreases it (on a scheme with strong and vivid colors)
-#saturation = 35
-
-# Alpha value for templating, by default 100 (no other use whatsoever)
-#alpha = 100
-
-# threshold = 5  # Default is heuristic; 1-10 = "perceptible at a glance"
-
-# When wallust can't find enough unique colors, complementary generates
-# more interesting fallback colors than the default interpolation gradients
-fallback_generator = "complementary"
-
 [templates]
-# NOTE: prefer '' over "" for paths, avoids escaping.
-# template: A RELATIVE path that points to `~/.config/wallust/template` (depends on platform)
-# target: ABSOLUTE path in which to place a file with generated templated values.
-
+palette = { template = 'palette.css', dst = '~/.config/wallust/palette/palette.css' }
 waybar = { template = 'waybar-colors.css', target = '~/.config/waybar/colors.css' }
-ashell = { src = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
-alacritty = { template = 'alacritty-colors.toml', target = '~/.config/alacritty/colors.toml' }
-hyprland-conf = { template = 'hyprland-colors.conf', target = '~/.config/hypr/colors.conf' }
-hyprland-lua = { src = 'hyprland-colors.lua', dst = '~/.config/hypr/colors.lua' }
-wofi = { src = 'wofi-colors.css', dst = '~/.config/wofi/colors.css' }
+ashell = { template = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
+wofi = { template = 'wofi-colors.css', dst = '~/.config/wofi/colors.css' }
 vicinae = { src = 'vicinae-theme.toml', dst = '~/.local/share/vicinae/themes/wallust-theme.toml' }
+alacritty = { src = 'alacritty-colors.toml', target = '~/.config/alacritty/colors.toml' }
+kitty = { src='kitty.conf', dst='~/.config/kitty/colors.conf'}
+hyprland-conf = { src = 'hyprland-colors.conf', target = '~/.config/hypr/colors.conf' }
+hyprland-lua = { src = 'hyprland-colors.lua', dst = '~/.config/hypr/colors.lua' }
