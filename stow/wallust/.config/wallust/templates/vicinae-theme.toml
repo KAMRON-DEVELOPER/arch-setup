@@ -7,19 +7,19 @@ variant = "dark"
 inherits = "vicinae-dark"
 
 [colors.core]
-accent = "{{color0}}"
+accent = "#2f6fed"
 accent_foreground = "#ffffff"
 background = "{{background}}"
 foreground = "{{foreground}}"
-secondary_background = "#71ed0b"
-border = "#ed0ba9"
+secondary_background = "{{background}}"
+border = "{{color1 | darken(0.5)}}"
 
 [colors.main_window]
-border = "#7c0bed"
+border = "{{color1}}"
 footer = { background = "colors.core.secondary_background" }
 
 [colors.settings_window]
-border = "#0b80ed"
+border = "#2e2e2e"
 
 [colors.accents]
 blue = "#2f6fed"
@@ -48,12 +48,12 @@ default = "#2f6fed"
 visited = "#bc8cff"
 
 [colors.input]
-border = "#71ed0b"
+border = "#2e2e2e"
 border_focus = "#2f6fed"
 border_error = "#b9543b"
 
 [colors.button.primary]
-background = "#1719a8"
+background = "#2e2e2e"
 foreground = "#e8e6e1"
 hover = { background = "#bb2e2e2e" }
 focus = { outline = "colors.core.accent" }
@@ -63,18 +63,18 @@ foreground = "#e8e6e1"
 secondary_foreground = "#e8e6e1"
 
 [colors.list.item.selection]
-background = "#26ae83"
+background = "{{color1 | darken(0.5)}}"
 foreground = "#e8e6e1"
-secondary_background = "#ac22b6"
+secondary_background = "{{color1 | darken(0.5)}}"
 secondary_foreground = "#e8e6e1"
 
 [colors.grid.item]
-background = "#c6b627"
+background = "#242424"
 hover = { outline = "#e8e6e1" }
 selection = { outline = "#e8e6e1" }
 
 [colors.scrollbars]
-background = "#c0614a"
+background = "{{color1}}"
 
 [colors.loading]
 bar = "#e8e6e1"     # shown right below the search bar when something is loading
