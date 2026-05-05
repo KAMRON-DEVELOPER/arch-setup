@@ -1,1 +1,5 @@
-stow/wofi/.config/wofi/colors.css
+# stow/waybar/.config/waybar/colors.css
+# stow/wofi/.config/wofi/colors.css
+# stow/hypr/.config/hypr/colors.conf
+# stow/hypr/.config/hypr/colors.lua
+# stow/local/.local/share/vicinae/themes/wallust-theme.toml
