@@ -1,7 +1,7 @@
 
 # kmeans samples pixels distributed across the whole image.
 # full - resized - wal - thumb -  fastresize - kmeans
-backend = "kmeans"
+backend = "full"
 
 # lchmixed collapses gradient bands (sunset oranges/purples) into
 # representative hues, freeing up palette slots for unique accent colors.
@@ -31,6 +31,8 @@ check_contrast = true
 
 # Alpha value for templating, by default 100 (no other use whatsoever)
 #alpha = 100
+
+# threshold = 5  # Default is heuristic; 1-10 = "perceptible at a glance"
 
 # When wallust can't find enough unique colors, complementary generates
 # more interesting fallback colors than the default interpolation gradients
