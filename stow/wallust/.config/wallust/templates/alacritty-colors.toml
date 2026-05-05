@@ -23,7 +23,9 @@ green = "{{color6}}"
 # highlight ''/"" 
 # color: cursor
 yellow = "{{color6}}"
-blue = "#000000"
+# highlight --help
+# color: cursor
+blue = "{{color6}}"
 magenta = "#000000"
 # highlight paths
 # color: nx time darker than cursor

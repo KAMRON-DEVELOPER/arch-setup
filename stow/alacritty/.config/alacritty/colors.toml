@@ -23,7 +23,7 @@ green = "#0000ff"
 # highlight git branch and character
 # color: cursor
 yellow = "#d41f1f"
-blue = "#000000"
+blue = "#0000ff"
 magenta = "#000000"
 # highlight paths
 # color: 1 time darker than cursor

@@ -3,12 +3,8 @@ version = 1
 name = "Wallust Custom Theme"
 description = "A personalized theme for Vicinae"
 variant = "dark"
+# icon = "icons/catppuccin-mocha.png"
 inherits = "vicinae-dark"
-
-[colors.core]
-background = "colors.wallust.background"
-foreground = "colors.wallust.foreground"
-accent = "colors.wallust.color0"
 
 [colors.wallust]
 cursor = "#1E1E2E"
@@ -30,3 +26,8 @@ color12 = "#1E1E2E"
 color13 = "#1E1E2E"
 color14 = "#1E1E2E"
 color15 = "#1E1E2E"
+
+[colors.core]
+background = "colors.wallust.background"
+foreground = "colors.wallust.foreground"
+accent = "colors.wallust.color0"
