@@ -6,7 +6,7 @@ backend = "kmeans"
 # lchmixed collapses gradient bands (sunset oranges/purples) into
 # representative hues, freeing up palette slots for unique accent colors.
 # lab - labmixed - lch - lchmixed
-color_space = "lchmixed"
+color_space = "lch"
 
 # saliencedark16 picks colors by how much they visually "pop" —
 # ideal for borders and bars where you want standout accent colors.
@@ -15,7 +15,7 @@ color_space = "lchmixed"
 # harddark - harddark16 - harddarkcomp - harddarkcomp16
 # softdark - softdark16 - softdarkcomp - softdarkcomp16
 # softlight - softlight16 - softlightcomp - softlightcomp16
-palette = "saliencedark16"
+palette = "saliencedarkdistributed16"
 
 # Ensures a "readable contrast" (OPTIONAL, disabled by default)
 # Should only be enabled when you notice an unreadable contrast frequently happening

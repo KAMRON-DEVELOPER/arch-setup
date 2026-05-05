@@ -10,6 +10,7 @@ hl.config({
 
 require("colors")
 
+require("~/.config/hypr/sections/autostart.conf")
 require("sections.environment_variables")
 require("sections.monitors")
 require("sections.input")
