@@ -18,5 +18,13 @@
     --color13: {{color13}};
     --color14: {{color14}};
     --color15: {{color15}};
-    --new: {{color1 | lighten(0.2) | saturate(0.65)}};
+    --saturate0: {{color1 | saturate(0.0)}};
+    --saturate1: {{color1 | saturate(0.5)}};
+    --saturate2: {{color1 | saturate(1.0)}};
+    --darken0: {{color1 | darken(0.0)}};
+    --darken1: {{color1 | darken(0.5)}};
+    --darken2: {{color1 | darken(1.0)}};
+    --lighten0: {{color1 | lighten(0.0)}};
+    --lighten1: {{color1 | lighten(0.5)}};
+    --lighten2: {{color1 | lighten(1.0)}};
 }

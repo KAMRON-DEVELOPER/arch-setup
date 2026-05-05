@@ -1,9 +1,8 @@
-
-backend = "full"
+backend = "wal"
 color_space = "lch"
 palette = "dark"
 check_contrast = true
-saturation = 65
+# saturation = 65
 
 [templates]
 palette = { template = 'palette.css', dst = '~/.config/wallust/palette/palette.css' }
