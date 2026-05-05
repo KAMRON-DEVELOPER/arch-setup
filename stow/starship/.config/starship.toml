@@ -166,9 +166,9 @@ Macos = ' '
 Windows = '󰍲 '
 
 [character]
-success_symbol = '[❯](bold green)'
-error_symbol = '[❯](bold red)'
-vimcmd_symbol = '[❮](bold purple)'
+success_symbol = '[❯](bright-white)'
+error_symbol = '[❯](bright-red)'
+vimcmd_symbol = '[❮](bright-green)'
 
 [directory]
 truncation_length = 4
@@ -179,7 +179,7 @@ fish_style_pwd_dir_length = 1
 # symbol = '🌱 '
 # symbol = ' '
 symbol = ''
-style = 'bold green'
+style = 'bright-white'
 format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [git_commit]
@@ -189,17 +189,17 @@ tag_symbol = '  '
 disabled = true
 
 [git_status]
-conflicted = '[=${count}](bold red)'
-ahead = '[⇡${count}](bold green)'
-behind = '[⇣${count}](bold green)'
-diverged = '[⇕⇡${ahead_count}⇣${behind_count}](bold green)'
+conflicted = '[=${count}](bright-red)'
+ahead = '[⇡${count}](bright-green)'
+behind = '[⇣${count}](bright-green)'
+diverged = '[⇕⇡${ahead_count}⇣${behind_count}](bright-green)'
 up_to_date = ''
-untracked = '[?${count}](bold blue)'
+untracked = '[?${count}](bright-blue)'
 stashed = ''
-modified = '[!${count}](bold yellow)'
-staged = '[+$count](green)'
-renamed = '[»${count}](bold yellow)'
-deleted = '[✘${count}](bold red)'
+modified = '[!${count}](bright-yellow)'
+staged = '[+$count](bright-green)'
+renamed = '[»${count}](bright-yellow)'
+deleted = '[✘${count}](bright-red)'
 format = "([$ahead_behind]($style) )([$conflicted]($style) )([$stashed]($style) )([$deleted]($style) )([$renamed]($style) )([$modified]($style) )([$typechanged]($style) )([$staged]($style) )([$untracked]($style) )"
 
 [package]

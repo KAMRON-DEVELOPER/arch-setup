@@ -1,35 +1,48 @@
 [colors.primary]
-background = "#050400"
-# which controls the main color, text, outputs
-foreground = "#50709c"
+background = "#050300"
+# highlight command outputs
+# color: 1 time darker than cursor
+foreground = "#202087"
 
 [colors.cursor]
-cursor = "#48B8A6"
+cursor = "#0000ff"
 
 [colors.selection]
-text = "#ff0505"
-background = "#0000ff"
+text = "CellForeground"
+# color: 5 time darker than cursor
+background = "#09092b"
 
 [colors.normal]
-black = "#f700ff"
-# command is half written
-red = "#256258"
-# which controls command colors
-green = "#48B8A6"
-yellow = "#ffff00"
-blue = "#ffffff"
-magenta = "#ffffff"
-# which controls the path
-cyan = "#267164"
-white = "#ffffff"
+black = "#000000"
+# highlight prompt
+# color: 1 time darker than cursor
+red = "#202087"
+# highlight commands
+# color: cursor
+green = "#0000ff"
+# highlight git branch and character
+# color: cursor
+yellow = "#d41f1f"
+blue = "#000000"
+magenta = "#000000"
+# highlight paths
+# color: 1 time darker than cursor
+cyan = "#202087"
+white = "#000000"
+
 
 [colors.bright]
-# this controls the zsh-autosuggestion remaing part
-black = "#1c4b41"
-red = "#6C5D3C"
-green = "#94dc6f"
-yellow = "#70704e"
-blue = "#A13B45"
-magenta = "#884900"
+# highlight zsh-autosuggestions
+# color: 2 time darker than cursor
+black = "#1a1a4e"
+red = "#d32c2c"
+green = "#69cf2f"
+yellow = "#caca31"
+blue = "#2f50d1"
+magenta = "#ffffff"
 cyan = "#ffffff"
-white = "#ffffff"
+# highlight git branch and character
+# color: cursor
+white = "#40ff00"
+
+

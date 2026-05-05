@@ -1,4 +1,5 @@
-# Arch setup with Gnome and Hyprland
+#
+Arch setup with Gnome and Hyprland
 
 This is very minimal setup.
 
