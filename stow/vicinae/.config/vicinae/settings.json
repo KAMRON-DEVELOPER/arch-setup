@@ -9,82 +9,86 @@
 // Learn more about configuration at https://docs.vicinae.com/config
 
 {
-  "$schema": "https://vicinae.com/schemas/config.json",
-  "imports": [],
-  "close_on_focus_loss": false,
-  "consider_preedit": false,
-  "pop_to_root_on_close": false,
-  "pop_on_backspace": true,
-  "activate_on_single_click": false,
-  "escape_key_behavior": "navigate_back",
-  "favicon_service": "twenty",
-  "keybinding": "default",
-  "pixmap_cache_mb": 50,
-  "search_files_in_root": false,
-  "font": {
-    "rendering": "qt",
-    "normal": {
-      "family": "auto",
-      "size": 10.5
-    }
-  },
-  "theme": {
-    "light": {
-      "name": "vicinae-light",
-      "icon_theme": "auto"
-    },
-    "dark": {
-      "name": "wallust-theme",
-      "icon_theme": "auto"
-    }
-  },
-  "telemetry": {
-    "system_info": false
-  },
-  "launcher_window": {
-    "opacity": 1,
-    "client_side_decorations": {
-      "enabled": true,
-      "rounding": 10,
-      "border_width": 1
-    },
-    "size": {
-      "width": 770,
-      "height": 480
-    },
-    "dim_around": false,
-    "blur": {
-      "enabled": true
-    },
-    "compact_mode": {
-      "enabled": false
-    },
-    "layer_shell": {
-      "layer": "top",
-      "keyboard_interactivity": "exclusive",
-      "enabled": true
-    }
-  },
-  "keybinds": {
-    "action.copy": "control+shift+C",
-    "action.copy-name": "control+shift+.",
-    "action.copy-path": "control+shift+,",
-    "action.dangerous-remove": "control+shift+X",
-    "action.duplicate": "control+D",
-    "action.edit": "control+E",
-    "action.edit-secondary": "control+shift+E",
-    "action.move-down": "control+shift+ARROWDOWN",
-    "action.move-up": "control+shift+ARROWUP",
-    "action.new": "control+N",
-    "action.open": "control+O",
-    "action.pin": "control+shift+P",
-    "action.refresh": "control+R",
-    "action.remove": "control+X",
-    "action.save": "control+S",
-    "open-search-filter": "control+P",
-    "open-settings": "control+,",
-    "toggle-action-panel": "control+B"
-  },
-  "favorites": ["clipboard:history"],
-  "fallbacks": ["files:search"]
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "imports": [],
+   "close_on_focus_loss": false,
+   "consider_preedit": false,
+   "pop_to_root_on_close": false,
+   "pop_on_backspace": true,
+   "activate_on_single_click": false,
+   "escape_key_behavior": "navigate_back",
+   "favicon_service": "twenty",
+   "keybinding": "default",
+   "pixmap_cache_mb": 50,
+   "search_files_in_root": false,
+   "font": {
+      "rendering": "qt",
+      "normal": {
+         "family": "auto",
+         "size": 10.5
+      }
+   },
+   "theme": {
+      "light": {
+         "name": "vicinae-light",
+         "icon_theme": "auto"
+      },
+      "dark": {
+         "name": "wallust-theme",
+         "icon_theme": "auto"
+      }
+   },
+   "telemetry": {
+      "system_info": false
+   },
+   "launcher_window": {
+      "opacity": 1,
+      "client_side_decorations": {
+         "enabled": true,
+         "rounding": 10,
+         "border_width": 1
+      },
+      "size": {
+         "width": 770,
+         "height": 480
+      },
+      "dim_around": false,
+      "blur": {
+         "enabled": true
+      },
+      "compact_mode": {
+         "enabled": false
+      },
+      "layer_shell": {
+         "layer": "top",
+         "keyboard_interactivity": "exclusive",
+         "enabled": true
+      }
+   },
+   "keybinds": {
+      "action.copy": "control+shift+C",
+      "action.copy-name": "control+shift+.",
+      "action.copy-path": "control+shift+,",
+      "action.dangerous-remove": "control+shift+X",
+      "action.duplicate": "control+D",
+      "action.edit": "control+E",
+      "action.edit-secondary": "control+shift+E",
+      "action.move-down": "control+shift+ARROWDOWN",
+      "action.move-up": "control+shift+ARROWUP",
+      "action.new": "control+N",
+      "action.open": "control+O",
+      "action.pin": "control+shift+P",
+      "action.refresh": "control+R",
+      "action.remove": "control+X",
+      "action.save": "control+S",
+      "open-search-filter": "control+P",
+      "open-settings": "control+,",
+      "toggle-action-panel": "control+B"
+   },
+   "favorites": [
+      "clipboard:history"
+   ],
+   "fallbacks": [
+      "files:search"
+   ]
 }
