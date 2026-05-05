@@ -18,5 +18,5 @@
     --color13: {{color13}};
     --color14: {{color14}};
     --color15: {{color15}};
-    --active_border: {{color1 | saturate(0.6)}}
+    --active_border: {{color1 | saturate(0.6)}};
 }

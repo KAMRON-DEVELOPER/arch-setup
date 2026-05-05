@@ -1,7 +1,7 @@
 wallpaper  = "/home/kamronbek/Documents/Personal/Walpapers/archie_chrisanthou.jpg"
+cursor     = "rgb(C99986)"
 background = "rgb(020000)"
 foreground = "rgb(F7FBE5)"
-cursor     = "rgb(C99986)"
 color0     = "rgb(020000)"
 color1     = "rgb(5B7389)"
 color2     = "rgb(B26459)"

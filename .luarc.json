@@ -30,7 +30,8 @@
       "color15",
       "vim",
       "LazyVim",
-      "Snacks"
+      "Snacks",
+            "active_border"
     ]
   }
 }
