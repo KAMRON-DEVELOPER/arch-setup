@@ -1,0 +1,32 @@
+[meta]
+version = 1
+name = "Wallust Custom Theme"
+description = "A personalized theme for Vicinae"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+background = "colors.wallust.background"
+foreground = "colors.wallust.foreground"
+accent = "colors.wallust.color0"
+
+[colors.wallust]
+cursor = "#1E1E2E"
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+color0 = "#89B4FA"
+color1 = "#1E1E2E"
+color2 = "#1E1E2E"
+color3 = "#1E1E2E"
+color4 = "#1E1E2E"
+color5 = "#1E1E2E"
+color6 = "#1E1E2E"
+color7 = "#1E1E2E"
+color8 = "#1E1E2E"
+color9 = "#1E1E2E"
+color10 = "#1E1E2E"
+color11 = "#1E1E2E"
+color12 = "#1E1E2E"
+color13 = "#1E1E2E"
+color14 = "#1E1E2E"
+color15 = "#1E1E2E"
