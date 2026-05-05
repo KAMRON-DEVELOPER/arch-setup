@@ -102,7 +102,7 @@ special_workspace_colors = [ "{color4}", "#545A65" ]
 #     text_color: Used as the default text color
 
 [appearance.background_color]
-base = "#080203"
+base = "#080303"
 weak = "#0B0405"
 strong = "#538DB4"
 
