@@ -44,8 +44,9 @@ fallback_generator = "complementary"
 # target: ABSOLUTE path in which to place a file with generated templated values.
 
 waybar = { template = 'waybar-colors.css', target = '~/.config/waybar/colors.css' }
+ashell = { src = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
 alacritty = { template = 'alacritty-colors.toml', target = '~/.config/alacritty/colors.toml' }
 hyprland-conf = { template = 'hyprland-colors.conf', target = '~/.config/hypr/colors.conf' }
 hyprland-lua = { src = 'hyprland-colors.lua', dst = '~/.config/hypr/colors.lua' }
 wofi = { src = 'wofi-colors.css', dst = '~/.config/wofi/colors.css' }
-ashell = { src = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
+vicinae = { src = 'vicinae-theme.toml', dst = '~/.local/share/vicinae/themes/wallust-theme.toml' }
