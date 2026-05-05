@@ -6,41 +6,20 @@ variant = "dark"
 # icon = "icons/catppuccin-mocha.png"
 inherits = "vicinae-dark"
 
-[colors.wallust]
+[colors.core]
+accent = "{{color0}}"
+accent_foreground = "#ffffff"
 background = "{{background}}"
 foreground = "{{foreground}}"
-cursor = "{{cursor}}"
-color0 = "{{color0}}"
-color1 = "{{color1}}"
-color2 = "{{color2}}"
-color3 = "{{color3}}"
-color4 = "{{color4}}"
-color5 = "{{color5}}"
-color6 = "{{color6}}"
-color7 = "{{color7}}"
-color8 = "{{color8}}"
-color9 = "{{color9}}"
-color10 = "{{color10}}"
-color11 = "{{color11}}"
-color12 = "{{color12}}"
-color13 = "{{color13}}"
-color14 = "{{color14}}"
-color15 = "{{color15}}"
-
-[colors.core]
-accent = "colors.wallust.color0"
-accent_foreground = "#ffffff"
-background = "colors.wallust.background"
-foreground = "colors.wallust.foreground"
-secondary_background = "#242424"
-border = "#2e2e2e"
+secondary_background = "#c72222"
+border = "#d51e1e"
 
 [colors.main_window]
-border = "#2e2e2e"
+border = "#963535"
 footer = { background = "colors.core.secondary_background" }
 
 [colors.settings_window]
-border = "#2e2e2e"
+border = "#d12d2d"
 
 [colors.accents]
 blue = "#2f6fed"
@@ -69,12 +48,12 @@ default = "#2f6fed"
 visited = "#bc8cff"
 
 [colors.input]
-border = "#2e2e2e"
+border = "#a01f1f"
 border_focus = "#2f6fed"
 border_error = "#b9543b"
 
 [colors.button.primary]
-background = "#2e2e2e"
+background = "#a81717"
 foreground = "#e8e6e1"
 hover = { background = "#bb2e2e2e" }
 focus = { outline = "colors.core.accent" }
@@ -84,18 +63,18 @@ foreground = "#e8e6e1"
 secondary_foreground = "#e8e6e1"
 
 [colors.list.item.selection]
-background = "#2e2e2e"
+background = "#ae2626"
 foreground = "#e8e6e1"
-secondary_background = "#2e2e2e"
+secondary_background = "#b62222"
 secondary_foreground = "#e8e6e1"
 
 [colors.grid.item]
-background = "#242424"
+background = "#c62727"
 hover = { outline = "#e8e6e1" }
 selection = { outline = "#e8e6e1" }
 
 [colors.scrollbars]
-background = "#2e2e2e"
+background = "#c12424"
 
 [colors.loading]
 bar = "#e8e6e1"     # shown right below the search bar when something is loading

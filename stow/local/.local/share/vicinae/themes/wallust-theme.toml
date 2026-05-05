@@ -7,40 +7,40 @@ variant = "dark"
 inherits = "vicinae-dark"
 
 [colors.wallust]
-background = "#020000"
-foreground = "#F7FBE5"
-cursor = "#C99986"
-color0 = "#020000"
-color1 = "#5B7389"
-color2 = "#B26459"
-color3 = "#928D79"
-color4 = "#85A9CB"
-color5 = "#ED8E7C"
-color6 = "#E9F3B4"
-color7 = "#ECF1D1"
-color8 = "#A5A892"
-color9 = "#5B7389"
-color10 = "#B26459"
-color11 = "#928D79"
-color12 = "#85A9CB"
-color13 = "#ED8E7C"
-color14 = "#E9F3B4"
-color15 = "#ECF1D1"
+background = "#070C18"
+foreground = "#CCD7E2"
+cursor = "#8D8686"
+color0 = "#4D4E57"
+color1 = "#6E8DAC"
+color2 = "#C6643F"
+color3 = "#967571"
+color4 = "#837D8B"
+color5 = "#75635A"
+color6 = "#4B5878"
+color7 = "#AEBECD"
+color8 = "#7A8590"
+color9 = "#6E8DAC"
+color10 = "#C6643F"
+color11 = "#967571"
+color12 = "#837D8B"
+color13 = "#75635A"
+color14 = "#4B5878"
+color15 = "#AEBECD"
 
 [colors.core]
 accent = "colors.wallust.color0"
-accent_foreground = "#ffffff"
+accent_foreground = "#c41d1d"
 background = "colors.wallust.background"
 foreground = "colors.wallust.foreground"
-secondary_background = "#242424"
-border = "#2e2e2e"
+secondary_background = "#dd2020"
+border = "#e00f0f"
 
 [colors.main_window]
-border = "#2e2e2e"
+border = "#cf6262"
 footer = { background = "colors.core.secondary_background" }
 
 [colors.settings_window]
-border = "#2e2e2e"
+border = "#d81e1e"
 
 [colors.accents]
 blue = "#2f6fed"
@@ -69,12 +69,12 @@ default = "#2f6fed"
 visited = "#bc8cff"
 
 [colors.input]
-border = "#2e2e2e"
+border = "#c93333"
 border_focus = "#2f6fed"
 border_error = "#b9543b"
 
 [colors.button.primary]
-background = "#2e2e2e"
+background = "#c63c3c"
 foreground = "#e8e6e1"
 hover = { background = "#bb2e2e2e" }
 focus = { outline = "colors.core.accent" }
@@ -84,18 +84,18 @@ foreground = "#e8e6e1"
 secondary_foreground = "#e8e6e1"
 
 [colors.list.item.selection]
-background = "#2e2e2e"
+background = "#d01515"
 foreground = "#e8e6e1"
-secondary_background = "#2e2e2e"
+secondary_background = "#be3939"
 secondary_foreground = "#e8e6e1"
 
 [colors.grid.item]
-background = "#242424"
+background = "#ba2d2d"
 hover = { outline = "#e8e6e1" }
 selection = { outline = "#e8e6e1" }
 
 [colors.scrollbars]
-background = "#2e2e2e"
+background = "#a32525"
 
 [colors.loading]
 bar = "#e8e6e1"     # shown right below the search bar when something is loading

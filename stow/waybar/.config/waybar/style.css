@@ -9,31 +9,31 @@
 
 window#waybar {
   background: @background;
-    color: @cursor;
-      border-bottom: 1px solid @cursor;
+    color: @color1;
+      border-bottom: 1px solid @color1;
 }
 
 #workspaces button {
-  color: @cursor;
+  color: @color1;
 }
 
 #workspaces button:hover {
-  background: @cursor;
+  background: @color1;
 }
 
 #workspaces button.active {
-  color: @cursor;
+  color: @color1;
   font-weight: 800;
 }
 
 tooltip {
   background-color: @background;
-  color: @cursor;
-  border: 1px solid @cursor;
+  color: @color1;
+    border: 1px solid @color1;
 }
 
 tooltip label {
-  color: @cursor;
+  color: @color1;
 }
 
 #cpu,
@@ -41,7 +41,7 @@ tooltip label {
 #pulseaudio,
 #battery,
 #network {
-  color: @cursor;
+  color: @color1;
   padding-left: 4px;
 }
 
