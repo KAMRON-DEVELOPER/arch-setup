@@ -11,15 +11,15 @@ accent = "{{color0}}"
 accent_foreground = "#ffffff"
 background = "{{background}}"
 foreground = "{{foreground}}"
-secondary_background = "#c72222"
-border = "#d51e1e"
+secondary_background = "#71ed0b"
+border = "#ed0ba9"
 
 [colors.main_window]
-border = "#963535"
+border = "#7c0bed"
 footer = { background = "colors.core.secondary_background" }
 
 [colors.settings_window]
-border = "#d12d2d"
+border = "#0b80ed"
 
 [colors.accents]
 blue = "#2f6fed"
@@ -48,12 +48,12 @@ default = "#2f6fed"
 visited = "#bc8cff"
 
 [colors.input]
-border = "#a01f1f"
+border = "#71ed0b"
 border_focus = "#2f6fed"
 border_error = "#b9543b"
 
 [colors.button.primary]
-background = "#a81717"
+background = "#1719a8"
 foreground = "#e8e6e1"
 hover = { background = "#bb2e2e2e" }
 focus = { outline = "colors.core.accent" }
@@ -63,18 +63,18 @@ foreground = "#e8e6e1"
 secondary_foreground = "#e8e6e1"
 
 [colors.list.item.selection]
-background = "#ae2626"
+background = "#26ae83"
 foreground = "#e8e6e1"
-secondary_background = "#b62222"
+secondary_background = "#ac22b6"
 secondary_foreground = "#e8e6e1"
 
 [colors.grid.item]
-background = "#c62727"
+background = "#c6b627"
 hover = { outline = "#e8e6e1" }
 selection = { outline = "#e8e6e1" }
 
 [colors.scrollbars]
-background = "#c12424"
+background = "#c0614a"
 
 [colors.loading]
 bar = "#e8e6e1"     # shown right below the search bar when something is loading

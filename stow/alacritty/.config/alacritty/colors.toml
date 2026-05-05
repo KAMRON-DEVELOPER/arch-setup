@@ -30,12 +30,12 @@ magenta = "#000000"
 # highlight paths
 # color: nx time darker than cursor
 cyan = "#425567"
-white = "#ffffff"
+white = "#000000"
 
 [colors.bright]
 # highlight zsh-autosuggestions
 # color: 2nx time darker than cursor
-black = "#425567"
+black = "#374656"
 red = "#d32c2c"
 green = "#69cf2f"
 yellow = "#caca31"
