@@ -7,10 +7,10 @@ check_contrast = true
 [templates]
 palette = { template = 'palette.css', dst = '~/.config/wallust/palette/palette.css' }
 waybar = { template = 'waybar-colors.css', target = '~/.config/waybar/colors.css' }
-ashell = { template = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
-wofi = { template = 'wofi-colors.css', dst = '~/.config/wofi/colors.css' }
-vicinae = { src = 'vicinae-theme.toml', dst = '~/.local/share/vicinae/themes/wallust-theme.toml' }
+# ashell = { template = 'ashell-config.toml', dst = '~/.config/ashell/config.toml' }
+# wofi = { template = 'wofi-colors.css', dst = '~/.config/wofi/colors.css' }
+# vicinae = { src = 'vicinae-theme.toml', dst = '~/.local/share/vicinae/themes/wallust-theme.toml' }
 alacritty = { src = 'alacritty-colors.toml', target = '~/.config/alacritty/colors.toml' }
-kitty = { src='kitty.conf', dst='~/.config/kitty/colors.conf'}
+# kitty = { src='kitty.conf', dst='~/.config/kitty/colors.conf'}
 hyprland-conf = { src = 'hyprland-colors.conf', target = '~/.config/hypr/colors.conf' }
-hyprland-lua = { src = 'hyprland-colors.lua', dst = '~/.config/hypr/colors.lua' }
+# hyprland-lua = { src = 'hyprland-colors.lua', dst = '~/.config/hypr/colors.lua' }
