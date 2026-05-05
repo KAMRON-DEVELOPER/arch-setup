@@ -90,7 +90,7 @@ success_color = "#545A65"
 text_color = "#A5E0FF"
 
 workspace_colors = [ "#5682A0", "#545A65" ]
-special_workspace_colors = [ "{color4}", "#545A65" ]
+special_workspace_colors = [ "{{color4}}", "#545A65" ]
 
 # The following are the colors that make up the palette:
 #     background_color: Used as the background color for all status bar components
