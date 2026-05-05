@@ -1,40 +1,41 @@
 [colors.primary]
-background = "#050300"
+background = "#020408"
 # highlight command outputs
-# color: 1 time darker than cursor
-foreground = "#202087"
+# color: nx time darker than cursor
+foreground = "#838262"
 
 [colors.cursor]
-cursor = "#0000ff"
+cursor = "#92916D"
 
 [colors.selection]
 text = "CellForeground"
-# color: 5 time darker than cursor
-background = "#09092b"
+# color: nnx time darker than cursor
+background = "#494837"
 
 [colors.normal]
 black = "#000000"
 # highlight prompt
-# color: 1 time darker than cursor
-red = "#202087"
+# color: nx time darker than cursor
+red = "#838262"
 # highlight commands
 # color: cursor
-green = "#0000ff"
-# highlight git branch and character
+green = "#92916D"
+# highlight ''/"" 
 # color: cursor
-yellow = "#d41f1f"
-blue = "#0000ff"
+yellow = "#92916D"
+# highlight --help
+# color: cursor
+blue = "#92916D"
 magenta = "#000000"
 # highlight paths
-# color: 1 time darker than cursor
-cyan = "#202087"
+# color: nx time darker than cursor
+cyan = "#838262"
 white = "#000000"
-
 
 [colors.bright]
 # highlight zsh-autosuggestions
-# color: 2 time darker than cursor
-black = "#1a1a4e"
+# color: 2nx time darker than cursor
+black = "#757457"
 red = "#d32c2c"
 green = "#69cf2f"
 yellow = "#caca31"
@@ -43,6 +44,4 @@ magenta = "#ffffff"
 cyan = "#ffffff"
 # highlight git branch and character
 # color: cursor
-white = "#40ff00"
-
-
+white = "#92916D"
