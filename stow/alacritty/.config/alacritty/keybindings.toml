@@ -7,15 +7,14 @@ bindings = [
     # Reset font size with Ctrl + 0
     { key = "Key0", mods = "Control", action = "ResetFontSize" },
 
-    # Change opacity
-    { key = "Key1", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.5"] } },
-    { key = "Key2", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.6"] } },
-    { key = "Key3", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.65"] } },
-    { key = "Key4", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.7"] } },
-    { key = "Key5", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.75"] } },
-    { key = "Key6", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.8"] } },
-    { key = "Key7", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.85"] } },
-    { key = "Key8", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.9"] } },
-    { key = "Key9", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["0.95"] } },
-    { key = "Key0", mods = "Alt", command = { program = "alacritty-opacity.sh", args = ["1.0"] } },
+    { key = "Key1", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.5"] } },
+    { key = "Key2", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.6"] } },
+    { key = "Key3", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.65"] } },
+    { key = "Key4", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.7"] } },
+    { key = "Key5", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.75"] } },
+    { key = "Key6", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.8"] } },
+    { key = "Key7", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.85"] } },
+    { key = "Key8", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.9"] } },
+    { key = "Key9", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 0.95"] } },
+    { key = "Key0", mods = "Alt", command = { program = "bash", args = ["-c", "~/.local/bin/alacritty-opacity.sh 1.0"] } },
 ]
