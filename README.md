@@ -22,7 +22,8 @@ sudo pacman -S --needed firefox \
   alacritty \
   kitty \
   ghostty \
-  fastfetch
+  fastfetch \
+  ripgrep \
   yazi \
   fzf \
   eza \
