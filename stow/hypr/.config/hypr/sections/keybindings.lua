@@ -18,19 +18,22 @@ hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind("SUPER + Print", hl.dsp.exec_cmd("flameshot gui"))
 hl.bind("SUPER + SHIFT + Print", hl.dsp.exec_cmd("flameshot launcher"))
 
-hl.bind("SUPER + SHIFT + left", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind("SUPER + SHIFT + right", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind("SUPER + left", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind("SUPER + right", hl.dsp.focus({ workspace = "e+1" }))
 
-hl.bind("SUPER + h", hl.dsp.focus({ direction = "left" }))
-hl.bind("SUPER + j", hl.dsp.focus({ direction = "down" }))
-hl.bind("SUPER + k", hl.dsp.focus({ direction = "up" }))
-hl.bind("SUPER + l", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + h", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind("SUPER + l", hl.dsp.focus({ workspace = "e+1" }))
+
+hl.bind("SUPER + SHIFT + h", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + SHIFT + j", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + SHIFT + k", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + SHIFT + l", hl.dsp.focus({ direction = "right" }))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
+-- hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
+-- hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+-- hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
+-- hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
