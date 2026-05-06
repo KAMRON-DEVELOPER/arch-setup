@@ -1,7 +1,7 @@
 [config.wallpaper]
-command = "swaybg"
-arguments = ["img", "--transition-type", "center"]
 set = true
+command = "hyprctl hyprpaper wallpaper 'fit_mode cover, {{image}}'"
+# command = "waypaper --backend swaybg --wallpaper {{image}}"
 
 [templates.alacritty]
 input_path = './templates/alacritty.toml'
