@@ -1,6 +1,6 @@
 [config.wallpaper]
 set = true
-command = "hyprctl hyprpaper wallpaper 'fit_mode cover, {{image}}'"
+command = "hyprctl hyprpaper wallpaper ',{{image}},fit_mode cover'"
 # command = "waypaper --backend swaybg --wallpaper {{image}}"
 
 [templates.alacritty]
