@@ -19,7 +19,7 @@ border = "{{color1}}"
 footer = { background = "colors.core.secondary_background" }
 
 [colors.settings_window]
-border = "#2e2e2e"
+border = "{{color1 | darken(0.5)}}"
 
 [colors.accents]
 blue = "#2f6fed"
@@ -48,12 +48,12 @@ default = "#2f6fed"
 visited = "#bc8cff"
 
 [colors.input]
-border = "#2e2e2e"
+border = "{{color1 | darken(0.5)}}"
 border_focus = "#2f6fed"
 border_error = "#b9543b"
 
 [colors.button.primary]
-background = "#2e2e2e"
+background = "{{background}}"
 foreground = "#e8e6e1"
 hover = { background = "#bb2e2e2e" }
 focus = { outline = "colors.core.accent" }

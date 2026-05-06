@@ -5,7 +5,7 @@ background = "{{background}}"
 foreground = "{{color1 | darken(0.2)}}"
 
 [colors.cursor]
-cursor = "{{color1}}"
+cursor = "{{color1 | lighten(0.2)}}"
 
 [colors.selection]
 text = "CellForeground"
@@ -19,13 +19,13 @@ black = "#000000"
 red = "{{color1 | darken(0.2)}}"
 # highlight commands
 # color: cursor
-green = "{{color1}}"
+green = "{{color1 | lighten(0.2)}}"
 # highlight ''/"" 
 # color: cursor
 yellow = "{{cursor}}"
 # highlight --help
 # color: cursor
-blue = "{{color1}}"
+blue = "{{color1 | lighten(0.2)}}"
 magenta = "#000000"
 # highlight paths
 # color: nx time darker than cursor
@@ -44,4 +44,4 @@ magenta = "#ffffff"
 cyan = "#ffffff"
 # highlight git branch and character
 # color: cursor
-white = "{{color1}}"
+white = "{{color1 | lighten(0.2)}}"

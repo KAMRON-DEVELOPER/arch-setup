@@ -12,9 +12,10 @@
 #   lchmixed + harddark = (Dark Teal / Bright Green)
 #   lch,lchmixed + saliencedarkbalanced, saliencedarkdistributed = (Black / Bold Teal)
 backend = "wal"
-color_space = "lch"
-palette = "harddark"
+color_space = "lchmixed"
+palette = "dark"
 check_contrast = true
+threshold = 0
 
 [templates]
 palette = { template = 'palette.css', dst = '~/.config/wallust/palette/palette.css' }
