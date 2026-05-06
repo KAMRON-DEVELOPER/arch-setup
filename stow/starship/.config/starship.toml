@@ -105,13 +105,19 @@ $character"""
 
 add_newline = false
 
-# palette = 'theme'
+palette = 'colors'
 
-# [palettes.theme]
-# Overwrite existing color
-# blue = '21'
-# Define new color
-# mustard = '#af8700'
+[palettes.colors]
+mustard = '#af8700' # example
+color1 = '#88d1eb'
+color2 = '#003543'
+color3 = '#bfc8cc'
+color4 = '#1b2023'
+color5 = '#003543'
+color6 = '#0f1416'
+color7 = '#0f1416'
+color8 = '#88d1eb'
+color9 = '#c3c3eb'
 
 [line_break]
 disabled = true
@@ -166,20 +172,33 @@ Macos = ' '
 Windows = '󰍲 '
 
 [character]
-success_symbol = '[❯](bright-white)'
-error_symbol = '[❯](bright-red)'
-vimcmd_symbol = '[❮](bright-green)'
+success_symbol = '[❯](color3 bold)'
+error_symbol = '[❯](@{error})'
+vimcmd_symbol = '[❮](#f9e2af)'
+
+# [directory.substitutions]
+# "Documents" = "󰈙 "
+# "Downloads" = " "
+# "Music" = " "
+# "Pictures" = " "
 
 [directory]
+style = "fg:color3"
+format = "[$path ]($style)"
 truncation_length = 4
 truncate_to_repo = false
 fish_style_pwd_dir_length = 1
+
+[time]
+format = "[$time](fg:color3) "
+disabled = true
+time_format = "%R" # Hour:Minute Format
 
 [git_branch]
 # symbol = '🌱 '
 # symbol = ' '
 symbol = ''
-style = 'bright-white'
+style = 'fg:color1'
 format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [git_commit]
@@ -212,7 +231,7 @@ format = "[$symbol]($style)"
 
 [python]
 symbol = ' '
-format = "[${symbol}(\\($virtualenv\\) )]($style)"
+format = "[${symbol}](fg:color3)[( ${virtualenv})](fg:color1) "
 
 [nodejs]
 symbol = ' '

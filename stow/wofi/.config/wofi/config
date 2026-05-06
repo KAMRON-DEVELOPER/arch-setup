@@ -1,0 +1,11 @@
+show=drun
+matching=fuzzy
+term=alacritty
+prompt=Search
+allow_images=true
+image_size=20
+no_actions=true
+insensitive=true
+allow_markup=true
+width=500
+height=250

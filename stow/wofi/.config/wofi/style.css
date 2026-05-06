@@ -1,51 +1,55 @@
-@import url("file:///home/kamronbek/.config/wofi/colors.css");
+@import url("/home/kamronbek/.config/wofi/colors.css");
 
 * {
+  all: unset;
+  outline: none;
   border: none;
-  border-radius: 0.5em;
-  padding: 0;
-  margin: 0;
+  color: @secondary;
+  font-family: "JetBrainsMono NF", monospace;
+  font-size: 14px;
 }
 
 window {
-  margin: 0px;
   border-radius: 0.75em;
-  border: 1px solid @color6;
-  background-color: @background;
-}
-
-#inner-box {
-  margin: 5px;
-  border: none;
-  background-color: @background;
+  border: 1px solid @primary;
+  background-color: alpha(@background,.9);
 }
 
 #outer-box {
-  margin: 5px;
-  border: none;
-  background-color: @background;
+  padding: 5px;
 }
 
 #input {
   margin: 5px;
-  border: none;
-  color: @color7;
-  background-color: @background;
+  padding: 5px 5px 5px 10px;
+  border-radius: 0.5em;
+  color: @secondary;
+  background-color: alpha(@on_secondary,.2);
+}
+
+#input image {
+  margin-right: 5px;
+}
+
+#inner-box {
+  margin: 5px;
 }
 
 #text {
-  margin: 2px;
-  color: @color7;
+  padding-left: 10px;
+  color: @primary;
 }
 
 #text:selected {
-  color: @background;
+  color: @primary;
 }
 
 #entry {
+  padding: 5px 5px 5px 10px;
+  border-radius: 0.5em;
 }
 
 #entry:selected {
-  color: @background;
-  background-color: @color7;
+  color: @primary;
+  background-color: alpha(@on_secondary,.2);
 }

@@ -171,45 +171,35 @@ Zorin = ' '
 Macos = ' '
 Windows = '󰍲 '
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [character]
-success_symbol = "[🞈](color9 bold)"
-error_symbol = "[🞈](@{error})"
-vimcmd_symbol = "[🞈](#f9e2af)"
+success_symbol = '[❯](color3 bold)'
+error_symbol = '[❯](@{error})'
+vimcmd_symbol = '[❮](#f9e2af)'
 
-# [character]
-# success_symbol = '[❯](bright-white)'
-# error_symbol = '[❯](bright-red)'
-# vimcmd_symbol = '[❮](bright-green)'
-
+# [directory.substitutions]
+# "Documents" = "󰈙 "
+# "Downloads" = " "
+# "Music" = " "
+# "Pictures" = " "
 
 [directory]
-format = "[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
-
-# [directory]
-# truncation_length = 4
-# truncate_to_repo = false
-# fish_style_pwd_dir_length = 1
+style = "fg:color3"
+format = "[$path ]($style)"
+truncation_length = 4
+truncate_to_repo = false
+fish_style_pwd_dir_length = 1
 
 [time]
-format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $time](fg:color3 bg:color4)[](fg:color4) "
-disabled = false
+format = "[$time](fg:color3) "
+disabled = true
 time_format = "%R" # Hour:Minute Format
 
 [git_branch]
-format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
-
-# [git_branch]
-# # symbol = '🌱 '
-# # symbol = ' '
-# symbol = ''
-# style = 'bright-white'
-# format = "[$symbol$branch(:$remote_branch)]($style) "
+# symbol = '🌱 '
+# symbol = ' '
+symbol = ''
+style = 'fg:color1'
+format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [git_commit]
 tag_symbol = '  '
@@ -241,7 +231,7 @@ format = "[$symbol]($style)"
 
 [python]
 symbol = ' '
-format = "[${symbol}(\\($virtualenv\\) )]($style)"
+format = "[${symbol}](fg:color3)[( ${virtualenv})](fg:color1) "
 
 [nodejs]
 symbol = ' '

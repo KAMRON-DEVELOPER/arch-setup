@@ -41,6 +41,11 @@ hl.window_rule({
 -- Set opacity to 1.0 active, 1.0 inactive and 0.8 fullscreen
 hl.window_rule({
     match = { class = "code" },
+    opacity = "1.0 override 1.0 override 1.0 firefox",
+})
+
+hl.window_rule({
+    match = { class = "code" },
     opacity = "1.0 override 1.0 override 1.0 override",
 })
 
@@ -52,4 +57,15 @@ hl.window_rule({
 hl.window_rule({
     match = { class = "dev.zed.Zed" },
     opacity = "1.0 override 1.0 override 1.0 override",
+})
+
+hl.layer_rule({
+    match   = { namespace = "waybar" },
+    blur    = true,
+})
+
+hl.layer_rule({
+    match = { namespace = "wofi" },
+    blur = true,
+    ignore_alpha = 0.0,
 })

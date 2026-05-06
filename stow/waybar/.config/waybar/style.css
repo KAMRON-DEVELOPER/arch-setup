@@ -1,39 +1,45 @@
 @import url("colors.css");
 
 * {
+  all: unset;
   min-height: 0;
   min-width: 0;
   font-family: "Hack Nerd Font";
   font-size: 12px;
 }
 
-window#waybar {
-  background: @background;
-    color: @color1;
-      border-bottom: 1px solid @color1;
+window {
+  border-bottom: 1px solid @primary;
+  color: @primary;
+  background: alpha(@background,0.9);
 }
 
 #workspaces button {
-  color: @color1;
+  all:unset;
+  margin-left: 12px;
+  margin-right: 6px;
+  color: @secondary;
 }
 
 #workspaces button:hover {
-  background: @color1;
+  all:unset;
+  margin-left: 12px;
+  background: @background;
 }
 
 #workspaces button.active {
-  color: @color1;
+  color: @primary;
   font-weight: 800;
 }
 
 tooltip {
   background-color: @background;
-  color: @color1;
-    border: 1px solid @color1;
+  color: @primary;
+  border: 1px solid @primary;
 }
 
 tooltip label {
-  color: @color1;
+  color: @primary;
 }
 
 #cpu,
@@ -41,11 +47,11 @@ tooltip label {
 #pulseaudio,
 #battery,
 #network {
-  color: @color1;
-  padding-left: 4px;
+  margin-left: 6px;
+  color: @primary;
 }
 
 #tray {
-  margin-left: 4px;
-  margin-right: 6px;
+  margin-left: 6px;
+  margin-right: 12px;
 }

@@ -1,7 +1,6 @@
 [general]
 import = [
-  # "~/.config/alacritty/themes/themes/matugen.toml",
-  "~/.config/alacritty/themes/themes/tokyo_night.toml",
+  "~/.config/alacritty/themes/themes/matugen.toml",
   "~/.config/alacritty/opacity.toml",
   "~/.config/alacritty/keybindings.toml",
 ]
