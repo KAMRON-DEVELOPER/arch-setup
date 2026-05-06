@@ -12,7 +12,7 @@
 window {
   border-radius: 0.75em;
   border: 1px solid @primary;
-  background-color: alpha(@background,.9);
+  background-color: alpha(@background,.5);
 }
 
 #outer-box {
