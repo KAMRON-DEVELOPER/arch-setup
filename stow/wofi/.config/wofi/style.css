@@ -21,14 +21,13 @@ window {
 
 #input {
   margin: 5px;
-  padding: 5px 5px 5px 10px;
+  padding: 5px 5px 5px 0px;
+  border: 1px solid @primary;
   border-radius: 0.5em;
-  color: @secondary;
-  background-color: alpha(@on_secondary,.2);
 }
 
 #input image {
-  margin-right: 5px;
+  color: rgba(0, 0, 0, 0);
 }
 
 #inner-box {
@@ -46,10 +45,16 @@ window {
 
 #entry {
   padding: 5px 5px 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 0.5em;
+  color: @primary;
 }
 
 #entry:selected {
+  border: 1px solid @primary;
   color: @primary;
-  background-color: alpha(@on_secondary,.2);
+}
+
+#inner-box flowboxchild:nth-child(even) {
+    background-color: transparent;
 }
