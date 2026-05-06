@@ -12,7 +12,7 @@ fi
 echo "Generating colors from: $WALLPAPER"
 
 # Run wallust to generate colors
-matugen -v --show-colors -m "dark" image "$WALLPAPER"
+matugen -v -m "dark" image "$WALLPAPER"
 
 
 echo "Colors updated successfully!"
