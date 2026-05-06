@@ -1,0 +1,336 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$nats\
+$directory\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$hg_state\
+$pijul_channel\
+$docker_context\
+$package\
+$bun\
+$c\
+$cmake\
+$cobol\
+$cpp\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$fortran\
+$gleam\
+$golang\
+$gradle\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$maven\
+$mojo\
+$nim\
+$nodejs\
+$ocaml\
+$odin\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$xmake\
+$zig\
+$buf\
+$guix_shell\
+$nix_shell\
+$conda\
+$pixi\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$direnv\
+$env_var\
+$mise\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$netns\
+$shell\
+$character"""
+
+add_newline = false
+
+palette = 'colors'
+
+[palettes.colors]
+mustard = '#af8700' # example
+color1 = '{{colors.primary_fixed_dim.default.hex}}'
+color2 = '{{colors.on_primary.default.hex}}'
+color3 = '{{colors.on_surface_variant.default.hex}}'
+color4 = '{{colors.surface_container.default.hex}}'
+color5 = '{{colors.on_primary.default.hex}}'
+color6 = '{{colors.surface_dim.default.hex}}'
+color7 = '{{colors.surface.default.hex}}'
+color8 = '{{colors.primary.default.hex}}'
+color9 = '{{colors.tertiary.default.hex}}'
+
+[line_break]
+disabled = true
+
+[os]
+disabled = true
+
+[os.symbols]
+Linux = ' '
+Arch = ' '
+Bluefin = ' '
+Fedora = ' '
+Ubuntu = ' '
+Debian = ' '
+Pop = ' '
+NixOS = ' '
+FreeBSD = ' '
+Kali = ' '
+Garuda = ' '
+Gentoo = ' '
+AlmaLinux = ' '
+Alpine = ' '
+CachyOS = ' '
+CentOS = ' '
+DragonFly = ' '
+Elementary = ' '
+EndeavourOS = ' '
+Manjaro = ' '
+Mariner = ' '
+MidnightBSD = ' '
+Mint = ' '
+NetBSD = ' '
+Nobara = ' '
+OpenBSD = ' '
+OpenCloudOS = ' '
+openEuler = ' '
+openSUSE = ' '
+OracleLinux = '󰺡 '
+PikaOS = ' '
+Raspbian = ' '
+Redhat = '󱄛 '
+RedHatEnterprise = '󱄛 '
+Redox = '󰀘 '
+RockyLinux = ' '
+Solus = ' '
+SUSE = ' '
+Ultramarine = ' '
+Uos = ' '
+Void = ' '
+Zorin = ' '
+Macos = ' '
+Windows = '󰍲 '
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[character]
+success_symbol = "[🞈](color9 bold)"
+error_symbol = "[🞈](@{error})"
+vimcmd_symbol = "[🞈](#f9e2af)"
+
+# [character]
+# success_symbol = '[❯](bright-white)'
+# error_symbol = '[❯](bright-red)'
+# vimcmd_symbol = '[❮](bright-green)'
+
+
+[directory]
+format = "[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
+
+# [directory]
+# truncation_length = 4
+# truncate_to_repo = false
+# fish_style_pwd_dir_length = 1
+
+[time]
+format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $time](fg:color3 bg:color4)[](fg:color4) "
+disabled = false
+time_format = "%R" # Hour:Minute Format
+
+[git_branch]
+format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
+
+# [git_branch]
+# # symbol = '🌱 '
+# # symbol = ' '
+# symbol = ''
+# style = 'bright-white'
+# format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[git_commit]
+tag_symbol = '  '
+
+[git_metrics]
+disabled = true
+
+[git_status]
+conflicted = '[=${count}](bright-red)'
+ahead = '[⇡${count}](bright-green)'
+behind = '[⇣${count}](bright-green)'
+diverged = '[⇕⇡${ahead_count}⇣${behind_count}](bright-green)'
+up_to_date = ''
+untracked = '[?${count}](bright-blue)'
+stashed = ''
+modified = '[!${count}](bright-yellow)'
+staged = '[+$count](bright-green)'
+renamed = '[»${count}](bright-yellow)'
+deleted = '[✘${count}](bright-red)'
+format = "([$ahead_behind]($style) )([$conflicted]($style) )([$stashed]($style) )([$deleted]($style) )([$renamed]($style) )([$modified]($style) )([$typechanged]($style) )([$staged]($style) )([$untracked]($style) )"
+
+[package]
+disabled = true
+symbol = '󰏗 '
+
+[c]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[python]
+symbol = ' '
+format = "[${symbol}(\\($virtualenv\\) )]($style)"
+
+[nodejs]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[rust]
+symbol = '󱘗 '
+format = "[$symbol]($style)"
+
+[golang]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[zig]
+symbol = " "
+format = "[$symbol]($style)"
+
+[dart]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[lua]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[ruby]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[elixir]
+symbol = ' '
+
+[haskell]
+symbol = ' '
+
+[java]
+symbol = ' '
+format = "[$symbol]($style)"
+
+[scala]
+symbol = ' '
+
+[helm]
+symbol = ' '
+
+[gradle]
+symbol = ' '
+
+[gcloud]
+symbol = '󱇶 '
+
+[kotlin]
+symbol = ' '
+
+[hostname]
+ssh_symbol = ' '
+
+[kubernetes]
+symbol = '󱃾 '
+
+[maven]
+symbol = ' '
+
+[memory_usage]
+symbol = '󰍛 '
+
+[container]
+symbol = ' '
+
+[nix_shell]
+symbol = ' '
+
+[ocaml]
+symbol = ' '
+
+[perl]
+symbol = ' '
+
+[php]
+symbol = ' '
+
+[sudo]
+symbol = ' '
+
+[swift]
+symbol = ' '
+
+[terraform]
+symbol = ' '
+
+[gleam]
+symbol = ' '

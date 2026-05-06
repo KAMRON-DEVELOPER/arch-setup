@@ -1,9 +1,67 @@
 [config.wallpaper]
-command = "swww"
+command = "swaybg"
 arguments = ["img", "--transition-type", "center"]
 set = true
+
+[templates.alacritty]
+input_path = './templates/alacritty.toml'
+output_path = '~/.config/alacritty/themes/themes/matugen.toml'
+
+[templates.btop]
+input_path = './templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
 
 [templates.vicinae]
 input_path = './templates/vicinae.toml'
 output_path = '~/.local/share/vicinae/themes/matugen.toml'
 post_hook = 'vicinae theme set matugen'
+
+[templates.dunst]
+input_path = './templates/dunstrc-colors'
+output_path = '~/.config/dunst/dunstrc'
+post_hook = 'dunstctl reload'
+
+[templates.ghostty]
+input_path = './templates/ghostty'
+output_path = '~/.config/ghostty/themes/Matugen'
+post_hook = 'pkill -SIGUSR2 ghostty'
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.nvim]
+input_path = './templates/nvim-colors.vim'
+output_path = '~/.config/nvim/colors/matugen.vim'
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[templates.rofi]
+input_path = './templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.starship]
+input_path = './templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.tmux]
+input_path = './templates/tmux-colors.conf'
+output_path = '~/.config/tmux/generated.conf'
+post_hook = 'tmux source-file ~/.config/tmux/generated.conf'
+
+[templates.waybar]
+input_path = './templates/waybar/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.yazi]
+input_path = './templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.zed]
+input_path = './templates/zed-colors.json'
+output_path = '~/.config/zed/themes/matugen.json'
+
+[templates.wofi]
+input_path = "./templates/colors.css"
+output_path = "~/.config/wofi/colors.css"
