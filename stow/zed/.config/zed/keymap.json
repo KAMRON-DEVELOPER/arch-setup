@@ -34,5 +34,29 @@
     "unbind": {
       "ctrl-shift-l": "terminal::Clear"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "super-tab": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-tab": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "shift-tab": "agent::CycleModeSelector"
+    }
+  },
+  {
+    "context": "AcpThread > Editor",
+    "unbind": {
+      "shift-tab": "agent::CycleModeSelector"
+    }
   }
 ]

@@ -1,6 +1,6 @@
 {
   "mouse_wheel_zoom": true,
-  "preferred_line_length": 120,
+  "preferred_line_length": 80,
   "outline_panel": {
     "dock": "left"
   },
@@ -42,7 +42,7 @@
   },
   "terminal": {
     "env": {},
-    "font_size": 13.0,
+    "font_size": 14.0,
     "font_family": "JetBrainsMono Nerd Font",
     "cursor_shape": "bar",
     "blinking": "on",
@@ -85,8 +85,10 @@
   "auto_indent_on_paste": true,
   "use_on_type_format": true,
   "wrap_guides": [
-    160
+    80,
+    120
   ],
+  "show_wrap_guides": true,
   "ui_font_size": 16,
   "buffer_font_size": 11.0,
   "theme": {
@@ -113,6 +115,9 @@
     }
   },
   "languages": {
+    "Lua": {
+      "tab_size": 2
+    },
     "Markdown": {
       "format_on_save": "on"
     },

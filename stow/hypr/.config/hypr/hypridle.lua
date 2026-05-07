@@ -18,6 +18,7 @@ hl.config({
       {
         timeout = 600,
         on_timeout = "loginctl lock-session",
+        on_resume = "brightnessctl -r",
       },
     }
   }
