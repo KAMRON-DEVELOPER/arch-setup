@@ -20,10 +20,10 @@ opt.cursorline = true
 opt.wrap = false
 
 -- windows
-opt.pumblend = 0
-opt.pumborder = "none"
-opt.winblend = 0
-opt.winborder = "rounded"
+-- opt.pumblend = 0
+-- opt.pumborder = "none"
+-- opt.winblend = 0
+-- opt.winborder = "rounded"
 opt.splitbelow = true
 opt.splitright = true
 
