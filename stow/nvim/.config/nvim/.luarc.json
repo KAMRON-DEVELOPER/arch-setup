@@ -1,7 +1,3 @@
 {
-  "diagnostics.globals": [
-    "vim",
-        "augroup",
-        "FzfLua"
-  ]
+  "diagnostics.globals": ["vim", "FzfLua"]
 }

@@ -1,4 +1,4 @@
-vim.pack.add("https://github.com/rmagatti/auto-session")
+vim.pack.add({ "https://github.com/rmagatti/auto-session" })
 
 require("lua.config.pack.extra.auto_session").setup({
 	enabled = true,

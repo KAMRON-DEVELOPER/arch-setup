@@ -1,6 +1,6 @@
-vim.pack.add("https://github.com/romus204/tree-sitter-manager.nvim")
+vim.pack.add({ "https://github.com/romus204/tree-sitter-manager.nvim" })
 
-require("lua.config.pack.extra.tree_sitter_manager").setup({
+require("tree-sitter-manager").setup({
 	ensure_installed = {
 		"zsh",
 		"bash",
@@ -26,7 +26,7 @@ require("lua.config.pack.extra.tree_sitter_manager").setup({
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	group = augroup("treesitter_start"),
+	group = vim.api.nvim_create_augroup("treesitter_start", { clear = true }),
 	callback = function(event)
 		local filetype = vim.bo[event.buf].filetype
 		local lang = vim.treesitter.language.get_lang(filetype)

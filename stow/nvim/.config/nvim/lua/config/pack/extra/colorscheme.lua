@@ -1,14 +1,14 @@
-vim.pack.add(
-	"https://github.com/navarasu/onedark.nvim",
-	"https://github.com/ellisonleao/gruvbox.nvim",
-	"https://github.com/folke/tokyonight.nvim",
+vim.pack.add({
+	{ "https://github.com/navarasu/onedark.nvim" },
+	{ "https://github.com/ellisonleao/gruvbox.nvim" },
+	{ "https://github.com/folke/tokyonight.nvim" },
 	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
 	{
 		src = "https://github.com/rose-pine/neovim",
 		name = "rose-pine",
 	},
-	"https://github.com/vague-theme/vague.nvim"
-)
+	{ "https://github.com/vague-theme/vague.nvim" },
+})
 
 -- dark, darker, cool, deep, warm, warmer, light
 require("onedark").setup({

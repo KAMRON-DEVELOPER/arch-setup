@@ -1,13 +1,9 @@
 local api = vim.api
 
-local function augroup(name)
-	return api.nvim_create_augroup("kam_" .. name, { clear = true })
-end
-
 -- highlight on yank
 api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight selection on yank",
-	group = augroup("highlight_yank"),
+	group = api.nvim_create_augroup("highlight_yank", { clear = true }),
 	callback = function()
 		vim.hl.on_yank()
 	end,
@@ -15,7 +11,7 @@ api.nvim_create_autocmd("TextYankPost", {
 
 -- create parent directory before saving a normal file
 api.nvim_create_autocmd({ "BufWritePre" }, {
-	group = augroup("auto_create_dir"),
+	group = api.nvim_create_augroup("auto_create_dir", { clear = true }),
 	callback = function(event)
 		if event.match == "" then
 			return
@@ -36,7 +32,7 @@ api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 api.nvim_create_autocmd("FileType", {
-	group = augroup("indent_4"),
+	group = api.nvim_create_augroup("indent_4", { clear = true }),
 	pattern = {
 		"c",
 		"cpp",

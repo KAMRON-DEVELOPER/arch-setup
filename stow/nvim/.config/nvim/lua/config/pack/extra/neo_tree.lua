@@ -1,12 +1,12 @@
-vim.pack.add(
-	"https://github.com/nvim-lua/plenary.nvimm",
-	"https://github.com/MunifTanjim/nui.nvim",
-	"https://github.com/nvim-tree/nvim-web-devicons",
+vim.pack.add({
+	{ "https://github.com/nvim-lua/plenary.nvimm" },
+	{ "https://github.com/MunifTanjim/nui.nvim" },
+	{ "https://github.com/nvim-tree/nvim-web-devicons" },
 	{
 		src = "https://github.com/nvim-neo-tree/neo-tree.nvim",
 		version = vim.version.range("3"),
-	}
-)
+	},
+})
 
 require("neo-tree").setup({
 	sources = {

@@ -13,10 +13,10 @@ vim.api.nvim_create_autocmd("PackChanged", {
 })
 
 vim.pack.add({
-	{ src = "https://github.com/nvim-lua/plenary.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
-	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
+	{ "https://github.com/nvim-lua/plenary.nvim" },
+	{ "https://github.com/nvim-tree/nvim-web-devicons" },
+	{ "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
+	{ "https://github.com/nvim-telescope/telescope.nvim" },
 })
 
 local telescope = require("telescope")

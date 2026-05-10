@@ -1,5 +1,5 @@
 require("lua.config.pack.extra.tree_sitter_manager")
-require("config.pack.extra.which_key")
+-- require("config.pack.extra.which_key")
 -- require("config.pack.extra.telescope")
 -- require("config.pack.extra.fzf_lua")
 -- require("config.pack.extra.oil")
