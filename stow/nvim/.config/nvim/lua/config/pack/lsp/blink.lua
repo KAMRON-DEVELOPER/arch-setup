@@ -69,16 +69,19 @@ vim.api.nvim_create_autocmd("PackChanged", {
 })
 
 local plugins = {
-	{ "https://github.com/saghen/blink.lib" },
-	{ "https://github.com/saghen/blink.cmp" },
+	{ src = "https://github.com/saghen/blink.lib" },
+	{ src = "https://github.com/saghen/blink.cmp" },
 }
 
 if settings.blink.luasnip then
-	table.insert(plugins, { "https://github.com/L3MON4D3/LuaSnip" })
+	table.insert(plugins, { src = "https://github.com/L3MON4D3/LuaSnip" })
 end
 
 if settings.blink.friendly_snippets then
-	table.insert(plugins, { "https://github.com/rafamadriz/friendly-snippets" })
+	table.insert(
+		plugins,
+		{ src = "https://github.com/rafamadriz/friendly-snippets" }
+	)
 end
 
 vim.pack.add(plugins)

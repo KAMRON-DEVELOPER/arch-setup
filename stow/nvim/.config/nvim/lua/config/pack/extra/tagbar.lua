@@ -1,4 +1,4 @@
-vim.pack.add({ { "https://github.com/preservim/tagbar" } })
+vim.pack.add({ { src = "https://github.com/preservim/tagbar" } })
 
 vim.keymap.set(
 	"n",
