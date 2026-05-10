@@ -1,6 +1,6 @@
 local function map(mode, lhs, rhs, desc, opts)
-	opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
-	vim.keymap.set(mode, lhs, rhs, opts)
+  opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
+  vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 -- half page jump
@@ -49,82 +49,82 @@ map("n", "<leader>rj", "<cmd>resize +2<cr>", "Resize: taller")
 map("n", "<leader>rk", "<cmd>resize -2<cr>", "Resize: shorter")
 
 map("n", "<leader>tt", function()
-	vim.cmd("split")
-	vim.cmd("resize 10")
-	vim.cmd("terminal")
-	vim.cmd("startinsert")
+  vim.cmd("split")
+  vim.cmd("resize 10")
+  vim.cmd("terminal")
+  vim.cmd("startinsert")
 end, "Terminal: open horizontal")
 
 -- diagnostics
 map(
-	"n",
-	"<leader>dd",
-	vim.diagnostic.open_float,
-	"Diagnostic: show current line"
+  "n",
+  "<leader>dd",
+  vim.diagnostic.open_float,
+  "Diagnostic: show current line"
 )
 
 map("n", "<leader>dn", function()
-	vim.diagnostic.jump({ count = 1 })
+  vim.diagnostic.jump({ count = 1 })
 end, "Diagnostic: next")
 
 map("n", "<leader>dp", function()
-	vim.diagnostic.jump({ count = -1 })
+  vim.diagnostic.jump({ count = -1 })
 end, "Diagnostic: previous")
 
 map("n", "<leader>df", function()
-	vim.diagnostic.jump({ count = -999999 })
+  vim.diagnostic.jump({ count = -999999 })
 end, "Diagnostic: first")
 
 map("n", "<leader>dl", function()
-	vim.diagnostic.jump({ count = 999999 })
+  vim.diagnostic.jump({ count = 999999 })
 end, "Diagnostic: last")
 
 map("n", "<leader>de", function()
-	vim.diagnostic.jump({
-		count = 1,
-		severity = vim.diagnostic.severity.ERROR,
-	})
+  vim.diagnostic.jump({
+    count = 1,
+    severity = vim.diagnostic.severity.ERROR,
+  })
 end, "Diagnostic: next error")
 
 map("n", "<leader>dE", function()
-	vim.diagnostic.jump({
-		count = -1,
-		severity = vim.diagnostic.severity.ERROR,
-	})
+  vim.diagnostic.jump({
+    count = -1,
+    severity = vim.diagnostic.severity.ERROR,
+  })
 end, "Diagnostic: previous error")
 
 map("n", "<leader>dx", function()
-	vim.diagnostic.setqflist()
+  vim.diagnostic.setqflist()
 end, "Diagnostic: send to quickfix")
 
 map("n", "<leader>dt", function()
-	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, "Diagnostic: toggle")
 
 map("n", "<leader>dvt", function()
-	local enable = not vim.diagnostic.config().virtual_text
-	vim.diagnostic.config({ virtual_text = enable })
+  local enable = not vim.diagnostic.config().virtual_text
+  vim.diagnostic.config({ virtual_text = enable })
 end, "Diagnostic: toggle virtual text")
 
 map("n", "<leader>dvl", function()
-	local enable = not vim.diagnostic.config().virtual_lines
-	vim.diagnostic.config({ virtual_lines = enable })
+  local enable = not vim.diagnostic.config().virtual_lines
+  vim.diagnostic.config({ virtual_lines = enable })
 end, "Diagnostic: toggle virtual lines")
 
 map("n", "<leader>dul", function()
-	local enable = not vim.diagnostic.config().underline
-	vim.diagnostic.config({ underline = enable })
+  local enable = not vim.diagnostic.config().underline
+  vim.diagnostic.config({ underline = enable })
 end, "Diagnostic: toggle underline")
 
 -- quickfixes
 local function quickfix_toggle()
-	local winid = vim.fn.getqflist({ winid = 0 }).winid
+  local winid = vim.fn.getqflist({ winid = 0 }).winid
 
-	if winid ~= 0 then
-		vim.cmd.cclose()
-	else
-		vim.cmd.copen()
-	end
+  if winid ~= 0 then
+    vim.cmd.cclose()
+  else
+    vim.cmd.copen()
+  end
 end
 
 map("n", "<leader>xx", quickfix_toggle, "Quickfix: toggle")
@@ -143,13 +143,13 @@ map("n", "<leader>xP", "<cmd>colder<cr>", "Quickfix: older list")
 map("n", "<leader>xh", "<cmd>chistory<cr>", "Quickfix: history")
 
 local function loclist_toggle()
-	local winid = vim.fn.getloclist(0, { winid = 0 }).winid
+  local winid = vim.fn.getloclist(0, { winid = 0 }).winid
 
-	if winid ~= 0 then
-		vim.cmd.lclose()
-	else
-		vim.cmd.lopen()
-	end
+  if winid ~= 0 then
+    vim.cmd.lclose()
+  else
+    vim.cmd.lopen()
+  end
 end
 
 map("n", "<leader>ll", loclist_toggle, "Location List: toggle")

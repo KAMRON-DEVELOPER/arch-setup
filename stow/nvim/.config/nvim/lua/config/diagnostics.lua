@@ -1,31 +1,31 @@
 local sev = vim.diagnostic.severity
 
 vim.diagnostic.config({
-	virtual_text = true,
-	virtual_lines = false,
-	underline = false,
+  virtual_text = true,
+  virtual_lines = false,
+  underline = false,
 
-	severity_sort = true,
-	update_in_insert = false,
+  severity_sort = true,
+  update_in_insert = false,
 
-	float = {
-		border = "rounded",
-		source = true,
-	},
+  float = {
+    border = "rounded",
+    source = true,
+  },
 
-	-- signs = {
-	-- 	severity = {
-	-- 		min = vim.diagnostic.severity.HINT,
-	-- 	},
-	-- },
+  -- signs = {
+  -- 	severity = {
+  -- 		min = vim.diagnostic.severity.HINT,
+  -- 	},
+  -- },
 
-	signs = {
-		text = {
-			[sev.ERROR] = " ",
-			[sev.WARN] = " ",
-			[sev.INFO] = " ",
-			[sev.HINT] = "󰌵 ",
-			-- [sev.HINT] = " ",
-		},
-	},
+  signs = {
+    text = {
+      [sev.ERROR] = " ",
+      [sev.WARN] = " ",
+      [sev.INFO] = " ",
+      [sev.HINT] = "󰌵 ",
+      -- [sev.HINT] = " ",
+    },
+  },
 })

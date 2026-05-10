@@ -1,22 +1,22 @@
 vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function(ev)
-		local name = ev.data.spec.name
-		local kind = ev.data.kind
+  callback = function(ev)
+    local name = ev.data.spec.name
+    local kind = ev.data.kind
 
-		if
-			name == "telescope-fzf-native.nvim"
-			and (kind == "install" or kind == "update")
-		then
-			vim.system({ "make" }, { cwd = ev.data.path }):wait()
-		end
-	end,
+    if
+      name == "telescope-fzf-native.nvim"
+      and (kind == "install" or kind == "update")
+    then
+      vim.system({ "make" }, { cwd = ev.data.path }):wait()
+    end
+  end,
 })
 
 vim.pack.add({
-	{ src = "https://github.com/nvim-lua/plenary.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
-	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
+  { src = "https://github.com/nvim-lua/plenary.nvim" },
+  { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+  { src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
+  { src = "https://github.com/nvim-telescope/telescope.nvim" },
 })
 
 local telescope = require("telescope")
@@ -28,24 +28,24 @@ local builtin = require("telescope.builtin")
 local map = vim.keymap.set
 
 function FindClasses()
-	builtin.lsp_dynamic_workspace_symbols({
-		symbols = { "Class" },
-		prompt_title = "Find Classes",
-	})
+  builtin.lsp_dynamic_workspace_symbols({
+    symbols = { "Class" },
+    prompt_title = "Find Classes",
+  })
 end
 
 function FindFunctions()
-	builtin.lsp_dynamic_workspace_symbols({
-		symbols = { "Function", "Method" },
-		prompt_title = "Find Functions",
-	})
+  builtin.lsp_dynamic_workspace_symbols({
+    symbols = { "Function", "Method" },
+    prompt_title = "Find Functions",
+  })
 end
 
 function FindVariables()
-	builtin.lsp_dynamic_workspace_symbols({
-		symbols = { "Variable", "Constant" },
-		prompt_title = "Find Variables",
-	})
+  builtin.lsp_dynamic_workspace_symbols({
+    symbols = { "Variable", "Constant" },
+    prompt_title = "Find Variables",
+  })
 end
 
 map("n", "<leader>fi", builtin.builtin, { desc = "Builtin" })

@@ -7,8 +7,8 @@ setting.completion = "native"
 
 -- only used when M.completion == "blink"
 setting.blink = {
-	luasnip = false,
-	friendly_snippets = false,
+  luasnip = false,
+  friendly_snippets = false,
 }
 
 return setting

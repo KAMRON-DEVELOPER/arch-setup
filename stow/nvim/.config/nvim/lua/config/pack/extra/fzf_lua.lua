@@ -1,24 +1,24 @@
 vim.pack.add({
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/ibhagwan/fzf-lua" },
+  { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+  { src = "https://github.com/ibhagwan/fzf-lua" },
 })
 
 local fzf = require("fzf_lua")
 fzf.setup({
-	winopts = {
-		preview = {
-			default = "bat",
-		},
-	},
+  winopts = {
+    preview = {
+      default = "bat",
+    },
+  },
 
-	files = {
-		previewer = "bat",
-	},
+  files = {
+    previewer = "bat",
+  },
 })
 
 local function map(mode, lhs, rhs, desc, opts)
-	opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
-	vim.keymap.set(mode, lhs, rhs, opts)
+  opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
+  vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 -- main picker menu

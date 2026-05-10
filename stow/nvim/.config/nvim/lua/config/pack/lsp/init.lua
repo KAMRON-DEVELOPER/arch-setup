@@ -3,7 +3,7 @@ require("config.pack.lsp.mason")
 local settings = require("config.pack.lsp.settings")
 
 if settings.completion == "blink" then
-	require("config.pack.lsp.blink")
+  require("config.pack.lsp.blink")
 end
 
 require("config.pack.lsp.servers")
