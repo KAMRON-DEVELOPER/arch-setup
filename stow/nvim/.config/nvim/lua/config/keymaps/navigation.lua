@@ -35,20 +35,9 @@ map(
 	{ silent = true, desc = "Go to previous tab" }
 )
 
--- window
 -- split
-map(
-	"n",
-	"<leader>sv",
-	"<C-w>v",
-	{ silent = true, desc = "Split window vertically" }
-)
-map(
-	"n",
-	"<leader>sh",
-	"<C-w>s",
-	{ silent = true, desc = "Split window horizontally" }
-)
+map("n", "<leader>sv", "<C-w>v", { silent = true, desc = "Split vertically" })
+map("n", "<leader>sh", "<C-w>s", { silent = true, desc = "Split horizontally" })
 map(
 	"n",
 	"<leader>se",
@@ -67,25 +56,25 @@ map(
 	"n",
 	"<C-S-Left>",
 	":vertical resize -2<CR>",
-	{ silent = true, desc = "Resize vertical split Down" }
+	{ silent = true, desc = "Decrease window width" }
+)
+map(
+	"n",
+	"<C-S-Right>",
+	":vertical resize +<2CR>",
+	{ silent = true, desc = "Increase window width" }
 )
 map(
 	"n",
 	"<C-S-Down>",
 	":resize +2<CR>",
-	{ silent = true, desc = "Resize horizontal split Down" }
+	{ silent = true, desc = "Decrease window height" }
 )
 map(
 	"n",
 	"<C-S-Up>",
 	":resize -2<CR>",
-	{ silent = true, desc = "Resize horizontal split Up" }
-)
-map(
-	"n",
-	"<C-S-Right>",
-	":vertical resize +2CR>",
-	{ silent = true, desc = "Resize vertical split Up" }
+	{ silent = true, desc = "Increase window height" }
 )
 
 -- resize with h/j/k/l
@@ -94,6 +83,12 @@ map(
 	"<C-S-h>",
 	":vertical resize -2<CR>",
 	{ silent = true, desc = "Resize vertical split Down" }
+)
+map(
+	"n",
+	"<C-S-l>",
+	":vertical resize +2CR>",
+	{ silent = true, desc = "Resize vertical split Up" }
 )
 map(
 	"n",
@@ -106,12 +101,6 @@ map(
 	"<C-S-k>",
 	":resize -2<CR>",
 	{ silent = true, desc = "Resize horizontal split Up" }
-)
-map(
-	"n",
-	"<C-S-l>",
-	":vertical resize +2CR>",
-	{ silent = true, desc = "Resize vertical split Up" }
 )
 
 -- move with h/j/k/l
@@ -157,13 +146,13 @@ map(
 	"n",
 	"<c-j>",
 	":wincmd j<CR>",
-	{ silent = true, desc = "Navigate to down pane" }
+	{ silent = true, desc = "Navigate to below pane" }
 )
 map(
 	"n",
 	"<c-k>",
 	":wincmd k<CR>",
-	{ silent = true, desc = "Navigate to up pane" }
+	{ silent = true, desc = "Navigate to above pane" }
 )
 map(
 	"n",
