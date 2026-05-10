@@ -50,6 +50,11 @@ input_path = './templates/tmux-colors.conf'
 output_path = '~/.config/tmux/generated.conf'
 post_hook = 'tmux source-file ~/.config/tmux/generated.conf'
 
+[template.zellij]
+input_path = './templates/zellij-theme.kdl.tera'
+output_path = '~/.config/zellij/themes/matugen.kdl'
+post_hook = 'touch ~/.config/zellij/config.kdl'
+
 [templates.waybar]
 input_path = './templates/colors.css'
 output_path = '~/.config/waybar/colors.css'
