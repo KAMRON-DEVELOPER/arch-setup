@@ -23,9 +23,7 @@ vim.pack.add({
 local telescope = require("telescope")
 telescope.setup()
 -- telescope.load_extension("fzf")
--- telescope.load_extension("aerial")
 pcall(require("telescope").load_extension, "fzf")
-pcall(require("telescope").load_extension, "aerial")
 
 local builtin = require("telescope.builtin")
 local map = vim.keymap.set
