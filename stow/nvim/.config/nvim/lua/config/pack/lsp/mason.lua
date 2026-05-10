@@ -33,17 +33,21 @@ require("mason-tool-installer").setup({
     -- "rust-analyzer", -- lsp (rust)
     -- "rustfmt", -- formatter (rust), comes with rust
     -- "gopls",                      -- lsp (go), official go language server (pronounced "Go please")
-    -- "gofumpt",                    -- formatter (go), a stricter gofmt
-    -- "goimports", -- formatter (go), formats like gofmt and fix imports
+    "gofumpt", -- formatter (go), a stricter gofmt
+    "goimports", -- formatter (go), formats like gofmt and fix imports
+    -- "eslint_d", -- formatter (js, ts),
     -- "typescript-language-server", -- lsp (js, ts), mason-lspconfig (ts_ls)
     -- "vtsls", -- lsp (ts)
     -- "quick-lint-js",              -- lsp (js, ts), 130x faster than ESlint
+    "prettierd", -- formatter (js, ts, json, html, JSX, markdown, yaml)
     "prettier", -- formatter (js, ts, json, html, JSX, markdown, yaml)
     -- "clangd",                     -- lsp (C and C++)
-    -- "clang-format",               -- formatter (c, c++)
+    "clang-format", -- formatter (c, c++)
     -- "cmake-language-server",      -- lsp (cmake), mason-lspconfig (cmake)
+    -- "neocmakelsp", -- lsp (cmake), mason-lspconfig (neocmake)
     -- "cmakelint",                  -- linter (cmake)
-    -- "gersemi",                    -- formatter (cmake)
+    -- "cmake-lint",                  -- linter (cmake)
+    "gersemi", -- formatter (cmake)
     -- "dockerfile-language-server", -- lsp (docker), mason-slpconfig (dockerls)
     -- "docker-compose-language-service", -- lsp (docker compose), mason-lspconfig (docker_compose_language_service)
     -- "json-lsp", -- lsp (json), mason-slpconfig (jsonls)
@@ -51,6 +55,9 @@ require("mason-tool-installer").setup({
     "bash-language-server", -- lsp (bash), mason-slpconfig (bashls)
     "markdownlint", -- linter, formatter(markdown),
     -- "codebook", -- lsp(spell checker)
+    "sqlfmt", -- formatter(sql)
+    "sqlfluff", -- linter, formatter(sql)
+    "hclfmt", -- formatter(HCL)
   },
 })
 
@@ -59,10 +66,8 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "stylua",
-    -- "pyright",
     "basedpyright",
     "ruff",
-    "pyrefly",
     "zls",
     "rust_analyzer",
     "gopls",
@@ -73,7 +78,6 @@ require("mason-lspconfig").setup({
     "docker_compose_language_service",
     "jsonls",
     "taplo",
-    "bashls", -- "bash-language-server",
-    "codebook",
+    "bashls",
   },
 })
