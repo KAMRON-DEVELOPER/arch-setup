@@ -2,14 +2,12 @@ vim.pack.add({ { src = "https://github.com/stevearc/conform.nvim" } })
 
 local prettier = { "prettier", "prettierd", stop_after_first = true }
 
-local fos = { lsp_fallback = true, async = false, timeout_ms = 3000 }
+local fos = { lsp_format = "fallback", async = false, timeout_ms = 3000 }
 
 local function format(bufnr)
   local ok, conform = pcall(require, "conform")
   if ok then
-    conform.format(
-      vim.tbl_extend("force", fos, bufnr and { bufnr = bufnr } or {})
-    )
+    conform.format(vim.tbl_extend("force", fos, { bufnr = bufnr or 0 }))
   end
 end
 
@@ -50,8 +48,8 @@ require("conform").setup({
   notify_no_formatters = true,
 })
 
-vim.keymap.set({ "i", "n", "v" }, "<C-A-f>", function(args)
-  format(args.buf)
+vim.keymap.set({ "n", "v" }, "<C-A-f>", function()
+  format()
 end, { desc = "Conform: format" })
 
 -- format on save
