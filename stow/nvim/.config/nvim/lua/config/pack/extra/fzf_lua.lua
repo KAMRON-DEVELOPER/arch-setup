@@ -25,7 +25,7 @@ map("n", "<leader>zc", fzf.grep_cword, { desc = "FzF: Grep Current Word" })
 map("n", "<leader>fg", fzf.live_grep, { desc = "FzF: Live Grep" })
 map("n", "<leader>zr", fzf.resume, { desc = "FzF: Find Resume" })
 map("n", "<leader>zh", fzf.helptags, { desc = "FzF: Find Help Tags" })
-map("n", "<leader>sm", fzf.manpages, { desc = "FzF: Find Man Pages" })
+map("n", "<leader>zm", fzf.manpages, { desc = "FzF: Find Man Pages" })
 
 require("which-key").setup({
 	spec = {
