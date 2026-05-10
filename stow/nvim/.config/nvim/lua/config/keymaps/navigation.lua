@@ -1,5 +1,5 @@
 local function map(mode, lhs, rhs, desc, opts)
-	opts = vim.tbl_extend("force", { desc = desc }, opts or {})
+	opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
@@ -101,17 +101,17 @@ map("n", "<leader>dt", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, "Diagnostic: toggle")
 
-vim.keymap.set("n", "<leader>dtvt", function()
+map("n", "<leader>dvt", function()
 	local enable = not vim.diagnostic.config().virtual_text
 	vim.diagnostic.config({ virtual_text = enable })
-end, "Diagnostic: toggle virtual_text")
+end, "Diagnostic: toggle virtual text")
 
-vim.keymap.set("n", "<leader>dtvl", function()
+map("n", "<leader>dvl", function()
 	local enable = not vim.diagnostic.config().virtual_lines
 	vim.diagnostic.config({ virtual_lines = enable })
-end, "Diagnostic: toggle virtual_lines")
+end, "Diagnostic: toggle virtual lines")
 
-vim.keymap.set("n", "<leader>dtul", function()
+map("n", "<leader>dul", function()
 	local enable = not vim.diagnostic.config().underline
 	vim.diagnostic.config({ underline = enable })
 end, "Diagnostic: toggle underline")
@@ -138,7 +138,7 @@ map("n", "<leader>xf", "<cmd>cfirst<cr>", "Quickfix: first")
 map("n", "<leader>xl", "<cmd>clast<cr>", "Quickfix: last")
 
 map("n", "<leader>xN", "<cmd>cnewer<cr>", "Quickfix: newer list")
-map("n", "<leader>xP", "<cmd>colder<cr>", { "Quickfix: older list" })
+map("n", "<leader>xP", "<cmd>colder<cr>", "Quickfix: older list")
 
 map("n", "<leader>xh", "<cmd>chistory<cr>", "Quickfix: history")
 

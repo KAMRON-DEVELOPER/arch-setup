@@ -416,7 +416,7 @@ require("neo-tree").setup({
 })
 
 local function map(mode, lhs, rhs, desc, opts)
-	opts = vim.tbl_extend("force", { desc = desc }, opts or {})
+	opts = vim.tbl_extend("force", { silent = true, desc = desc }, opts or {})
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
