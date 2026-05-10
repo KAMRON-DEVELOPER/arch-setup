@@ -14,7 +14,11 @@ sudo pacman -S --needed firefox \
   github-cli \
   less \
   tmux \
+  zellij \
+  tree-sitter-cli \
   neovim \
+  neovide \
+  man \
   zsh \
   zsh-autosuggestions \
   zsh-syntax-highlighting \
@@ -27,9 +31,13 @@ sudo pacman -S --needed firefox \
   yazi \
   fzf \
   eza \
+  bat \
   fd \
   feh \
+  zip \
+  unzip \
   htop \
+  bat \
   bat \
   brightnessctl \
   alsa-utils \
