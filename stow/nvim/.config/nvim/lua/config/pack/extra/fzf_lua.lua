@@ -4,7 +4,7 @@ vim.pack.add({
 	{ src = "https://github.com/ibhagwan/fzf-lua" },
 })
 
-local fzf = require("lua.config.pack.extra.fzf_lua")
+local fzf = require("fzf_lua")
 fzf.setup({
 	winopts = {
 		preview = {
