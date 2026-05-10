@@ -2,7 +2,7 @@ vim.pack.add("https://github.com/preservim/tagbar")
 
 vim.keymap.set(
 	"n",
-	"<Leader>tt",
+	"<Leader>tbt",
 	":TagbarToggle<CR>",
-	{ desc = "Toggle Tagbar" }
+	{ desc = "Tagbar: toggle" }
 )
