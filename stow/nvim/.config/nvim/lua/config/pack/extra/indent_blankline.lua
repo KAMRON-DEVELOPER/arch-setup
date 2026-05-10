@@ -2,7 +2,12 @@ vim.pack.add({
   { src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
 })
 
-require("ibl").setup({ enabled = false })
+require("ibl").setup({
+  enabled = false,
+  scope = {
+    enabled = false,
+  },
+})
 
 local map = vim.keymap.set
 
