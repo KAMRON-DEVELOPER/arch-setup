@@ -1,6 +1,6 @@
 vim.pack.add({ { src = "https://github.com/rmagatti/auto-session" } })
 
-require("lua.config.pack.extra.auto_session").setup({
+require("auto-session").setup({
   enabled = true,
   auto_save = false,
   auto_restore = false,
