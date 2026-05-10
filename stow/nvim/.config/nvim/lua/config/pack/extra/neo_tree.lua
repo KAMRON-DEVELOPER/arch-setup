@@ -432,7 +432,6 @@ map(
 	"n",
 	"<leader>eE",
 	"<cmd>Neotree toggle source=filesystem position=float reveal=false<cr>",
-
 	"Explorer: Files float"
 )
 
@@ -441,7 +440,6 @@ map(
 	"n",
 	"<leader>eb",
 	"<cmd>Neotree toggle source=buffers position=right reveal=false<cr>",
-
 	"Explorer: Buffers right"
 )
 
@@ -449,7 +447,6 @@ map(
 	"n",
 	"<leader>eB",
 	"<cmd>Neotree toggle source=buffers position=float reveal=false<cr>",
-
 	"Explorer: Buffers float"
 )
 
@@ -458,7 +455,6 @@ map(
 	"n",
 	"<leader>es",
 	"<cmd>Neotree toggle source=document_symbols position=right reveal=false<cr>",
-
 	"Explorer: Symbols right"
 )
 
@@ -466,7 +462,6 @@ map(
 	"n",
 	"<leader>eS",
 	"<cmd>Neotree toggle source=document_symbols position=float reveal=false<cr>",
-
 	"Explorer: Symbols float"
 )
 
