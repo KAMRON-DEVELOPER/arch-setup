@@ -1,4 +1,4 @@
-vim.pack.add("preservim/tagbar")
+vim.pack.add("https://github.com/preservim/tagbar")
 
 vim.keymap.set(
 	"n",
