@@ -5,7 +5,7 @@ vim.pack.add({
 })
 
 require("oil").setup({
-	default_file_explorer = true,
+	default_file_explorer = false,
 	win_options = {
 		signcolumn = "yes",
 		cursorcolumn = true,
