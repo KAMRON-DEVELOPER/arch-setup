@@ -20,11 +20,13 @@ require("mason").setup({
 require("mason-tool-installer").setup({
 	ensure_installed = {
 		-- "lua-language-server", -- lsp (lua), mason-lspconfig (lua_ls)
-		"stylua", -- formatter (lua)
-		"luaformatter", -- formatter (lua)
-		"pyright", -- lsp (python)
+		-- "stylua", -- formatter (lua)
+		-- "luaformatter", -- formatter (lua)
+		-- "pyright", -- lsp (python)
+		-- "basedpyright", -- lsp (python)
 		"mypy", -- linter (python)
 		-- "ruff", -- lsp, linter, formatter (python)
+		-- "pyrefly", -- lsp, linter (python)
 		"isort", -- formatter (python)
 		"black", -- formatter (python)
 		-- "zls", -- lsp, formatter (zig)
@@ -47,6 +49,8 @@ require("mason-tool-installer").setup({
 		-- "json-lsp", -- lsp (json), mason-slpconfig (jsonls)
 		"taplo", -- lsp (toml)
 		"bash-language-server", -- lsp (bash), mason-slpconfig (bashls)
+		"markdownlint", -- linter, formatter(markdown),
+		-- "codebook", -- lsp(spell checker)
 	},
 })
 
@@ -54,8 +58,11 @@ require("mason-tool-installer").setup({
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"lua_ls",
-		"pyright",
+		"stylua",
+		-- "pyright",
+		"basedpyright",
 		"ruff",
+		"pyrefly",
 		"zls",
 		"rust_analyzer",
 		"gopls",
@@ -66,6 +73,7 @@ require("mason-lspconfig").setup({
 		"docker_compose_language_service",
 		"jsonls",
 		"taplo",
-		"bashls", -- "bash-language-server"
+		"bashls", -- "bash-language-server",
+		"codebook",
 	},
 })

@@ -1,4 +1,7 @@
-vim.pack.add("https://github.com/nvim-tree/nvim-web-devicons", "https://github.com/stevearc/aerial.nvim")
+vim.pack.add(
+	"https://github.com/nvim-tree/nvim-web-devicons",
+	"https://github.com/stevearc/aerial.nvim"
+)
 
 require("aerial").setup({
 	on_attach = function(bufnr)

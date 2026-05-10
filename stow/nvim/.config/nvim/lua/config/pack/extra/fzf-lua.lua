@@ -29,6 +29,10 @@ map("n", "<leader>sm", fzf.manpages, { desc = "FzF: Find Man Pages" })
 
 require("which-key").setup({
 	spec = {
-		{ "<leader>zf", group = "FzF: Find", icon = { icon = "", color = "green" } },
+		{
+			"<leader>zf",
+			group = "FzF: Find",
+			icon = { icon = "", color = "green" },
+		},
 	},
 })

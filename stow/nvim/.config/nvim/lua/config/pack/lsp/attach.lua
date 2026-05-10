@@ -17,16 +17,34 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end
 
 		local function map(mode, lhs, rhs, desc)
-			vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, silent = true, desc = desc })
+			vim.keymap.set(
+				mode,
+				lhs,
+				rhs,
+				{ buffer = bufnr, silent = true, desc = desc }
+			)
 		end
 
 		-- native completion
-		if settings.completion == "native" and supports("textDocument/completion") then
-			vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
+		if
+			settings.completion == "native"
+			and supports("textDocument/completion")
+		then
+			vim.lsp.completion.enable(
+				true,
+				client.id,
+				bufnr,
+				{ autotrigger = true }
+			)
 		end
 
 		if supports("textDocument/codeAction") then
-			map({ "n", "v" }, "<C-.>", vim.lsp.buf.code_action, "LSP: Code Action")
+			map(
+				{ "n", "v" },
+				"<C-.>",
+				vim.lsp.buf.code_action,
+				"LSP: Code Action"
+			)
 		end
 
 		if supports("textDocument/hover") then
@@ -65,7 +83,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		if supports("textDocument/inlayHint") then
 			map("n", "<leader>hh", function()
-				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = bufnr }), { bufnr = bufnr })
+				vim.lsp.inlay_hint.enable(
+					not vim.lsp.inlay_hint.is_enabled({ bufnr = bufnr }),
+					{ bufnr = bufnr }
+				)
 			end, "LSP: Toggle Inlay Hints")
 		end
 

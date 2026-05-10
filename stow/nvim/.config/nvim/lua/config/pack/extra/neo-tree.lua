@@ -84,8 +84,10 @@ require("neo-tree").setup({
 			folder_empty_open = "󰷏",
 			provider = function(icon, node, state)
 				if node.type == "file" or node.type == "terminal" then
-					local success, web_devicons = pcall(require, "nvim-web-devicons")
-					local name = node.type == "terminal" and "terminal" or node.name
+					local success, web_devicons =
+						pcall(require, "nvim-web-devicons")
+					local name = node.type == "terminal" and "terminal"
+						or node.name
 					if success then
 						local devicon, hl = web_devicons.get_icon(name)
 						icon.text = devicon or icon.text
@@ -202,7 +204,11 @@ require("neo-tree").setup({
 				["]g"] = "next_git_modified",
 				["i"] = "show_file_details",
 				["b"] = "rename_basename",
-				["o"] = { "show_help", nowait = false, config = { title = "Order by", prefix_key = "o" } },
+				["o"] = {
+					"show_help",
+					nowait = false,
+					config = { title = "Order by", prefix_key = "o" },
+				},
 				["oc"] = { "order_by_created", nowait = false },
 				["od"] = { "order_by_diagnostics", nowait = false },
 				["og"] = { "order_by_git_status", nowait = false },
@@ -261,7 +267,11 @@ require("neo-tree").setup({
 				["bd"] = "buffer_delete",
 				["i"] = "show_file_details",
 				["b"] = "rename_basename",
-				["o"] = { "show_help", nowait = false, config = { title = "Order by", prefix_key = "o" } },
+				["o"] = {
+					"show_help",
+					nowait = false,
+					config = { title = "Order by", prefix_key = "o" },
+				},
 				["oc"] = { "order_by_created", nowait = false },
 				["od"] = { "order_by_diagnostics", nowait = false },
 				["om"] = { "order_by_modified", nowait = false },
@@ -287,7 +297,11 @@ require("neo-tree").setup({
 				["gg"] = "git_commit_and_push",
 				["i"] = "show_file_details",
 				["b"] = "rename_basename",
-				["o"] = { "show_help", nowait = false, config = { title = "Order by", prefix_key = "o" } },
+				["o"] = {
+					"show_help",
+					nowait = false,
+					config = { title = "Order by", prefix_key = "o" },
+				},
 				["oc"] = { "order_by_created", nowait = false },
 				["od"] = { "order_by_diagnostics", nowait = false },
 				["om"] = { "order_by_modified", nowait = false },
@@ -368,8 +382,18 @@ require("neo-tree").setup({
 local map = vim.keymap
 
 map.set("n", "<leader>tt", ":Neotree toggle<CR>", { desc = "Neotree toggle" })
-map.set("n", "<leader>to", ":Neotree reveal=false position=right<CR>", { desc = "Neotree: open right" })
-map.set("n", "<leader>tr", ":Neotree reveal=true position=right<CR>", { desc = "Neotree: open reveal right" })
+map.set(
+	"n",
+	"<leader>to",
+	":Neotree reveal=false position=right<CR>",
+	{ desc = "Neotree: open right" }
+)
+map.set(
+	"n",
+	"<leader>tr",
+	":Neotree reveal=true position=right<CR>",
+	{ desc = "Neotree: open reveal right" }
+)
 map.set(
 	"n",
 	"<leader>tfo",

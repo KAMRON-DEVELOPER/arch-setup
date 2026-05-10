@@ -6,33 +6,113 @@ map("n", "<C-u>", "<C-u>zz")
 
 -- buffer
 map("n", "<Tab>", ":bnext<CR>", { silent = true, desc = "Next buffer" })
-map("n", "<S-Tab>", ":bprevious<CR>", { silent = true, desc = "Previous buffer" })
+map(
+	"n",
+	"<S-Tab>",
+	":bprevious<CR>",
+	{ silent = true, desc = "Previous buffer" }
+)
 
 -- tab
 map("n", "<leader>to", ":tabnew<CR>", { silent = true, desc = "Open new tab" })
-map("n", "<leader>tf", ":tabnew %<CR>", { silent = true, desc = "Open current buffer in new tab" })
-map("n", "<leader>tx", ":tabclose<CR>", { silent = true, desc = "Close current tab" })
+map(
+	"n",
+	"<leader>tf",
+	":tabnew %<CR>",
+	{ silent = true, desc = "Open current buffer in new tab" }
+)
+map(
+	"n",
+	"<leader>tx",
+	":tabclose<CR>",
+	{ silent = true, desc = "Close current tab" }
+)
 map("n", "<leader>tn", ":tabn<CR>", { silent = true, desc = "Go to next tab" })
-map("n", "<leader>tp", ":tabp<CR>", { silent = true, desc = "Go to previous tab" })
+map(
+	"n",
+	"<leader>tp",
+	":tabp<CR>",
+	{ silent = true, desc = "Go to previous tab" }
+)
 
 -- window
 -- split
-map("n", "<leader>sv", "<C-w>v", { silent = true, desc = "Split window vertically" })
-map("n", "<leader>sh", "<C-w>s", { silent = true, desc = "Split window horizontally" })
-map("n", "<leader>se", "<C-w>=", { silent = true, desc = "Make splits equal size" })
-map("n", "<leader>sx", ":close<CR>", { silent = true, desc = "Close current split" })
+map(
+	"n",
+	"<leader>sv",
+	"<C-w>v",
+	{ silent = true, desc = "Split window vertically" }
+)
+map(
+	"n",
+	"<leader>sh",
+	"<C-w>s",
+	{ silent = true, desc = "Split window horizontally" }
+)
+map(
+	"n",
+	"<leader>se",
+	"<C-w>=",
+	{ silent = true, desc = "Make splits equal size" }
+)
+map(
+	"n",
+	"<leader>sx",
+	":close<CR>",
+	{ silent = true, desc = "Close current split" }
+)
 
 -- resize with arros
-map("n", "<C-S-Left>", ":vertical resize -2<CR>", { silent = true, desc = "Resize vertical split Down" })
-map("n", "<C-S-Down>", ":resize +2<CR>", { silent = true, desc = "Resize horizontal split Down" })
-map("n", "<C-S-Up>", ":resize -2<CR>", { silent = true, desc = "Resize horizontal split Up" })
-map("n", "<C-S-Right>", ":vertical resize +2CR>", { silent = true, desc = "Resize vertical split Up" })
+map(
+	"n",
+	"<C-S-Left>",
+	":vertical resize -2<CR>",
+	{ silent = true, desc = "Resize vertical split Down" }
+)
+map(
+	"n",
+	"<C-S-Down>",
+	":resize +2<CR>",
+	{ silent = true, desc = "Resize horizontal split Down" }
+)
+map(
+	"n",
+	"<C-S-Up>",
+	":resize -2<CR>",
+	{ silent = true, desc = "Resize horizontal split Up" }
+)
+map(
+	"n",
+	"<C-S-Right>",
+	":vertical resize +2CR>",
+	{ silent = true, desc = "Resize vertical split Up" }
+)
 
 -- resize with h/j/k/l
-map("n", "<C-S-h>", ":vertical resize -2<CR>", { silent = true, desc = "Resize vertical split Down" })
-map("n", "<C-S-j>", ":resize +2<CR>", { silent = true, desc = "Resize horizontal split Down" })
-map("n", "<C-S-k>", ":resize -2<CR>", { silent = true, desc = "Resize horizontal split Up" })
-map("n", "<C-S-l>", ":vertical resize +2CR>", { silent = true, desc = "Resize vertical split Up" })
+map(
+	"n",
+	"<C-S-h>",
+	":vertical resize -2<CR>",
+	{ silent = true, desc = "Resize vertical split Down" }
+)
+map(
+	"n",
+	"<C-S-j>",
+	":resize +2<CR>",
+	{ silent = true, desc = "Resize horizontal split Down" }
+)
+map(
+	"n",
+	"<C-S-k>",
+	":resize -2<CR>",
+	{ silent = true, desc = "Resize horizontal split Up" }
+)
+map(
+	"n",
+	"<C-S-l>",
+	":vertical resize +2CR>",
+	{ silent = true, desc = "Resize vertical split Up" }
+)
 
 -- move with h/j/k/l
 map("n", "<A-h>", "<C-w>h", { silent = true, desc = "Move to left window" })
@@ -41,29 +121,109 @@ map("n", "<A-k>", "<C-w>k", { silent = true, desc = "Move to upper window" })
 map("n", "<A-l>", "<C-w>l", { silent = true, desc = "Move to right window" })
 
 -- navigate with arrows
-map("n", "<c-Left>", ":wincmd h<CR>", { silent = true, desc = "Navigate to left pane" })
-map("n", "<c-Down>", ":wincmd j<CR>", { silent = true, desc = "Navigate to down pane" })
-map("n", "<c-Up>", ":wincmd k<CR>", { silent = true, desc = "Navigate to up pane" })
-map("n", "<c-Right>", ":wincmd l<CR>", { silent = true, desc = "Navigate to right pane" })
+map(
+	"n",
+	"<c-Left>",
+	":wincmd h<CR>",
+	{ silent = true, desc = "Navigate to left pane" }
+)
+map(
+	"n",
+	"<c-Down>",
+	":wincmd j<CR>",
+	{ silent = true, desc = "Navigate to down pane" }
+)
+map(
+	"n",
+	"<c-Up>",
+	":wincmd k<CR>",
+	{ silent = true, desc = "Navigate to up pane" }
+)
+map(
+	"n",
+	"<c-Right>",
+	":wincmd l<CR>",
+	{ silent = true, desc = "Navigate to right pane" }
+)
 
 -- navigate with h/j/k/l
-map("n", "<c-h>", ":wincmd h<CR>", { silent = true, desc = "Navigate to left pane" })
-map("n", "<c-j>", ":wincmd j<CR>", { silent = true, desc = "Navigate to down pane" })
-map("n", "<c-k>", ":wincmd k<CR>", { silent = true, desc = "Navigate to up pane" })
-map("n", "<c-l>", ":wincmd l<CR>", { silent = true, desc = "Navigate to right pane" })
+map(
+	"n",
+	"<c-h>",
+	":wincmd h<CR>",
+	{ silent = true, desc = "Navigate to left pane" }
+)
+map(
+	"n",
+	"<c-j>",
+	":wincmd j<CR>",
+	{ silent = true, desc = "Navigate to down pane" }
+)
+map(
+	"n",
+	"<c-k>",
+	":wincmd k<CR>",
+	{ silent = true, desc = "Navigate to up pane" }
+)
+map(
+	"n",
+	"<c-l>",
+	":wincmd l<CR>",
+	{ silent = true, desc = "Navigate to right pane" }
+)
 
 -- terminal
 -- insert mode
-map("i", "<A-h>", "<C-o><C-w>h", { silent = true, desc = "Move to left window" })
-map("i", "<A-j>", "<C-o><C-w>j", { silent = true, desc = "Move to lower window" })
-map("i", "<A-k>", "<C-o><C-w>k", { silent = true, desc = "Move to upper window" })
-map("i", "<A-l>", "<C-o><C-w>l", { silent = true, desc = "Move to right window" })
+map(
+	"i",
+	"<A-h>",
+	"<C-o><C-w>h",
+	{ silent = true, desc = "Move to left window" }
+)
+map(
+	"i",
+	"<A-j>",
+	"<C-o><C-w>j",
+	{ silent = true, desc = "Move to lower window" }
+)
+map(
+	"i",
+	"<A-k>",
+	"<C-o><C-w>k",
+	{ silent = true, desc = "Move to upper window" }
+)
+map(
+	"i",
+	"<A-l>",
+	"<C-o><C-w>l",
+	{ silent = true, desc = "Move to right window" }
+)
 
 -- terminal mode
-map("t", "<A-h>", "<C-\\><C-n><C-w>h", { silent = true, desc = "Move to left window" })
-map("t", "<A-j>", "<C-\\><C-n><C-w>j", { silent = true, desc = "Move to lower window" })
-map("t", "<A-k>", "<C-\\><C-n><C-w>k", { silent = true, desc = "Move to upper window" })
-map("t", "<A-l>", "<C-\\><C-n><C-w>l", { silent = true, desc = "Move to right window" })
+map(
+	"t",
+	"<A-h>",
+	"<C-\\><C-n><C-w>h",
+	{ silent = true, desc = "Move to left window" }
+)
+map(
+	"t",
+	"<A-j>",
+	"<C-\\><C-n><C-w>j",
+	{ silent = true, desc = "Move to lower window" }
+)
+map(
+	"t",
+	"<A-k>",
+	"<C-\\><C-n><C-w>k",
+	{ silent = true, desc = "Move to upper window" }
+)
+map(
+	"t",
+	"<A-l>",
+	"<C-\\><C-n><C-w>l",
+	{ silent = true, desc = "Move to right window" }
+)
 
 -- open terminal
 vim.keymap.set("n", "<S-t>", function()
@@ -74,7 +234,12 @@ vim.keymap.set("n", "<S-t>", function()
 end, { noremap = true, silent = true })
 
 -- diagnostics
-map("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Diagnostic: Show Current Line" })
+map(
+	"n",
+	"<leader>dd",
+	vim.diagnostic.open_float,
+	{ desc = "Diagnostic: Show Current Line" }
+)
 
 map("n", "<leader>dn", function()
 	vim.diagnostic.jump({ count = 1 })
@@ -170,7 +335,12 @@ map("n", "<leader>lo", "<cmd>lopen<cr>", { desc = "Location List: Open" })
 map("n", "<leader>lc", "<cmd>lclose<cr>", { desc = "Location List: Close" })
 
 map("n", "<leader>ln", "<cmd>lnext<cr>", { desc = "Location List: Next" })
-map("n", "<leader>lp", "<cmd>lprevious<cr>", { desc = "Location List: Previous" })
+map(
+	"n",
+	"<leader>lp",
+	"<cmd>lprevious<cr>",
+	{ desc = "Location List: Previous" }
+)
 
 map("n", "<leader>lf", "<cmd>lfirst<cr>", { desc = "Location List: First" })
 map("n", "<leader>lL", "<cmd>llast<cr>", { desc = "Location List: Last" })

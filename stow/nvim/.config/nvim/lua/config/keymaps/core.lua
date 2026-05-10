@@ -9,8 +9,18 @@ map("n", "==", "gg<S-v>G", { desc = "Select all" })
 map("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
 
 -- copy file name and paths
-map("n", "<leader>cf", '<cmd>let @+ = expand("%")<CR>', { desc = "Copy File Name" })
-map("n", "<leader>cp", '<cmd>let @+ = expand("%:p")<CR>', { desc = "Copy File Path" })
+map(
+	"n",
+	"<leader>cf",
+	'<cmd>let @+ = expand("%")<CR>',
+	{ desc = "Copy File Name" }
+)
+map(
+	"n",
+	"<leader>cp",
+	'<cmd>let @+ = expand("%:p")<CR>',
+	{ desc = "Copy File Path" }
+)
 
 -- increment/decrement numbers
 map("n", "<leader>=", "<C-a>", { desc = "Increment number" })

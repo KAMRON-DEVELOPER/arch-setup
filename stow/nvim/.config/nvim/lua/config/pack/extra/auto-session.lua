@@ -41,9 +41,30 @@ require("auto-session").setup({
 	},
 })
 
-vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+vim.o.sessionoptions =
+	"blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
-vim.keymap.set("n", "<leader>ass", "<cmd>AutoSession search<CR>", { desc = "Session search" })
-vim.keymap.set("n", "<leader>ast", "<cmd>AutoSession toggle<CR>", { desc = "Toggle autosave" })
-vim.keymap.set("n", "<leader>asw", "<cmd>AutoSession save<CR>", { desc = "Save Session" })
-vim.keymap.set("n", "<leader>asr", "<cmd>AutoSession restore<CR>", { desc = "Restore session for cwd" })
+vim.keymap.set(
+	"n",
+	"<leader>ass",
+	"<cmd>AutoSession search<CR>",
+	{ desc = "Session search" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>ast",
+	"<cmd>AutoSession toggle<CR>",
+	{ desc = "Toggle autosave" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>asw",
+	"<cmd>AutoSession save<CR>",
+	{ desc = "Save Session" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>asr",
+	"<cmd>AutoSession restore<CR>",
+	{ desc = "Restore session for cwd" }
+)

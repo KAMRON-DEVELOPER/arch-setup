@@ -4,7 +4,7 @@ vim.pack.add(
 )
 
 require("which-key").setup({
-  delay = 1000,
+	delay = 1000,
 	spec = {
 		{
 			"<leader>s",
