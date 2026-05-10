@@ -106,6 +106,9 @@ blink.setup({
   -- C-k: Toggle signature help (if signature.enabled = true)
   keymap = {
     preset = "default",
+
+    ["<C-j>"] = { "select_next", "fallback" },
+    ["<C-k>"] = { "select_prev", "fallback" },
   },
 
   completion = {
@@ -199,13 +202,13 @@ if settings.blink.luasnip then
 
     local map = vim.keymap.set
 
-    map({ "i", "s" }, "<C-k>", function()
+    map({ "i", "s" }, "<C-h>", function()
       if luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
       end
     end, { silent = true, desc = "Expand or jump snippet" })
 
-    map({ "i", "s" }, "<C-j>", function()
+    map({ "i", "s" }, "<C-l>", function()
       if luasnip.jumpable(-1) then
         luasnip.jump(-1)
       end

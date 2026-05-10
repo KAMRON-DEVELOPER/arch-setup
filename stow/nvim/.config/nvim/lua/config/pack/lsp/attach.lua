@@ -16,58 +16,56 @@ vim.api.nvim_create_autocmd("LspAttach", {
       return client:supports_method(method, bufnr)
     end
 
-  local function map(mode, lhs, rhs, desc, opts)
-    opts = opts or {}
+    local function map(mode, lhs, rhs, desc, opts)
+      opts = opts or {}
 
-    vim.keymap.set(
-      mode,
-      lhs,
-      rhs,
-      vim.tbl_extend("force", {
-        buffer = bufnr,
-        silent = true,
-        desc = desc,
-      }, opts)
-    )
-  end
+      vim.keymap.set(
+        mode,
+        lhs,
+        rhs,
+        vim.tbl_extend("force", {
+          buffer = bufnr,
+          silent = true,
+          desc = desc,
+        }, opts)
+      )
+    end
 
     -- native completion
     if
       settings.completion == "native" and supports("textDocument/completion")
     then
-    local chars = {}
-    for i = 32, 126 do
-      table.insert(chars, string.char(i))
-    end
+      -- local chars = {}
+      -- for i = 32, 126 do
+      --   table.insert(chars, string.char(i))
+      -- end
+      -- client.server_capabilities.completionProvider.triggerCharacters = chars
 
-    client.server_capabilities.completionProvider.triggerCharacters = chars
+      client.server_capabilities.completionProvider.triggerCharacters =
+        vim.split(
+          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+          ""
+        )
 
-    vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
+      vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
 
-    -- manual trigger
-    map("i", "<C-Space>", function()
-      vim.lsp.completion.get()
-    end, "LSP: trigger completion")
-    map("i", "<C-@>", function()
-      vim.lsp.completion.get()
-    end, "LSP: trigger completion")
+      -- manual trigger
+      map("i", "<C-Space>", function()
+        vim.lsp.completion.get()
+      end, "LSP: trigger completion")
 
-    -- completion menu navigation
-    map("i", "<C-j>", function()
-      return vim.fn.pumvisible() == 1 and "<C-n>" or "<C-j>"
-    end, "Completion: Next")
+      -- completion menu navigation
+      map("i", "<C-j>", function()
+        return vim.fn.pumvisible() == 1 and "<C-n>" or "<C-j>"
+      end, "Completion: next", { expr = true })
 
-    map("i", "<C-k>", function()
-      return vim.fn.pumvisible() == 1 and "<C-p>" or "<C-k>"
-    end, "Completion: Previous")
+      map("i", "<C-k>", function()
+        return vim.fn.pumvisible() == 1 and "<C-p>" or "<C-k>"
+      end, "Completion: previous", { expr = true })
 
-    map("i", "<CR>", function()
-      return vim.fn.pumvisible() == 1 and "<C-y>" or "<CR>"
-    end, "Completion: Accept")
-
-    map("i", "<C-e>", function()
-      return vim.fn.pumvisible() == 1 and "<C-e>" or "<C-e>"
-    end, "Completion: Cancel")
+      map("i", "<CR>", function()
+        return vim.fn.pumvisible() == 1 and "<C-y>" or "<CR>"
+      end, "Completion: accept", { expr = true })
     end
 
     if supports("textDocument/codeAction") then
