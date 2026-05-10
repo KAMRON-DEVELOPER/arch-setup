@@ -138,6 +138,9 @@ function acp() {
 
 
 alias k="kubectl"
+alias dow="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias cod="cd ~/coding"
 
 
 # Env vars

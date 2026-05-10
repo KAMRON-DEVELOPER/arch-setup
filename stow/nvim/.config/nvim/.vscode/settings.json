@@ -1,0 +1,7 @@
+{
+  "Lua.diagnostics.globals": ["vim"],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.tabSize": 2
+}

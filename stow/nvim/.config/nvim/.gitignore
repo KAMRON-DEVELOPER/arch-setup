@@ -1,4 +1,2 @@
-.vscode/
 .mypy_cache
-.luarc.json
 lazy-lock.json
