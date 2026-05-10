@@ -6,12 +6,15 @@ vim.pack.add({
 
 require("oil").setup({
 	default_file_explorer = false,
+
 	win_options = {
 		signcolumn = "yes",
-		cursorcolumn = true,
+		cursorcolumn = false,
 	},
+
 	delete_to_trash = true,
 	watch_for_changes = true,
+
 	keymaps = {
 		["g?"] = { "actions.show_help", mode = "n" },
 		["<CR>"] = "actions.select",
@@ -27,13 +30,16 @@ require("oil").setup({
 		["g~"] = { "actions.cd", opts = { scope = "tab" }, mode = "n" },
 		["gs"] = { "actions.change_sort", mode = "n" },
 		["gx"] = "actions.open_external",
-		["g."] = { "actions.toggle_hidden", mode = "n" },
+		["H"] = { "actions.toggle_hidden", mode = "n" },
 		["g\\"] = { "actions.toggle_trash", mode = "n" },
 	},
+
 	use_default_keymaps = true,
+
 	view_options = {
 		show_hidden = false,
 	},
+
 	float = {
 		padding = 2,
 		max_width = 0,

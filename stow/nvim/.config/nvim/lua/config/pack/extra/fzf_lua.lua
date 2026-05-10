@@ -1,8 +1,7 @@
-vim.pack.add({
-	{ src = "https://github.com/folke/which-key.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/ibhagwan/fzf-lua" },
-})
+vim.pack.add(
+	"https://github.com/nvim-tree/nvim-web-devicons",
+	"https://github.com/ibhagwan/fzf-lua"
+)
 
 local fzf = require("fzf_lua")
 fzf.setup({
@@ -18,21 +17,24 @@ fzf.setup({
 })
 
 local map = vim.keymap.set
-map("n", "<leader>zp", fzf.builtin, { desc = "FzF: Find Builtin Pickers" })
-map("n", "<leader>zb", fzf.buffers, { desc = "FzF: Find Buffers" })
-map("n", "<leader>zf", fzf.files, { desc = "FzF: Find Files" })
-map("n", "<leader>zc", fzf.grep_cword, { desc = "FzF: Grep Current Word" })
-map("n", "<leader>fg", fzf.live_grep, { desc = "FzF: Live Grep" })
-map("n", "<leader>zr", fzf.resume, { desc = "FzF: Find Resume" })
-map("n", "<leader>zh", fzf.helptags, { desc = "FzF: Find Help Tags" })
-map("n", "<leader>zm", fzf.manpages, { desc = "FzF: Find Man Pages" })
-
-require("which-key").setup({
-	spec = {
-		{
-			"<leader>zf",
-			group = "FzF: Find",
-			icon = { icon = "", color = "green" },
-		},
-	},
-})
+map("n", "<leader>ff", fzf.files, { desc = "Find files" })
+map("n", "<leader>fg", fzf.live_grep, { desc = "Live grep" })
+map("n", "<leader>fw", fzf.grep_cword, { desc = "Grep word under cursor" })
+map("n", "<leader>fb", fzf.buffers, { desc = "Find buffers" })
+map("n", "<leader>fh", fzf.helptags, { desc = "Find help" })
+map("n", "<leader>fm", fzf.manpages, { desc = "Find man pages" })
+map("n", "<leader>fr", fzf.resume, { desc = "Resume finder" })
+map("n", "<leader>fp", fzf.builtin, { desc = "Find picker" })
+map(
+	"n",
+	"<leader>fd",
+	fzf.diagnostics_document,
+	{ desc = "Document diagnostics" }
+)
+map(
+	"n",
+	"<leader>fD",
+	fzf.diagnostics_workspace,
+	{ desc = "Workspace diagnostics" }
+)
+map("n", "<leader>fq", fzf.quickfix, { desc = "Quickfix" })
