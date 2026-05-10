@@ -8,11 +8,12 @@ vim.pack.add({
     name = "rose-pine",
   },
   { src = "https://github.com/vague-theme/vague.nvim" },
+  { src = "https://github.com/rebelot/kanagawa.nvim" },
 })
 
 -- dark, darker, cool, deep, warm, warmer, light
 require("onedark").setup({
-  style = "dark",
+  style = "deep",
   transparent = false,
   lualine = { transparent = false },
   code_style = {
@@ -40,7 +41,7 @@ require("gruvbox").setup({
 
 -- moon, storm, night, day
 require("tokyonight").setup({
-  style = "storm",
+  style = "night",
   transparent = false,
   dim_inactive = true,
   lualine_bold = false,
@@ -54,7 +55,7 @@ require("tokyonight").setup({
     floats = "dark",
   },
 })
--- vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("tokyonight")
 
 -- latte, frappe, macchiato, mocha
 require("catppuccin").setup({
@@ -121,3 +122,15 @@ require("vague").setup({
   italic = false, -- Disable italic globally
 })
 -- vim.cmd.colorscheme("vague")
+
+require("kanagawa").setup({
+  transparent = false,
+  dimInactive = true,
+  commentStyle = { italic = true },
+  functionStyle = {},
+  keywordStyle = { italic = true },
+  statementStyle = { bold = true },
+  typeStyle = {},
+})
+-- wave, dragon, lotus
+-- require("kanagawa").load("wave")
