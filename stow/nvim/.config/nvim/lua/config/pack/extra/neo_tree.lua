@@ -17,7 +17,7 @@ require("neo-tree").setup({
 	},
 	-- global, universal, none
 	clipboard = { sync = "universal" },
-	close_if_last_window = true,
+	close_if_last_window = false,
 	default_source = "filesystem",
 	enable_diagnostics = true,
 	enable_git_status = true,
@@ -143,6 +143,25 @@ require("neo-tree").setup({
 		},
 
 		mappings = {
+			-- ["<space>"] = "toggle_node",
+			-- ["<cr>"] = "open",
+			-- ["<esc>"] = "cancel",
+			-- ["q"] = "close_window",
+			-- ["?"] = "show_help",
+
+			-- ["s"] = "open_vsplit",
+			-- ["S"] = "open_split",
+			-- ["t"] = "open_tabnew",
+
+			-- ["a"] = "add",
+			-- ["A"] = "add_directory",
+			-- ["d"] = "delete",
+			-- ["r"] = "rename",
+			-- ["y"] = "copy_to_clipboard",
+			-- ["x"] = "cut_to_clipboard",
+			-- ["p"] = "paste_from_clipboard",
+			-- ["R"] = "refresh",
+
 			["t"] = { "toggle_node" },
 			["<2-LeftMouse>"] = "open",
 			["<cr>"] = "open",
@@ -192,6 +211,28 @@ require("neo-tree").setup({
 
 	-- filesystem
 	filesystem = {
+		filtered_items = {
+			-- when true, they will just be displayed differently than normal items
+			visible = false,
+			hide_dotfiles = false,
+			hide_gitignored = true,
+		},
+
+		follow_current_file = {
+			-- This will find and focus the file in the active buffer every time
+			enabled = false,
+			-- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+			leave_dirs_open = false,
+		},
+
+		-- netrw disabled, opening a directory opens neo-tree
+		-- disabled, open_default
+		hijack_netrw_behavior = "disabled",
+
+		-- This will use the OS level file watchers to detect changes
+		-- instead of relying on nvim autocmd events.
+		use_libuv_file_watcher = false,
+
 		window = {
 			mappings = {
 				["H"] = "toggle_hidden",
@@ -238,18 +279,6 @@ require("neo-tree").setup({
 				},
 			},
 		},
-
-		follow_current_file = {
-			enabled = false,
-			leave_dirs_open = false,
-		},
-
-		-- disabled, open_default
-		hijack_netrw_behavior = "disabled",
-
-		-- This will use the OS level file watchers to detect changes
-		-- instead of relying on nvim autocmd events.
-		use_libuv_file_watcher = false,
 	},
 
 	-- buffers
@@ -258,6 +287,10 @@ require("neo-tree").setup({
 			enabled = false,
 			leave_dirs_open = false,
 		},
+
+		-- when true, empty folders will be grouped together
+		group_empty_dirs = true,
+		show_unloaded = true,
 
 		window = {
 			mappings = {
@@ -285,6 +318,8 @@ require("neo-tree").setup({
 	-- git status
 	git_status = {
 		window = {
+			position = "float",
+
 			mappings = {
 				["A"] = "git_add_all",
 				["gu"] = "git_unstage_file",
@@ -316,6 +351,7 @@ require("neo-tree").setup({
 	document_symbols = {
 		follow_cursor = true,
 		follow_tree_cursor = true,
+
 		window = {
 			mappings = {
 				["<cr>"] = "jump_to_symbol",
@@ -379,30 +415,60 @@ require("neo-tree").setup({
 	},
 })
 
-local map = vim.keymap
+local function map(mode, lhs, rhs, desc, opts)
+	opts = vim.tbl_extend("force", { desc = desc }, opts or {})
+	vim.keymap.set(mode, lhs, rhs, opts)
+end
 
-map.set("n", "<leader>tt", ":Neotree toggle<CR>", { desc = "Neotree toggle" })
-map.set(
+-- filesystem
+map(
 	"n",
-	"<leader>to",
-	":Neotree reveal=false position=right<CR>",
-	{ desc = "Neotree: open right" }
+	"<leader>ee",
+	"<cmd>Neotree toggle source=filesystem position=right reveal=false<cr>",
+	"Explorer: Files right"
 )
-map.set(
+
+map(
 	"n",
-	"<leader>tr",
-	":Neotree reveal=true position=right<CR>",
-	{ desc = "Neotree: open reveal right" }
+	"<leader>eE",
+	"<cmd>Neotree toggle source=filesystem position=float reveal=false<cr>",
+
+	"Explorer: Files float"
 )
-map.set(
+
+-- buffers
+map(
 	"n",
-	"<leader>tfo",
-	":Neotree source=buffers reveal=false position=float<CR>",
-	{ desc = "Neotree: open buffers float" }
+	"<leader>eb",
+	"<cmd>Neotree toggle source=buffers position=right reveal=false<cr>",
+
+	"Explorer: Buffers right"
 )
-map.set(
+
+map(
 	"n",
-	"tfr",
-	":Neotree source=buffers reveal=true position=float<CR>",
-	{ desc = "Neotree: open buffers reveal float" }
+	"<leader>eB",
+	"<cmd>Neotree toggle source=buffers position=float reveal=false<cr>",
+
+	"Explorer: Buffers float"
 )
+
+-- document symbols
+map(
+	"n",
+	"<leader>es",
+	"<cmd>Neotree toggle source=document_symbols position=right reveal=false<cr>",
+
+	"Explorer: Symbols right"
+)
+
+map(
+	"n",
+	"<leader>eS",
+	"<cmd>Neotree toggle source=document_symbols position=float reveal=false<cr>",
+
+	"Explorer: Symbols float"
+)
+
+-- optional close
+map("n", "<leader>ec", "<cmd>Neotree close<cr>", "Explorer: Close")
