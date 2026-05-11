@@ -223,14 +223,15 @@ sudo pacman -S --needed hyprland \
   hyprpolkitagent \
   qt5-wayland \
   qt6-wayland \
-  lxappearance \
+  # lxappearance \
   nwg-look \
   qt5ct \
   qt6ct \
+  matugen \
   swaync \
   waybar \
   wofi \
-  rofi \
+  # rofi \
   swaybg \
   hyprpaper \
   hypridle \
@@ -248,8 +249,8 @@ sudo pacman -S --needed hyprland \
 ```bash
 yay -S hyprqt6engine \
   waypaper \
-  wallust \
-  ashell \
+  # wallust \
+  # ashell \
   cursor-clip-git
 ```
 
