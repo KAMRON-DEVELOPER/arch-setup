@@ -36,3 +36,20 @@ stow -v -t ~ hypr
 stow -v -t ~ walpapers
 cd ..
 ```
+
+preview
+
+```bash
+cd stow
+stow -n -v -D -t ~ */
+cd ..
+```
+
+remove symlinks
+
+```bash
+cd stow
+stow -v -D -t ~ */
+cd ..
+```
+
