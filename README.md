@@ -219,6 +219,7 @@ sudo pacman -S --needed hyprland \
   qt5ct \
   qt6ct \
   swaync \
+  matugen \
   waybar \
   wofi \
   rofi \

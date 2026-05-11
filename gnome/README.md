@@ -18,14 +18,14 @@ Media Keys & Custom Shortcuts
 
 ```bash
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > gnome/media-keys.txt
-dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > ~/Documents/dotfiles/gnome/media-keys.txt
+dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > ~/Documents/arch-setup/gnome/media-keys.txt
 ```
 
 Window Manager Shortcuts
 
 ```bash
 dconf dump /org/gnome/desktop/wm/keybindings/ > gnome/keybindings.txt
-dconf dump /org/gnome/desktop/wm/keybindings/ > ~/Documents/dotfiles/gnome/keybindings.txt
+dconf dump /org/gnome/desktop/wm/keybindings/ > ~/Documents/arch-setup/gnome/keybindings.txt
 ```
 
 ---

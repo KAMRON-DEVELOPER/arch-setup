@@ -21,12 +21,14 @@ cd stow
 stow -v -t ~ zed
 stow -v -t ~ zsh
 stow -v -t ~ local
-stow -v -t ~ wallust
+# stow -v -t ~ wallust
+stow -v -t ~ matugen
 stow -v -t ~ kitty
 stow -v -t ~ ghostty
 stow -v -t ~ alacritty
 stow -v -t ~ starship
 stow -v -t ~ tmux
+stow -v -t ~ zellij
 stow -v -t ~ nvim
 stow -v -t ~ waypaper
 stow -v -t ~ waybar
