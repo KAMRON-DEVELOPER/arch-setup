@@ -37,8 +37,6 @@ sudo pacman -S --needed firefox \
   zip \
   unzip \
   htop \
-  bat \
-  bat \
   brightnessctl \
   alsa-utils \
   android-tools \
