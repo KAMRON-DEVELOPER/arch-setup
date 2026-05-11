@@ -25,7 +25,7 @@ Window Manager Shortcuts
 
 ```bash
 dconf dump /org/gnome/desktop/wm/keybindings/ > gnome/keybindings.txt
-dconf dump /org/gnome/desktop/wm/keybindings/ > ~/Documents/dotfiles/arch-setup/keybindings.txt
+dconf dump /org/gnome/desktop/wm/keybindings/ > ~/Documents/arch-setup/keybindings.txt
 ```
 
 ---
@@ -36,14 +36,14 @@ Media Keys & Custom Shortcuts
 
 ```bash
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < gnome/media-keys.txt
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ~/Documents/dotfiles/gnome/media-keys.txt
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ~/Documents/arch-setup/gnome/media-keys.txt
 ```
 
 Window Manager Shortcuts
 
 ```bash
 dconf load /org/gnome/desktop/wm/keybindings/ < gnome/keybindings.txt
-dconf load /org/gnome/desktop/wm/keybindings/ < ~/Documents/dotfiles/gnome/keybindings.txt
+dconf load /org/gnome/desktop/wm/keybindings/ < ~/Documents/arch-setup/gnome/keybindings.txt
 ```
 
 > **Important:** Log out and log back in after restoring for changes to take effect.
@@ -54,8 +54,8 @@ dconf load /org/gnome/desktop/wm/keybindings/ < ~/Documents/dotfiles/gnome/keybi
 
 ```bash
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < gnome/media-keys.txt
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ~/Documents/dotfiles/gnome/media-keys.txt
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ~/Documents/arch-setup/gnome/media-keys.txt
 
 dconf load /org/gnome/desktop/wm/keybindings/ < gnome/keybindings.txt
-dconf load /org/gnome/desktop/wm/keybindings/ < ~/Documents/dotfiles/gnome/keybindings.txt
+dconf load /org/gnome/desktop/wm/keybindings/ < ~/Documents/arch-setup/gnome/keybindings.txt
 ```
