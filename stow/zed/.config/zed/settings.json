@@ -32,7 +32,7 @@
     "trust_all_worktrees": true
   },
   "title_bar": {
-    "show_menus": false,
+    "show_menus": false
   },
   "disable_ai": true,
   "icon_theme": {
@@ -84,10 +84,7 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "auto_indent_on_paste": true,
   "use_on_type_format": true,
-  "wrap_guides": [
-    80,
-    120
-  ],
+  "wrap_guides": [80, 120],
   "show_wrap_guides": true,
   "ui_font_size": 16,
   "buffer_font_size": 11.0,
@@ -108,9 +105,7 @@
     "basedpyright": {
       "binary": {
         "path": ".venv/bin/basedpyright-langserver",
-        "arguments": [
-          "--stdio"
-        ]
+        "arguments": ["--stdio"]
       }
     }
   },
@@ -122,23 +117,16 @@
       "format_on_save": "on"
     },
     "Python": {
-      "language_servers": [
-        "basedpyright",
-        "ruff"
-      ],
+      "language_servers": ["basedpyright", "ruff"],
       "code_actions_on_format": {
         "source.organizeImports.ruff": true
       },
       "formatter": {
         "external": {
           "command": "black",
-          "arguments": [
-            "--stdin-filename",
-            "{buffer_path}",
-            "-"
-          ]
+          "arguments": ["--stdin-filename", "{buffer_path}", "-"]
         }
-      },
-    },
+      }
+    }
   }
 }
