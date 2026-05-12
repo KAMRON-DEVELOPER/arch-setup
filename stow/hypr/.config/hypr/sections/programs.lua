@@ -3,6 +3,6 @@
 ---------------------
 
 -- Set programs that you use
-terminal    = "alacritty"
+terminal = "alacritty"
 fileManager = "nautilus"
-menu        = "vicinae toggle"
+menu = "vicinae toggle"

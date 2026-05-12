@@ -26,6 +26,6 @@ hl.config({
         blur_passes = 2,
         blur_size = 4,
       },
-    }
-  }
+    },
+  },
 })

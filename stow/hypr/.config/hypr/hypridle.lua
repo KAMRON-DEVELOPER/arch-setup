@@ -20,6 +20,6 @@ hl.config({
         on_timeout = "loginctl lock-session",
         on_resume = "brightnessctl set 100%",
       },
-    }
-  }
+    },
+  },
 })

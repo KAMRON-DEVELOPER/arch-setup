@@ -1,7 +1,7 @@
 hl.config({
-    hyprpaper = {
-        wallpaper = {
-            path = "~/.wallpapers/arch.png"
-        },
-    }
+  hyprpaper = {
+    wallpaper = {
+      path = "~/.wallpapers/arch.png",
+    },
+  },
 })
