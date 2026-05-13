@@ -25,3 +25,11 @@ hl.device({
   name = "epic-mouse-v1",
   sensitivity = -0.5,
 })
+
+hl.window_rule({
+  name = "chrome-touchpad-scroll-speed",
+  match = { class = "google-chrome" },
+
+  scroll_touchpad = 0.35,
+})
+
