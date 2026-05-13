@@ -1,4 +1,17 @@
 {
+  "ssh_connections": [
+    {
+      "host": "192.168.10.11",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/kamronbek/Coding/python/fastapi/rupert-fastapi"
+          ]
+        }
+      ]
+    }
+  ],
   "mouse_wheel_zoom": true,
   "preferred_line_length": 80,
   "outline_panel": {
