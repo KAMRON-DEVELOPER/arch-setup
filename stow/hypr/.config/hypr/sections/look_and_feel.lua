@@ -1,13 +1,15 @@
+local colors = dofile(os.getenv("HOME") .. "/.config/hypr/colors.lua")
+
 hl.config({
   general = {
     gaps_in = 8,
     gaps_out = 8,
 
-    border_size = 4,
+    border_size = 1,
 
     col = {
-      active_border = primary,
-      inactive_border = background,
+      active_border = colors.primary,
+      inactive_border = colors.background,
     },
 
     resize_on_border = false,

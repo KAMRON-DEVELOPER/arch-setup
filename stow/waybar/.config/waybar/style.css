@@ -9,7 +9,7 @@
 }
 
 window {
-    border-bottom: 4px solid @primary;
+    border-bottom: 1px solid @primary;
     color: @primary;
     background: alpha(@background, 0.9);
 }
