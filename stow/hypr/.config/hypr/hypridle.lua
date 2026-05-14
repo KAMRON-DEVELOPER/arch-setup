@@ -6,19 +6,19 @@ hl.config({
 
     listeners = {
       {
-        timeout = 60,
+        timeout = 300,
         on_timeout = "brightnessctl set 25",
         on_resume = "brightnessctl set 100%",
       },
       {
-        timeout = 300,
-        on_timeout = "brightnessctl set 0",
+        timeout = 600,
+        on_timeout ="hyprlock",
         on_resume = "brightnessctl set 100%",
       },
       {
-        timeout = 600,
-        on_timeout = "loginctl lock-session",
-        on_resume = "brightnessctl set 100%",
+        timeout = 1800,
+        on_timeout ="systemctl sleep",
+        on_resume = "hyprlock",
       },
     },
   },
