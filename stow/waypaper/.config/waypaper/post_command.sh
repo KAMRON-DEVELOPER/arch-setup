@@ -13,7 +13,7 @@ fi
 echo "Generating colors from: $WALLPAPER"
 
 # Run matugen to generate colors
-matugen -v --show-colors --prefer -m "dark" image "$WALLPAPER"
+matugen -v --show-colors --prefer darkness -m "dark" image "$WALLPAPER"
 
 
 echo "Colors updated successfully!"

@@ -1,3 +1,15 @@
+[config]
+# Which color to choose if multiple good colors were found from an image.
+# choices: [darkness, lightness, saturation, less-saturation]
+# The cli flag will override this if used.
+prefer = "darkness"
+
+caching = false
+
+# Defaults to the contrast from CLI if unspecified.
+# Value from -1 to 1.
+contrast = 1.0
+
 [config.wallpaper]
 set = false
 # command = "swaybg -m fill -i {{image}}"
