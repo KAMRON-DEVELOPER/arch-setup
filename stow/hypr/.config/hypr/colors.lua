@@ -1,21 +1,104 @@
-wallpaper =
-  "/home/kamronbek/Documents/Personal/Walpapers/waterfalls-wallpaper-3840x2160-lush-foliage-fluffy-clouds-576.jpg"
-cursor = "rgb(99A8AE)"
-background = "rgb(000103)"
-foreground = "rgb(F1E0DE)"
-color0 = "rgb(000104)"
-color1 = "rgb(747A82)"
-color2 = "rgb(547D8B)"
-color3 = "rgb(9B7A7A)"
-color4 = "rgb(68919D)"
-color5 = "rgb(96A4A9)"
-color6 = "rgb(D6A7A0)"
-color7 = "rgb(E2CBC7)"
-color8 = "rgb(9E8E8B)"
-color9 = "rgb(747A82)"
-color10 = "rgb(547D8B)"
-color11 = "rgb(9B7A7A)"
-color12 = "rgb(68919D)"
-color13 = "rgb(96A4A9)"
-color14 = "rgb(D6A7A0)"
-color15 = "rgb(E2CBC7)"
+return {
+    image = "/home/kamronbek/Documents/Personal/Walpapers/monaco-yacht-show-monaco-city-cityscape-city-lights-aerial-3840x2400-4343.jpg",
+
+    background = "0xff121318",
+
+    error = "0xffffb4ab",
+
+    error_container = "0xff93000a",
+
+    inverse_on_surface = "0xff2f3036",
+
+    inverse_primary = "0xff4e5b92",
+
+    inverse_surface = "0xffe3e1e9",
+
+    on_background = "0xffe3e1e9",
+
+    on_error = "0xff690005",
+
+    on_error_container = "0xffffdad6",
+
+    on_primary = "0xff1f2d61",
+
+    on_primary_container = "0xffdde1ff",
+
+    on_primary_fixed = "0xff06164b",
+
+    on_primary_fixed_variant = "0xff364379",
+
+    on_secondary = "0xff2c2f42",
+
+    on_secondary_container = "0xffdee1f9",
+
+    on_secondary_fixed = "0xff171b2c",
+
+    on_secondary_fixed_variant = "0xff424659",
+
+    on_surface = "0xffe3e1e9",
+
+    on_surface_variant = "0xffc6c5d0",
+
+    on_tertiary = "0xff43273f",
+
+    on_tertiary_container = "0xffffd7f4",
+
+    on_tertiary_fixed = "0xff2c1229",
+
+    on_tertiary_fixed_variant = "0xff5c3d56",
+
+    outline = "0xff90909a",
+
+    outline_variant = "0xff45464f",
+
+    primary = "0xffb7c4ff",
+
+    primary_container = "0xff364379",
+
+    primary_fixed = "0xffdde1ff",
+
+    primary_fixed_dim = "0xffb7c4ff",
+
+    scrim = "0xff000000",
+
+    secondary = "0xffc2c5dd",
+
+    secondary_container = "0xff424659",
+
+    secondary_fixed = "0xffdee1f9",
+
+    secondary_fixed_dim = "0xffc2c5dd",
+
+    shadow = "0xff000000",
+
+    source_color = "0xff232d55",
+
+    surface = "0xff121318",
+
+    surface_bright = "0xff38393f",
+
+    surface_container = "0xff1f1f25",
+
+    surface_container_high = "0xff292a2f",
+
+    surface_container_highest = "0xff34343a",
+
+    surface_container_low = "0xff1a1b21",
+
+    surface_container_lowest = "0xff0d0e13",
+
+    surface_dim = "0xff121318",
+
+    surface_tint = "0xffb7c4ff",
+
+    surface_variant = "0xff45464f",
+
+    tertiary = "0xffe4bad9",
+
+    tertiary_container = "0xff5c3d56",
+
+    tertiary_fixed = "0xffffd7f4",
+
+    tertiary_fixed_dim = "0xffe4bad9",
+
+}

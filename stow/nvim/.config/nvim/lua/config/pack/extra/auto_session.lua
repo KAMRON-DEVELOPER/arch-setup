@@ -12,7 +12,7 @@ require("auto-session").setup({
   git_use_branch_name = true,
   git_auto_restore_on_branch_change = true,
 
-  allowed_dirs = { "~/coding/**" },
+  allowed_dirs = { "~/**" },
   bypass_save_filetypes = { "alpha" },
 
   session_lens = {

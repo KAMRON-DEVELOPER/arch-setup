@@ -50,11 +50,3 @@ map(
   "<cmd>let @+ = expand(\"%:p\")<CR>",
   { silent = true, desc = "Copy File Path" }
 )
-
-vim.keymap.set("n", "<leader>cc", function()
-  vim.cmd("nohlsearch")
-
-  pcall(vim.cmd, "messages clear")
-
-  vim.cmd("redraw!")
-end, { silent = true, desc = "Clear command line" })

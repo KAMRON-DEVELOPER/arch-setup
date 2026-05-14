@@ -2,3 +2,4 @@
 README\.md
 .*\.txt$
 \folder
+^hypr-old$

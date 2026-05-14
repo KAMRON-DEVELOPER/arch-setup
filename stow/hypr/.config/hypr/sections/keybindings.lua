@@ -9,7 +9,9 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
-hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("cursor-clip"))
+-- hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("cursor-clip"))
+local cmd = "cliphist list | wofi --dmenu --pre-display-cmd \"echo '%s' | cut -f 2\" | cliphist decode | wl-copy"
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd(cmd))
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("hyprctl reload"))
 
