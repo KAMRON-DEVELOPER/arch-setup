@@ -1,5 +1,5 @@
 [config.wallpaper]
-set = true
+set = false
 # command = "swaybg -m fill -i {{image}}"
 # command = "hyprctl hyprpaper wallpaper ',{{image}},fit_mode cover'"
 command = "waypaper --backend swaybg --wallpaper {{image}}"

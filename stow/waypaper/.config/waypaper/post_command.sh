@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # ~/.config/waypaper/post_command.sh
 # This hook runs after waypaper changes the wallpaper
 
@@ -11,8 +12,8 @@ fi
 
 echo "Generating colors from: $WALLPAPER"
 
-# Run wallust to generate colors
-# matugen -v -m "dark" image "$WALLPAPER"
+# Run matugen to generate colors
+matugen -v --show-colors --prefer -m "dark" image "$WALLPAPER"
 
 
 echo "Colors updated successfully!"
