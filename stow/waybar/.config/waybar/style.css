@@ -1,45 +1,45 @@
 @import url("colors.css");
 
 * {
-  all: unset;
-  min-height: 0;
-  min-width: 0;
-  font-family: "Hack Nerd Font";
-  font-size: 12px;
+    all: unset;
+    min-height: 0;
+    min-width: 0;
+    font-family: "Hack Nerd Font";
+    font-size: 12px;
 }
 
 window {
-  border-bottom: 1px solid @primary;
-  color: @primary;
-  background: alpha(@background,0.9);
+    border-bottom: 4px solid @primary;
+    color: @primary;
+    background: alpha(@background, 0.9);
 }
 
 #workspaces button {
-  all:unset;
-  margin-left: 12px;
-  margin-right: 6px;
-  color: @secondary;
+    all: unset;
+    margin-left: 12px;
+    margin-right: 6px;
+    color: @secondary;
 }
 
 #workspaces button:hover {
-  all:unset;
-  margin-left: 12px;
-  background: @background;
+    all: unset;
+    margin-left: 12px;
+    background: @background;
 }
 
 #workspaces button.active {
-  color: @primary;
-  font-weight: 800;
+    color: @primary;
+    font-weight: 800;
 }
 
 tooltip {
-  background-color: @background;
-  color: @primary;
-  border: 1px solid @primary;
+    background-color: @background;
+    color: @primary;
+    border: 1px solid @primary;
 }
 
 tooltip label {
-  color: @primary;
+    color: @primary;
 }
 
 #cpu,
@@ -47,11 +47,11 @@ tooltip label {
 #pulseaudio,
 #battery,
 #network {
-  margin-left: 6px;
-  color: @primary;
+    margin-left: 6px;
+    color: @primary;
 }
 
 #tray {
-  margin-left: 6px;
-  margin-right: 12px;
+    margin-left: 6px;
+    margin-right: 12px;
 }
