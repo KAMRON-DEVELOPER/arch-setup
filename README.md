@@ -5,13 +5,13 @@ This is very minimal setup.
 <!-- markdownlint-disable MD033 -->
 <table>
   <tr>
-    <td><img alt="img" src="static/images/2026-05-16-114028_hyprshot.png"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-113831_hyprshot.png"/></td>
+    <td width="50%"><img alt="img" width="100%" src="static/images/2026-05-16-114028_hyprshot.png"/></td>
+    <td width="50%"><img alt="img" width="100%" src="static/images/2026-05-16-113831_hyprshot.png"/></td>
   </tr>
   <tr>
-    <td><img alt="img" src="static/images/2026-05-16-114304_hyprshot.png"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-114328_hyprshot.png"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-114350_hyprshot.png"/></td>
+    <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114304_hyprshot.png"/></td>
+    <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114328_hyprshot.png"/></td>
+    <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114350_hyprshot.png"/></td>
   </tr>
 </table>
 <!-- markdownlint-enable MD033 -->
@@ -90,24 +90,24 @@ yay -S visual-studio-code-bin \
 
 Some packages:
 
-* sublime-text-4
-* zen-browser-bin
-* visual-studio-code-bin
-* visual-studio-code-insiders-bin
-* docker-credential-secretservice
-* docker-credential-pass
-* bombardier
-* headlamp-bin
-* zsh-theme-powerlevel10k
-* postman-bin
-* android-studio
-* google-chrome
+- sublime-text-4
+- zen-browser-bin
+- visual-studio-code-bin
+- visual-studio-code-insiders-bin
+- docker-credential-secretservice
+- docker-credential-pass
+- bombardier
+- headlamp-bin
+- zsh-theme-powerlevel10k
+- postman-bin
+- android-studio
+- google-chrome
 
 ## Gnome Setup
 
-* [GNOME](https://wiki.archlinux.org/title/GNOME)
-* [polkit](https://wiki.archlinux.org/title/Polkit)
-* [GNOME/Files](https://wiki.archlinux.org/title/GNOME/Files)
+- [GNOME](https://wiki.archlinux.org/title/GNOME)
+- [polkit](https://wiki.archlinux.org/title/Polkit)
+- [GNOME/Files](https://wiki.archlinux.org/title/GNOME/Files)
 
 ```bash
 sudo pacman -S --needed gnome-shell \
@@ -177,51 +177,51 @@ sudo systemctl stop gdm
 
 ## Hyprland Setup
 
-* [Hyprland Wiki](https://wiki.hypr.land/)
-* [Getting Started](https://wiki.hypr.land/Getting-Started/)
-  * [Installation](https://wiki.hypr.land/Getting-Started/Installation/)
-  * [Master tutorial](https://wiki.hypr.land/Getting-Started/Master-Tutorial/)
-  * [Preconfigured setups](https://wiki.hypr.land/Getting-Started/Preconfigured-setups/)
-* [Configuring](https://wiki.hypr.land/Configuring/)
-  * [Start]([ccc](https://wiki.hypr.land/Configuring/Start/))
-  * [Basics](https://wiki.hypr.land/Configuring/Basics/)
-    * [Variables](https://wiki.hypr.land/Configuring/Basics/Variables/)
-    * [Monitors](https://wiki.hypr.land/Configuring/Basics/Monitors/)
-    * [Binds](https://wiki.hypr.land/Configuring/Basics/Binds/)
-    * [Dispatchers](https://wiki.hypr.land/Configuring/Basics/Dispatchers/)
-    * [Window Rules](https://wiki.hypr.land/Configuring/Basics/Window-Rules/)
-    * [Workspace Rules](https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/)
-    * [Autostart](https://wiki.hypr.land/Configuring/Basics/Autostart/)
-  * [Layouts](https://wiki.hypr.land/Configuring/Layouts/)
-  * [Advanced and Cool](https://wiki.hypr.land/Configuring/Advanced-and-Cool/)
-  * [Example configurations](https://wiki.hypr.land/Configuring/Example-configurations/)
-* [Hypr Ecosystem](https://wiki.hypr.land/Hypr-Ecosystem/)
-  * [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper) | [GitHub](https://github.com/hyprwm/hyprpaper)
-  * [hyprpicker](https://wiki.hypr.land/Hypr-Ecosystem/hyprpicker) | [GitHub](https://github.com/hyprwm/hyprpicker)
-  * [hyprlauncher](https://wiki.hypr.land/Hypr-Ecosystem/hyprlauncher) | [GitHub](https://github.com/hyprwm/hyprlauncher)
-  * [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle) | [GitHub]((https://github.com/hyprwm/hypridle))
-  * [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock) | [GitHub](https://github.com/hyprwm/hyprlock)
-  * [xdg-desktop-portal-hyprland](https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland) | [GitHub](https://github.com/hyprwm/xdg-desktop-portal-hyprland)
-  * [hyprsysteminfo](https://wiki.hypr.land/Hypr-Ecosystem/hyprsysteminfo) | [GitHub](https://github.com/hyprwm/hyprsysteminfo)
-  * [hyprsunset](https://wiki.hypr.land/Hypr-Ecosystem/hyprsunset) | [GitHub](https://github.com/hyprwm/hyprsunset)
-  * [hyprpolkitagent](https://wiki.hypr.land/Hypr-Ecosystem/hyprpolkitagent) | [GitHub](https://github.com/hyprwm/hyprpolkitagent)
-  * [hyprland-qt-support](https://wiki.hypr.land/Hypr-Ecosystem/hyprland-qt-support) | [GitHub](https://github.com/hyprwm/hyprland-qt-support)
-  * [hyprqt6engine](https://wiki.hypr.land/Hypr-Ecosystem/hyprqt6engine) | [GitHub](https://github.com/hyprwm/hyprqt6engine)
-  * [hyprpwcenter](https://wiki.hypr.land/Hypr-Ecosystem/hyprpwcenter) | [GitHub](https://github.com/hyprwm/hyprpwcenter)
-  * [hyprshutdown](https://wiki.hypr.land/Hypr-Ecosystem/hyprshutdown) | [GitHub](https://github.com/hyprwm/hyprshutdown)
-* [Useful Utilities](https://wiki.hypr.land/Useful-Utilities/)
-  * [Must-Have](https://wiki.hypr.land/Useful-Utilities/Must-have)
-  * [Status Bars](https://wiki.hypr.land/Useful-Utilities/Status-Bars)
-  * [App Launchers](https://wiki.hypr.land/Useful-Utilities/App-Launchers)
-  * [Wallpapers](https://wiki.hypr.land/Useful-Utilities/Wallpapers)
-  * [Screen Sharing](https://wiki.hypr.land/Useful-Utilities/Screen-Sharing)
-  * [App Clients](https://wiki.hypr.land/Useful-Utilities/App-Clients)
-  * [Color Pickers](https://wiki.hypr.land/Useful-Utilities/Color-Pickers)
-  * [Clipboard Managers](https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers)
-  * [Hyprland Desktop Portal](https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland)
-  * [File Managers](https://wiki.hypr.land/Useful-Utilities/File-Managers)
-  * [Other](https://wiki.hypr.land/Useful-Utilities/Other)
-  * [Systemd startup](https://wiki.hypr.land/Useful-Utilities/Systemd-start)
+- [Hyprland Wiki](https://wiki.hypr.land/)
+- [Getting Started](https://wiki.hypr.land/Getting-Started/)
+  - [Installation](https://wiki.hypr.land/Getting-Started/Installation/)
+  - [Master tutorial](https://wiki.hypr.land/Getting-Started/Master-Tutorial/)
+  - [Preconfigured setups](https://wiki.hypr.land/Getting-Started/Preconfigured-setups/)
+- [Configuring](https://wiki.hypr.land/Configuring/)
+  - [Start](<[ccc](https://wiki.hypr.land/Configuring/Start/)>)
+  - [Basics](https://wiki.hypr.land/Configuring/Basics/)
+    - [Variables](https://wiki.hypr.land/Configuring/Basics/Variables/)
+    - [Monitors](https://wiki.hypr.land/Configuring/Basics/Monitors/)
+    - [Binds](https://wiki.hypr.land/Configuring/Basics/Binds/)
+    - [Dispatchers](https://wiki.hypr.land/Configuring/Basics/Dispatchers/)
+    - [Window Rules](https://wiki.hypr.land/Configuring/Basics/Window-Rules/)
+    - [Workspace Rules](https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/)
+    - [Autostart](https://wiki.hypr.land/Configuring/Basics/Autostart/)
+  - [Layouts](https://wiki.hypr.land/Configuring/Layouts/)
+  - [Advanced and Cool](https://wiki.hypr.land/Configuring/Advanced-and-Cool/)
+  - [Example configurations](https://wiki.hypr.land/Configuring/Example-configurations/)
+- [Hypr Ecosystem](https://wiki.hypr.land/Hypr-Ecosystem/)
+  - [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper) | [GitHub](https://github.com/hyprwm/hyprpaper)
+  - [hyprpicker](https://wiki.hypr.land/Hypr-Ecosystem/hyprpicker) | [GitHub](https://github.com/hyprwm/hyprpicker)
+  - [hyprlauncher](https://wiki.hypr.land/Hypr-Ecosystem/hyprlauncher) | [GitHub](https://github.com/hyprwm/hyprlauncher)
+  - [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle) | [GitHub](<(https://github.com/hyprwm/hypridle)>)
+  - [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock) | [GitHub](https://github.com/hyprwm/hyprlock)
+  - [xdg-desktop-portal-hyprland](https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland) | [GitHub](https://github.com/hyprwm/xdg-desktop-portal-hyprland)
+  - [hyprsysteminfo](https://wiki.hypr.land/Hypr-Ecosystem/hyprsysteminfo) | [GitHub](https://github.com/hyprwm/hyprsysteminfo)
+  - [hyprsunset](https://wiki.hypr.land/Hypr-Ecosystem/hyprsunset) | [GitHub](https://github.com/hyprwm/hyprsunset)
+  - [hyprpolkitagent](https://wiki.hypr.land/Hypr-Ecosystem/hyprpolkitagent) | [GitHub](https://github.com/hyprwm/hyprpolkitagent)
+  - [hyprland-qt-support](https://wiki.hypr.land/Hypr-Ecosystem/hyprland-qt-support) | [GitHub](https://github.com/hyprwm/hyprland-qt-support)
+  - [hyprqt6engine](https://wiki.hypr.land/Hypr-Ecosystem/hyprqt6engine) | [GitHub](https://github.com/hyprwm/hyprqt6engine)
+  - [hyprpwcenter](https://wiki.hypr.land/Hypr-Ecosystem/hyprpwcenter) | [GitHub](https://github.com/hyprwm/hyprpwcenter)
+  - [hyprshutdown](https://wiki.hypr.land/Hypr-Ecosystem/hyprshutdown) | [GitHub](https://github.com/hyprwm/hyprshutdown)
+- [Useful Utilities](https://wiki.hypr.land/Useful-Utilities/)
+  - [Must-Have](https://wiki.hypr.land/Useful-Utilities/Must-have)
+  - [Status Bars](https://wiki.hypr.land/Useful-Utilities/Status-Bars)
+  - [App Launchers](https://wiki.hypr.land/Useful-Utilities/App-Launchers)
+  - [Wallpapers](https://wiki.hypr.land/Useful-Utilities/Wallpapers)
+  - [Screen Sharing](https://wiki.hypr.land/Useful-Utilities/Screen-Sharing)
+  - [App Clients](https://wiki.hypr.land/Useful-Utilities/App-Clients)
+  - [Color Pickers](https://wiki.hypr.land/Useful-Utilities/Color-Pickers)
+  - [Clipboard Managers](https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers)
+  - [Hyprland Desktop Portal](https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland)
+  - [File Managers](https://wiki.hypr.land/Useful-Utilities/File-Managers)
+  - [Other](https://wiki.hypr.land/Useful-Utilities/Other)
+  - [Systemd startup](https://wiki.hypr.land/Useful-Utilities/Systemd-start)
 
 ### Pacman packages
 
@@ -253,7 +253,7 @@ sudo pacman -S --needed hyprland \
   wl-clip-persist
 ```
 
-* hyprsunset
+- hyprsunset
 
 ### Yay packages
 
@@ -265,8 +265,8 @@ yay -S hyprqt6engine \
   cursor-clip-git
 ```
 
-* hyprsysteminfo
-* nautilus-open-any-terminal
+- hyprsysteminfo
+- nautilus-open-any-terminal
 
 ## Docker Setup
 
