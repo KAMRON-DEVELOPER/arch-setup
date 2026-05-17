@@ -5,15 +5,16 @@ This is very minimal setup.
 <!-- markdownlint-disable MD033 -->
 <table>
   <tr>
-    <td><img alt="img" src="static/images/2026-05-16-114028_hyprshot.png" width="49%"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-113831_hyprshot.png" width="49%"/></td>
+    <td><img alt="img" width="100%" src="static/images/2026-05-16-114028_hyprshot.png"/></td>
+    <td><img alt="img" width="100%" src="static/images/2026-05-16-113831_hyprshot.png"/></td>
   </tr>
 </table>
+
 <table>
   <tr>
-    <td><img alt="img" src="static/images/2026-05-16-114304_hyprshot.png" width="32%"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-114328_hyprshot.png" width="32%"/></td>
-    <td><img alt="img" src="static/images/2026-05-16-114350_hyprshot.png" width="32%"/></td>
+    <td><img alt="img" width="100%" src="static/images/2026-05-16-114304_hyprshot.png"/></td>
+    <td><img alt="img" width="100%" src="static/images/2026-05-16-114328_hyprshot.png"/></td>
+    <td><img alt="img" width="100%" src="static/images/2026-05-16-114350_hyprshot.png"/></td>
   </tr>
 </table>
 <!-- markdownlint-enable MD033 -->
