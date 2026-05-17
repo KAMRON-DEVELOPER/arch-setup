@@ -11,7 +11,7 @@ This is very minimal setup.
   <tr>
     <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114304_hyprshot.png"/></td>
     <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114328_hyprshot.png"/></td>
-    <td width="33%"><img alt="img" width="100%" src="static/images/2026-05-16-114350_hyprshot.png"/></td>
+    <td width="34%"><img alt="img" width="100%" src="static/images/2026-05-16-114350_hyprshot.png"/></td>
   </tr>
 </table>
 <!-- markdownlint-enable MD033 -->
