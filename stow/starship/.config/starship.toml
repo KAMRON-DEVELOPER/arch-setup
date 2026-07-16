@@ -109,15 +109,15 @@ palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700' # example
-color1 = '#93cdf6'
-color2 = '#00344c'
-color3 = '#c1c7ce'
-color4 = '#1c2024'
-color5 = '#00344c'
-color6 = '#101417'
-color7 = '#101417'
-color8 = '#93cdf6'
-color9 = '#cdc0e9'
+color1 = '#9ad4a1'
+color2 = '#003916'
+color3 = '#c1c9be'
+color4 = '#1c211c'
+color5 = '#003916'
+color6 = '#101510'
+color7 = '#101510'
+color8 = '#9ad4a1'
+color9 = '#a1ced7'
 
 [line_break]
 disabled = true
