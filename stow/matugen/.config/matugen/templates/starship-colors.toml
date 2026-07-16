@@ -280,6 +280,9 @@ symbol = ' '
 [gradle]
 symbol = ' '
 
+[aws]
+disabled = true
+
 [gcloud]
 symbol = '󱇶 '
 
