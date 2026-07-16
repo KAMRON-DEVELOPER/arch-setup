@@ -26,10 +26,14 @@ hl.device({
   sensitivity = -0.5,
 })
 
+hl.device({
+  name = "yichip-2.4g-receiver-mouse",
+  sensitivity = -0.5,
+})
+
 hl.window_rule({
   name = "chrome-touchpad-scroll-speed",
   match = { class = "google-chrome" },
 
-  scroll_touchpad = 0.35,
+  scroll_touchpad = 0.15,
 })
-

@@ -156,3 +156,9 @@ export KUBECONFIG="$HOME/.kube/config"
 
 
 # typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# mimocode
+export PATH=/home/kamronbek/.mimocode/bin:$PATH
+
+# kimi-code
+export PATH="/home/kamronbek/.kimi-code/bin:$PATH"

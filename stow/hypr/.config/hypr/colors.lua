@@ -1,104 +1,104 @@
 return {
-    image = "/home/kamronbek/Documents/Personal/Walpapers/forest-with-tall-green-trees.jpg",
+    image = "/home/kamronbek/Documents/Personal/Walpapers/1332578-2560x1600-desktop-hd-cedar-tree-background-photo.jpg",
 
-    background = "rgba(11140eff)",
+    background = "rgba(101417ff)",
 
     error = "rgba(ffb4abff)",
 
     error_container = "rgba(93000aff)",
 
-    inverse_on_surface = "rgba(2e312aff)",
+    inverse_on_surface = "rgba(2d3135ff)",
 
-    inverse_primary = "rgba(48672fff)",
+    inverse_primary = "rgba(236488ff)",
 
-    inverse_surface = "rgba(e2e3d9ff)",
+    inverse_surface = "rgba(dfe3e7ff)",
 
-    on_background = "rgba(e2e3d9ff)",
+    on_background = "rgba(dfe3e7ff)",
 
     on_error = "rgba(690005ff)",
 
     on_error_container = "rgba(ffdad6ff)",
 
-    on_primary = "rgba(1b3704ff)",
+    on_primary = "rgba(00344cff)",
 
-    on_primary_container = "rgba(c8eea8ff)",
+    on_primary_container = "rgba(c7e7ffff)",
 
-    on_primary_fixed = "rgba(0b2000ff)",
+    on_primary_fixed = "rgba(001e2eff)",
 
-    on_primary_fixed_variant = "rgba(314f19ff)",
+    on_primary_fixed_variant = "rgba(004c6dff)",
 
-    on_secondary = "rgba(29341fff)",
+    on_secondary = "rgba(21323eff)",
 
-    on_secondary_container = "rgba(dae7c9ff)",
+    on_secondary_container = "rgba(d2e5f5ff)",
 
-    on_secondary_fixed = "rgba(141e0cff)",
+    on_secondary_fixed = "rgba(0b1d29ff)",
 
-    on_secondary_fixed_variant = "rgba(3f4a34ff)",
+    on_secondary_fixed_variant = "rgba(384956ff)",
 
-    on_surface = "rgba(e2e3d9ff)",
+    on_surface = "rgba(dfe3e7ff)",
 
-    on_surface_variant = "rgba(c4c8baff)",
+    on_surface_variant = "rgba(c1c7ceff)",
 
-    on_tertiary = "rgba(003736ff)",
+    on_tertiary = "rgba(342b4bff)",
 
-    on_tertiary_container = "rgba(bbeceaff)",
+    on_tertiary_container = "rgba(e9ddffff)",
 
-    on_tertiary_fixed = "rgba(00201fff)",
+    on_tertiary_fixed = "rgba(1f1635ff)",
 
-    on_tertiary_fixed_variant = "rgba(1e4e4dff)",
+    on_tertiary_fixed_variant = "rgba(4b4263ff)",
 
-    outline = "rgba(8e9286ff)",
+    outline = "rgba(8b9198ff)",
 
-    outline_variant = "rgba(44483eff)",
+    outline_variant = "rgba(41484dff)",
 
-    primary = "rgba(add28eff)",
+    primary = "rgba(93cdf6ff)",
 
-    primary_container = "rgba(314f19ff)",
+    primary_container = "rgba(004c6dff)",
 
-    primary_fixed = "rgba(c8eea8ff)",
+    primary_fixed = "rgba(c7e7ffff)",
 
-    primary_fixed_dim = "rgba(add28eff)",
+    primary_fixed_dim = "rgba(93cdf6ff)",
 
     scrim = "rgba(000000ff)",
 
-    secondary = "rgba(becbaeff)",
+    secondary = "rgba(b6c9d8ff)",
 
-    secondary_container = "rgba(3f4a34ff)",
+    secondary_container = "rgba(384956ff)",
 
-    secondary_fixed = "rgba(dae7c9ff)",
+    secondary_fixed = "rgba(d2e5f5ff)",
 
-    secondary_fixed_dim = "rgba(becbaeff)",
+    secondary_fixed_dim = "rgba(b6c9d8ff)",
 
     shadow = "rgba(000000ff)",
 
-    source_color = "rgba(27331dff)",
+    source_color = "rgba(457797ff)",
 
-    surface = "rgba(11140eff)",
+    surface = "rgba(101417ff)",
 
-    surface_bright = "rgba(373a33ff)",
+    surface_bright = "rgba(353a3dff)",
 
-    surface_container = "rgba(1e211aff)",
+    surface_container = "rgba(1c2024ff)",
 
-    surface_container_high = "rgba(282b24ff)",
+    surface_container_high = "rgba(262a2eff)",
 
-    surface_container_highest = "rgba(33362fff)",
+    surface_container_highest = "rgba(313539ff)",
 
-    surface_container_low = "rgba(191d16ff)",
+    surface_container_low = "rgba(181c20ff)",
 
-    surface_container_lowest = "rgba(0c0f09ff)",
+    surface_container_lowest = "rgba(0a0f12ff)",
 
-    surface_dim = "rgba(11140eff)",
+    surface_dim = "rgba(101417ff)",
 
-    surface_tint = "rgba(add28eff)",
+    surface_tint = "rgba(93cdf6ff)",
 
-    surface_variant = "rgba(44483eff)",
+    surface_variant = "rgba(41484dff)",
 
-    tertiary = "rgba(a0cfceff)",
+    tertiary = "rgba(cdc0e9ff)",
 
-    tertiary_container = "rgba(1e4e4dff)",
+    tertiary_container = "rgba(4b4263ff)",
 
-    tertiary_fixed = "rgba(bbeceaff)",
+    tertiary_fixed = "rgba(e9ddffff)",
 
-    tertiary_fixed_dim = "rgba(a0cfceff)",
+    tertiary_fixed_dim = "rgba(cdc0e9ff)",
 
 }

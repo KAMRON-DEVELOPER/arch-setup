@@ -37,7 +37,7 @@ require("gruvbox").setup({
     folds = false,
   },
 })
--- vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("gruvbox")
 
 -- moon, storm, night, day
 require("tokyonight").setup({
@@ -55,7 +55,7 @@ require("tokyonight").setup({
     floats = "dark",
   },
 })
-vim.cmd.colorscheme("tokyonight")
+-- vim.cmd.colorscheme("tokyonight")
 
 -- latte, frappe, macchiato, mocha
 require("catppuccin").setup({

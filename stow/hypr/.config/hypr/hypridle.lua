@@ -11,7 +11,7 @@ hl.config({
         on_resume = "brightnessctl set 100%",
       },
       {
-        timeout = 600,
+        timeout = 900,
         on_timeout ="hyprlock",
         on_resume = "brightnessctl set 100%",
       },

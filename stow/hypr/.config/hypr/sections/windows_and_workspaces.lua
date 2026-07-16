@@ -70,3 +70,9 @@ hl.layer_rule({
   blur = true,
   ignore_alpha = 0.5,
 })
+
+hl.window_rule({
+  name = "css-confine-pointer",
+  match = { class = "cstrike_linux64" },
+  confine_pointer = true,
+})
